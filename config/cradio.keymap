@@ -48,6 +48,11 @@
       flavor = "hold-preferred";
       bindings = <&mo>, <&kp>;
     };
+    
+  combos {
+    #include "combos.dtsi"
+  };
+
 
   };
 
