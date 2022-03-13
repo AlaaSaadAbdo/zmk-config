@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include "definitions.h"
 
 &sk {
   release-after-ms = <STICKY_KEY_TIMEOUT>;
