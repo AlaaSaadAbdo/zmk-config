@@ -18,4 +18,6 @@ compatible = "zmk,combos";
 
 /* misc */
 COMBO(esc, &kp ESC, 20 21, COL COLW)
-
+/* mac | win */
+COMBO(switch_to_mac, &to COL, 0 20, COLW)
+COMBO(switch_to_win, &to COLW, 9 29, COL)
