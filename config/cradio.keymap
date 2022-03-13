@@ -8,30 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define COL 0
-#define NAV 1
-#define SYM 2
-#define NUM 3
-#define COLW 4
-#define NAVW 6
-#define SYMW 7
-#define NUMW 8
-
-#define SK(KEY) &nk KEY KEY
-#define MO(LAYER) &mo_tap LAYER F24
-// Keep sticky keys active for a long time so they effectively do not time out
-#define STICKY_KEY_TIMEOUT 60000
-
-&mt {
-      flavor = "hold-preferred";
-      tapping_term_ms = <169>;
-};
-
-&lt {
-    flavor = "balanced";
-    tapping-term-ms = <169>;
-};
-
 &sk {
   release-after-ms = <STICKY_KEY_TIMEOUT>;
 };
@@ -46,7 +22,6 @@
 */
 
 / { 
-
 
   behaviors {
 
@@ -112,8 +87,6 @@
             key-positions = <17 18>;
             bindings = <&kp RGUI>;
         };
-        
-
         
     };
 
