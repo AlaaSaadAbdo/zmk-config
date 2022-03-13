@@ -9,22 +9,18 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define COL 0
-#define QWERTY 1
-#define LOWER 2
-#define RAISE 3
-#define NAV 4
-#define ADJUST 5
+#define NAV 1
+#define SYM 2
+#define NUM 3
+#define COLW 4
+#define NAVW 6
+#define SYMW 7
+#define NUMW 8
 
-/* KEY POSITIONS
--- from https://github.com/caksoylar/zmk-config/blob/main/config/combos.dtsi
-
-    ╭────────────────────╮ ╭────────────────────╮
-    │  0   1   2   3   4 │ │  5   6   7   8   9 │
-    │ 10  11  12  13  14 │ │ 15  16  17  18  19 │
-    │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
-    ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
-                ╰────────╯ ╰────────╯
-*/
+#define SK(KEY) &nk KEY KEY
+#define MO(LAYER) &mo_tap LAYER F24
+// Keep sticky keys active for a long time so they effectively do not time out
+#define STICKY_KEY_TIMEOUT 60000
 
 &mt {
       flavor = "hold-preferred";
@@ -36,8 +32,48 @@
     tapping-term-ms = <169>;
 };
 
+&sk {
+  release-after-ms = <STICKY_KEY_TIMEOUT>;
+};
+  
+/* KEY POSITIONS
+    ╭────────────────────╮ ╭────────────────────╮
+    │  0   1   2   3   4 │ │  5   6   7   8   9 │
+    │ 10  11  12  13  14 │ │ 15  16  17  18  19 │
+    │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
+    ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
+                ╰────────╯ ╰────────╯
+*/
+
 / { 
 
+
+  behaviors {
+
+    // Sticky key on tap, normal key on hold
+    // Useful for modifier-clicking without the modifier remaining active
+    nk: not_so_sticky_key {
+      compatible = "zmk,behavior-hold-tap";
+      label = "NOT_SO_STICKY_KEY";
+      #binding-cells = <2>;
+      tapping_term_ms = <69>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&sk>;
+    };
+    
+    // A hold-tap that activates without delay (like `&mo`) to get rid off sticky keys if not needed
+    mo_tap: mo_with_tap {
+      compatible = "zmk,behavior-hold-tap";
+      label = "MO_WITH_TAP";
+      #binding-cells = <2>;
+      tapping_term_ms = <0>;
+      retro-tap;
+      flavor = "hold-preferred";
+      bindings = <&mo>, <&kp>;
+    };
+
+  };
+  
     combos {
         compatible = "zmk,combos";
         combo_esc {
@@ -84,16 +120,23 @@
         keymap {
                 compatible = "zmk,keymap";
                 
-       		default_layer {
-		bindings = <
-		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
-		&kp A &kp S &kp D &kp F &kp G 			        	        &kp H &kp J &kp K &kp L &kp QUOT
-		&mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp CMMA &kp DOT &mt LSFT RET
-          				&mo 1 &kp LCTL  				&kp SPC &mo 2 
-		>;
-		};
+        colemak_layer {
+            label = "COL";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &kp SQT
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &kp A         &kp R         &kp S         &kp T         &kp G             &kp M         &kp N         &kp E         &kp I         &kp O
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                              MO(SYM)        &kp SPACE         SK(LSHIFT)    MO(NAV)
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
 
-       		left_layer {
+       		symbol_layer {
+		label = "SYM"
 		bindings = <
 		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5		&kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
 		&kp TAB    &kp LC(S)    &kp DQT      &kp PIPE2     &kp HASH 		&kp MINUS &kp EQL  &kp LBKT &kp RBKT  &kp DEL 
