@@ -3,9 +3,9 @@
 #define SYM 2
 #define NUM 3
 #define COLW 4
-#define NAVW 6
-#define SYMW 7
-#define NUMW 8
+#define NAVW 5
+#define SYMW 6
+#define NUMW 7
 
 #define SK(KEY) &nk KEY KEY
 #define MO(LAYER) &mo_tap LAYER F24
