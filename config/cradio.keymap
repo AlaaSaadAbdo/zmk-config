@@ -25,10 +25,6 @@
 
 / { 
   
-  combos {
-    #include "combos.dtsi"
-  };
-
   behaviors {
 
     // Sticky key on tap, normal key on hold
