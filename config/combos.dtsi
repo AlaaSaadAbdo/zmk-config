@@ -34,7 +34,7 @@ COMBO(select_all, &kp LG(A), 20 23, BASE)
 */
 
 /* misc */
-COMBO(esc, &kp ESC, 20 21, COL COLW)
+COMBO(esc, &kp ESC, 23 30, COL COLW)
 COMBO(esc, &kp RETURN, 23 24, COL COLW)
 
 
