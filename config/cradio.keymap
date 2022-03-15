@@ -14,10 +14,6 @@
   release-after-ms = <STICKY_KEY_TIMEOUT>;
 };
 
-&caps_word {
-  continue-list = <UNDERSCORE MINUS BACKSPACE>;
-};
-  
 /* KEY POSITIONS
     ╭────────────────────╮ ╭────────────────────╮
     │  0   1   2   3   4 │ │  5   6   7   8   9 │
