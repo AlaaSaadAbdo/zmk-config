@@ -16,14 +16,6 @@ compatible = "zmk,combos";
     layers = <LAYERS>; \
   };
 
-/* Text processing */
-COMBO(undo, &kp LG(Z), 20 21, COL)
-COMBO(copy, &kp LG(C), 21 22, COL)
-COMBO(cut, &kp LG(X), 21 23, COL)
-COMBO(paste, &kp LG(V), 21 22 23, COL)
-COMBO(select_all, &kp LG(A), 20 23, COL)
-COMBO(caps_word, &caps_word, 31 32, COL)
-
 /* misc */
 COMBO(esc, &kp ESC, 23 30, COL COLW)
 COMBO(esc, &kp RETURN, 23 24, COL COLW)
