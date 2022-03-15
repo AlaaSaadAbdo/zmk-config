@@ -13,6 +13,10 @@
 &sk {
   release-after-ms = <STICKY_KEY_TIMEOUT>;
 };
+
+&caps_word {
+  continue-list = <UNDERSCORE MINUS BACKSPACE>;
+};
   
 /* KEY POSITIONS
     ╭────────────────────╮ ╭────────────────────╮
