@@ -17,12 +17,12 @@ compatible = "zmk,combos";
   };
 
 /* Text processing */
-COMBO(undo, &kp LG(Z), 20 21, BASE)
-COMBO(copy, &kp LG(C), 21 22, BASE)
-COMBO(cut, &kp LG(X), 21 23, BASE)
-COMBO(paste, &kp LG(V), 21 22 23, BASE)
-COMBO(select_all, &kp LG(A), 20 23, BASE)
-COMBO(caps_word, &caps_word, 31 32, BASE)
+COMBO(undo, &kp LG(Z), 20 21, COL COLW)
+COMBO(copy, &kp LG(C), 21 22, COL COLW)
+COMBO(cut, &kp LG(X), 21 23, COL COLW)
+COMBO(paste, &kp LG(V), 21 22 23, COL COLW)
+COMBO(select_all, &kp LG(A), 20 23, COL COLW)
+COMBO(caps_word, &caps_word, 31 32, COL COLW)
 
 /* misc */
 COMBO(esc, &kp ESC, 23 30, COL COLW)
