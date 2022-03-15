@@ -16,18 +16,36 @@ compatible = "zmk,combos";
     layers = <LAYERS>; \
   };
 
+/* Brackets 
+COMBO(left_parenthesis, &kp LEFT_PARENTHESIS, 1 2, NUM)
+COMBO(right_parenthesis, &kp RIGHT_PARENTHESIS, 2 3, NUM)
+COMBO(left_bracket, &kp LEFT_BRACKET, 11 12, NUM)
+COMBO(right_bracket, &kp RIGHT_BRACKET, 12 13, NUM)
+COMBO(less_than, &kp LESS_THAN, 21 22, NUM)
+COMBO(greater_than, &kp GREATER_THAN, 22 23, NUM)
+*/
+
+/* Text processing */
+COMBO(undo, &kp LG(Z), 20 21, BASE)
+COMBO(cut, &kp LG(X), 21 23, BASE)
+COMBO(copy, &kp LG(C), 21 22, BASE)
+COMBO(paste, &kp LG(V), 21 22 23, BASE)
+COMBO(select_all, &kp LG(A), 20 23, BASE)
+
 /* misc */
 COMBO(esc, &kp ESC, 20 21, COL COLW)
+COMBO(esc, &kp RETURN, 23 24, COL COLW)
+
 
 /* mac | win */
-COMBO(switch_to_mac, &to COL, 0 20, COLW)
-COMBO(switch_to_win, &to COLW, 9 29, COL)
+COMBO(switch_to_mac, &to COL, 9 29, COLW)
+COMBO(switch_to_win, &to COLW, 0 20, COL)
 
 /* Keyboard */
 COMBO(reset, &reset, 11 12 13 17, COL)
 COMBO(bootloader, &bootloader, 14 15 24 25, COL)
-COMBO(bt0, &bt BT_SEL 0, 1 2, COL)
-COMBO(bt1, &bt BT_SEL 1, 2 3, COL)
-COMBO(bt2, &bt BT_SEL 2, 3 4, COL)
+COMBO(bt0, &bt BT_SEL 0, 27 28 29, COL)
+COMBO(bt1, &bt BT_SEL 1, 26 27 28, COL)
+COMBO(bt2, &bt BT_SEL 2, 25 26 27, COL)
 COMBO(bttog, &out OUT_TOG, 11 12 13, NAV)
 COMBO(btclear, &bt BT_CLR, 4 24, COL)
