@@ -27,6 +27,7 @@ COMBO(caps_word, &caps_word, 31 32, COL)
 /* misc */
 COMBO(esc, &kp ESC, 23 30, COL COLW)
 COMBO(enter, &kp RETURN, 23 24, COL COLW)
+COMBO(backspace, &kp BACKSPACE, 0 1, COL COLW)
 
 /* mac | win */
 COMBO(switch_to_mac, &to COL, 9 29, COLW)
