@@ -22,16 +22,25 @@ COMBO(copy, &kp LG(C), 21 22, COL)
 COMBO(cut, &kp LG(X), 21 23, COL)
 COMBO(paste, &kp LG(V), 21 22 23, COL)
 COMBO(select_all, &kp LG(A), 20 23, COL)
-COMBO(caps_word, &caps_word, 31 32, COL)
+
+COMBO(undo, &kp LC(Z), 20 21, COLW)
+COMBO(copy, &kp LC(C), 21 22, COLW)
+COMBO(cut, &kp LC(X), 21 23, COLW)
+COMBO(paste, &kp LC(V), 21 22 23, COLW)
+COMBO(select_all, &kp LC(A), 20 23, COLW)
+
+COMBO(caps_word, &caps_word, 31 32, COL COLW)
 
 /* misc */
+COMBO(alfred, &kp LG(SPACE), 24 25, COL)
+COMBO(clpbrd, &kp ESC, 14 15, COL)
+
+COMBO(pwrtys, &kp LG(SPACE), 23 30, COLW)
+COMBO(ditto, &kp ESC, 14 15, COLW)
+
 COMBO(esc, &kp ESC, 23 30, COL COLW)
 COMBO(enter, &kp RETURN, 23 24, COL COLW)
 COMBO(backspace, &kp BACKSPACE, 0 1, COL COLW)
-
-/* mac | win */
-COMBO(switch_to_mac, &to COL, 9 29, COLW)
-COMBO(switch_to_win, &to COLW, 0 20, COL)
 
 /* Keyboard */
 COMBO(reset, &reset, 11 12 13 17, COL)
@@ -41,3 +50,13 @@ COMBO(bt1, &bt BT_SEL 1, 26 27 28, COL)
 COMBO(bt2, &bt BT_SEL 2, 25 26 27, COL)
 COMBO(bttog, &out OUT_TOG, 11 12 13, NAV)
 COMBO(btclear, &bt BT_CLR, 4 24, COL)
+
+#define GCOMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+  };
+  
+/* mac | win */
+GCOMBO(switch_to_mac, &to COL, 0 20)
+GCOMBO(switch_to_win, &to COLW, 9 29)
