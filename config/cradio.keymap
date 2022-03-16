@@ -95,13 +95,13 @@
             label = "NAV";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &kp SQT
+     &kp LG(Q)     &kp DELETE    &kp UP         &kp ESCAPE    &kp LG(F)         &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(LS(Z))
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp A         &kp R         &kp S         &kp T         &kp G             &kp M         &kp N         &kp E         &kp I         &kp O
+     &kp TAB       &kp LEFT      &kp DOWN       &kp RIGHT     &kp BACKSPACE     &kp LG(A)     SK(LSHIFT)    SK(LCTRL)     SK(LALT)      SK(LGUI)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH
+&kp LA(LC(LEFT)) &kp LA(LC(RIGHT)) &kp LA(LC(ENTER)) &kp LA(LG(I)) &kp ENTER    &kp LG(LS(T)) &kp LG(W)     &kp LG(R)     &kp LG(T)     &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                              MO(SYM)        &kp SPACE         SK(LSHIFT)    MO(NAV)
+                                              &trans          &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -109,13 +109,13 @@
             label = "SYM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &kp SQT
+     &kp TILDE     &kp LBRC      &kp LBKT      &kp LPAR      &kp SEMI          &kp CARET     &kp RPAR      &kp RBKT      &kp LBRC      &kp GRAVE
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp A         &kp R         &kp S         &kp T         &kp G             &kp M         &kp N         &kp E         &kp I         &kp O
+     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON         &kp MINUS     &kp PLUS      &kp EQUAL     &kp UNDER     &kp HASH
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH
+     &kp BSLH      &kp AMPS      &kp DLLR      &kp EXCL      &kp QMARK         &kp ASTRK     &kp PIPE      &kp AT        &kp PRCNT     &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                              MO(SYM)        &kp SPACE         SK(LSHIFT)    MO(NAV)
+                                              &trans          &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -123,13 +123,13 @@
             label = "NUM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &kp SQT
+     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5            &kp N6        &kp N7       &kp N8         &kp N9        &kp N0
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp A         &kp R         &kp S         &kp T         &kp G             &kp M         &kp N         &kp E         &kp I         &kp O
+     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp F11           &kp F12       SK(LSHIFT)    SK(LCTRL)     SK(LALT)      SK(LGUI)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH
+     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp F6        &kp F7        &kp F8         &kp F9        &kp F10
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                              MO(SYM)        &kp SPACE         SK(LSHIFT)    MO(NAV)
+                                              &trans          &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
