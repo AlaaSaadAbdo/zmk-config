@@ -39,7 +39,7 @@ COMBO(pwrtys, &kp LG(SPACE), 24 25, COLW)
 COMBO(ditto, &kp LG(LC(LA(LS(Z)))), 14 15, COLW)
 
 COMBO(esc, &kp ESC, 23 30, COL COLW)
-COMBO(enter, &kp RETURN, 23 24, COL COLW)
+COMBO(enter, &kp ENTER, 23 24, COL COLW)
 COMBO(backspace, &kp BACKSPACE, 0 1, COL COLW)
 
 /* Keyboard */
