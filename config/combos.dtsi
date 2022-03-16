@@ -33,10 +33,10 @@ COMBO(caps_word, &caps_word, 31 32, COL COLW)
 
 /* misc */
 COMBO(alfred, &kp LG(SPACE), 24 25, COL)
-COMBO(clpbrd, &kp ESC, 14 15, COL)
+COMBO(clpbrd, &kp LG(LC(LA(LS(Z)))), 14 15, COL)
 
-COMBO(pwrtys, &kp LG(SPACE), 23 30, COLW)
-COMBO(ditto, &kp ESC, 14 15, COLW)
+COMBO(pwrtys, &kp LG(SPACE), 24 25, COLW)
+COMBO(ditto, &kp LG(LC(LA(LS(Z)))), 14 15, COLW)
 
 COMBO(esc, &kp ESC, 23 30, COL COLW)
 COMBO(enter, &kp RETURN, 23 24, COL COLW)
