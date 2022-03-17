@@ -32,10 +32,12 @@ Firmware for zmk and bluemicro_ble is called ["Cradio"](https://zmk.dev/docs/har
 
 ## References
 
-[dxmh zmk config](https://github.com/dxmh/zmk-config)
-[Callum's layout](https://github.com/callum-oakley/keymap)
+* [dxmh zmk config](https://github.com/dxmh/zmk-config)
+* [Callum's layout](https://github.com/callum-oakley/keymap)
 
 ## Links
+
+[Low Profile Keyboards discod](https://discord.gg/69UM9sQF8q). I got a lot of help there.
 
 [1]: https://github.com/zmkfirmware/zmk
 [2]: https://github.com/davidphilipbarr/Sweep
