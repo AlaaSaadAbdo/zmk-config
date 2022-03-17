@@ -1,6 +1,6 @@
 # zmk-config
 
-This is my personal [ZMK firmware][1] configuration for my current 34-key wireless keyboards [2][Sweep].
+This is my personal [ZMK firmware][1] configuration for my current 34-key wireless keyboards [Sweep][2].
 
 I use this keyboard for both windows and mac.
 
