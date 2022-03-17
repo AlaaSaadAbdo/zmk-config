@@ -4,6 +4,8 @@ This is my personal [ZMK firmware][1] configuration for my current 34-key wirele
 
 I use this keyboard for both windows and mac.
 
+![](/keeb.jpg) 
+
 ## Parts
 
 To build and use a similar one you will need:
