@@ -42,8 +42,8 @@ COMBO(esc, &kp ESC, 23 30, COL COLW)
 COMBO(enter, &kp ENTER, 23 24, COL COLW)
 COMBO(backspace, &kp BACKSPACE, 0 1, COL COLW)
 
-COMBO(misc_layertL, &to MISC, 10 11 12 13 14, COL)
-COMBO(misc_layerR, &to MISC, 15 16 17 18 19, COL)
+COMBO(misc_layertL, &to MISC, 11 12 13 14, COL)
+COMBO(misc_layerR, &to MISC, 15 16 17 18, COL)
 
 #define GCOMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
