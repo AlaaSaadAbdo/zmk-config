@@ -6,6 +6,7 @@
 #define NAVW 5
 #define SYMW 6
 #define NUMW 7
+#define MISC 8
 
 #define SK(KEY) &nk KEY KEY
 #define MO(LAYER) &mo_tap LAYER F24
