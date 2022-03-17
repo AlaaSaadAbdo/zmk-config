@@ -44,7 +44,8 @@ COMBO(backspace, &kp BACKSPACE, 0 1, COL COLW)
 
 /* Keyboard */
 COMBO(reset, &reset, 11 12 13 17, COL)
-COMBO(bootloader, &bootloader, 14 15 24 25, COL)
+COMBO(bootloaderL, &bootloader, 0 1 2 3 4, COL)
+COMBO(bootloaderR, &bootloader, 5 6 7 8 9, COL)
 COMBO(bt0, &bt BT_SEL 0, 27 28 29, COL)
 COMBO(bt1, &bt BT_SEL 1, 26 27 28, COL)
 COMBO(bt2, &bt BT_SEL 2, 25 26 27, COL)
