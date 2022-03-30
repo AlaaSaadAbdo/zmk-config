@@ -54,3 +54,5 @@ COMBO(misc_layerR, &to MISC, 15 16 17 18, COL)
 /* mac | win */
 GCOMBO(switch_to_mac, &to COL, 0 20)
 GCOMBO(switch_to_win, &to COLW, 9 29)
+GCOMBO(soft_resetL, &reset, 10 11 12 13)
+GCOMBO(soft_resetR, &reset, 16 17 18 19)
