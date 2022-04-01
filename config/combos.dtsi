@@ -16,17 +16,25 @@ compatible = "zmk,combos";
     layers = <LAYERS>; \
   };
 
+/* Brackets */
+COMBO(left_brace, &kp LBRC, 1 11, COL COLW)
+COMBO(right_brace, &kp RBRC, 8 18, COL COLW)
+COMBO(left_bracket, &kp LBKT, 2 12, COL COLW)
+COMBO(right_bracket, &kp RBKT, 7 17, COL COLW)
+COMBO(left_parenthesis, &kp LPAR, 3 13, COL COLW)
+COMBO(right_parenthesis, &kp RPAR, 6 16, COL COLW)
+
 /* Text processing */
 COMBO(undo, &kp LG(Z), 20 21, COL)
 COMBO(copy, &kp LG(C), 21 22, COL)
 COMBO(cut, &kp LG(X), 21 23, COL)
-COMBO(paste, &kp LG(V), 22 24, COL)
+COMBO(paste, &kp LG(V), 21 22 23, COL)
 COMBO(select_all, &kp LG(A), 20 23, COL)
 
 COMBO(undow, &kp LC(Z), 20 21, COLW)
 COMBO(copyw, &kp LC(C), 21 22, COLW)
 COMBO(cutw, &kp LC(X), 21 23, COLW)
-COMBO(pastew, &kp LC(V), 22 24, COLW)
+COMBO(pastew, &kp LC(V), 21 22 23, COLW)
 COMBO(select_allw, &kp LC(A), 20 23, COLW)
 
 COMBO(caps_word, &caps_word, 31 32, COL COLW)
@@ -39,8 +47,8 @@ COMBO(pwrtys, &kp LG(SPACE), 24 25, COLW)
 COMBO(ditto, &kp LG(LC(LA(LS(Z)))), 14 15, COLW)
 
 COMBO(esc, &kp ESC, 23 30, COL COLW)
-COMBO(enter, &kp ENTER, 23 24, COL COLW)
-COMBO(backspace, &kp BACKSPACE, 0 1, COL COLW)
+COMBO(enter, &kp ENTER, 14 24, COL COLW)
+COMBO(backspace, &kp BACKSPACE, 4 14, COL COLW)
 
 COMBO(misc_layertL, &to MISC, 11 12 13 14, COL)
 COMBO(misc_layerR, &to MISC, 15 16 17 18, COL)
@@ -54,5 +62,3 @@ COMBO(misc_layerR, &to MISC, 15 16 17 18, COL)
 /* mac | win */
 GCOMBO(switch_to_mac, &to COL, 0 20)
 GCOMBO(switch_to_win, &to COLW, 9 29)
-GCOMBO(soft_resetL, &reset, 10 11 12 13)
-GCOMBO(soft_resetR, &reset, 16 17 18 19)
