@@ -8,7 +8,20 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-#include "definitions.h"
+
+#define COL 0
+#define NAV 1
+#define SYM 2
+#define NUM 3
+#define COLW 4
+#define NAVW 5
+#define SYMW 6
+#define NUMW 7
+#define MISC 8
+
+#define SK(KEY) &nk KEY KEY
+// Keep sticky keys active for a long time so they effectively do not time out
+#define STICKY_KEY_TIMEOUT 60000
 
 &sk {
   release-after-ms = <STICKY_KEY_TIMEOUT>;
@@ -40,17 +53,6 @@
       tapping_term_ms = <169>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&sk>;
-    };
-    
-    // A hold-tap that activates without delay (like `&mo`) to get rid off sticky keys if not needed
-    mo_tap: mo_with_tap {
-      compatible = "zmk,behavior-hold-tap";
-      label = "MO_WITH_TAP";
-      #binding-cells = <2>;
-      tapping_term_ms = <0>;
-      retro-tap;
-      flavor = "hold-preferred";
-      bindings = <&mo>, <&kp>;
     };
 
      ZMK_MACRO(mo_nav,
