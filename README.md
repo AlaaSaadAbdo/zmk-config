@@ -33,6 +33,7 @@ Firmware for zmk and bluemicro_ble is called ["Cradio"](https://zmk.dev/docs/har
 ## References
 
 * [dxmh zmk config](https://github.com/dxmh/zmk-config)
+* [jcmkk3 zmk config](https://github.com/jcmkk3/zmk-config)
 * [Callum's layout](https://github.com/callum-oakley/keymap)
 
 ## Links
