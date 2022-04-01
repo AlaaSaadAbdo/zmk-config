@@ -1,12 +1,10 @@
 #define COL 0
-#define NAV 1
-#define SYM 2
-#define NUM 3
-#define COLW 4
-#define NAVW 5
-#define SYMW 6
-#define NUMW 7
-#define MISC 8
+#define COLW 1
+#define NAV 2
+#define NAVW 3
+#define SYM 4
+#define NUM 5
+#define MISC 6
 
 #define SK(KEY) &nk KEY KEY
 #define MO(LAYER) &mo_tap LAYER F24
