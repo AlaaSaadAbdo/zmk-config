@@ -39,6 +39,8 @@ COMBO(select_allw, &kp LC(A), 20 23, COLW)
 
 COMBO(caps_word, &caps_word, 31 32, COL COLW)
 
+COMBO(caps_word, &key_repeat, 15 25, COL COLW)
+
 /* misc */
 COMBO(alfred, &kp LG(SPACE), 24 25, COL)
 COMBO(clpbrd, &kp LG(LC(LA(LS(Z)))), 14 15, COL)
