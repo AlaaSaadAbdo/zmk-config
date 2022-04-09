@@ -52,6 +52,12 @@ COMBO(esc, &kp ESC, 23 30, COL COLW ARAQ)
 COMBO(enter, &kp ENTER, 14 24, COL COLW ARAQ)
 COMBO(backspace, &kp BACKSPACE, 4 14, COL COLW ARAQ)
 
+/* extra arabic letters */
+COMBO(taaa, &kp SQT, 18 19, ARAQ)
+COMBO(geem, &kp LBKT, 7 8, ARAQ)
+COMBO(daal, &kp RBKT, 8 9, ARAQ)
+COMBO(zthal, &kp TILDE, 0 1, ARAQ)
+
 
 #define GCOMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
