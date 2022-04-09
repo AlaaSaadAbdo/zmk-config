@@ -2,7 +2,7 @@
 
 This is my personal [ZMK firmware][1] configuration for my current 34-key wireless keyboards [Sweep][2].
 
-I use this keyboard for both windows and mac.
+I use this keyboard for both windows and mac, to type in Arabic and English
 
 ![](/keeb.jpg) 
 
