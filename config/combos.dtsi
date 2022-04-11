@@ -53,8 +53,8 @@ COMBO(backspace, &kp BACKSPACE, 4 14, COL COLW ARAQ)
 
 COMBO(key_repeat, &key_repeat, 15 25, COL COLW ARAQ)
 
-COMBO(delete_word, &kp LA(BACKSPACE), 15 25, COL)
-COMBO(delete_word_win, &kp LC(BACKSPACE), 15 25, COLW ARAQ)
+COMBO(delete_word, &kp LA(BACKSPACE), 5 15, COL)
+COMBO(delete_word_win, &kp LC(BACKSPACE), 5 15, COLW ARAQ)
 
 /* extra arabic letters */
 COMBO(taaa, &kp SQT, 18 19, ARAQ)
