@@ -39,7 +39,6 @@ COMBO(select_allw, &kp LC(A), 20 23, COLW ARAQ)
 
 COMBO(caps_word, &caps_word, 31 32, COL COLW ARAQ)
 
-COMBO(key_repeat, &key_repeat, 15 25, COL COLW ARAQ)
 
 /* misc */
 COMBO(alfred, &kp LG(SPACE), 24 25, COL)
@@ -51,6 +50,11 @@ COMBO(ditto, &kp LG(LC(LA(LS(Z)))), 14 15, COLW ARAQ)
 COMBO(esc, &kp ESC, 23 30, COL COLW ARAQ)
 COMBO(enter, &kp ENTER, 14 24, COL COLW ARAQ)
 COMBO(backspace, &kp BACKSPACE, 4 14, COL COLW ARAQ)
+
+COMBO(key_repeat, &key_repeat, 15 25, COL COLW ARAQ)
+
+COMBO(delete_word, LA(BACKSPACE), 15 25, COL)
+COMBO(delete_word_win, LC(BACKSPACE), 15 25, COLW ARAQ)
 
 /* extra arabic letters */
 COMBO(taaa, &kp SQT, 18 19, ARAQ)
