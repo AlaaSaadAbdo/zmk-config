@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "32_ducks.dtsi"
+#include "34w_ducks.dtsi"
 
 &default_transform {
 	col-offset = <15>;
