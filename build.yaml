@@ -18,5 +18,9 @@ include:
   - board: nice_nano_v2
     shield: cradio_right
   - board: nice_nano_v2
+    shield: 32w_ducks_left
+  - board: nice_nano_v2
+    shield: 32w_ducks_right
+  - board: nice_nano_v2
     shield: settings_reset
 
