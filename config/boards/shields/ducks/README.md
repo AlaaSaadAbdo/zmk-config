@@ -1,1 +1,1 @@
-This is the a shield for [ducks](https://github.com/AlaaSaadAbdo/ducks) 
+[ZMK](https://zmk.dev/) shield for [ducks](https://github.com/AlaaSaadAbdo/ducks) 
