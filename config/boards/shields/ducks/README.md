@@ -1,1 +1,1 @@
-[ZMK](https://zmk.dev/) shield for [ducks](https://github.com/AlaaSaadAbdo/ducks) 
+[ZMK](https://zmk.dev/) shield for [duck](https://github.com/AlaaSaadAbdo/duck) 

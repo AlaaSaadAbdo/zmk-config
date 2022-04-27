@@ -1,17 +1,17 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_DUCKS_LEFT
+if SHIELD_DUCK_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "ducks"
+	default "duck"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
 
 endif
 
-if SHIELD_DUCKS_LEFT || SHIELD_DUCKS_RIGHT
+if SHIELD_DUCK_LEFT || SHIELD_DUCK_RIGHT
 
 config ZMK_SPLIT
 	default y
