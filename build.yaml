@@ -22,5 +22,9 @@ include:
   - board: nice_nano_v2
     shield: batta_right
   - board: nice_nano_v2
+    shield: battamini_left
+  - board: nice_nano_v2
+    shield: battamini_right
+  - board: nice_nano_v2
     shield: settings_reset
 
