@@ -46,8 +46,8 @@ COMBO(redow, &kp LC(Y), 20 22, COL ARAQ)
 
 COMBO(select_allw, &kp LC(A), 20 23, COLW ARAQ)
 
-COMBO(copyw, &kp LC(C), 11 21, COLW ARAQ)
-COMBO(cutw, &kp LC(X), 12 22, COLW ARAQ)
+COMBO(cutw, &kp LC(X), 11 21, COLW ARAQ)
+COMBO(copyw, &kp LC(C), 12 22, COLW ARAQ)
 COMBO(pastew, &kp LC(V), 21 22 23, COLW ARAQ)
 
 COMBO(caps_word, &caps_word, 31 32, COL COLW ARAQ)
