@@ -86,6 +86,9 @@ COMBO(key_repeat, &key_repeat, 16 26, COL COLW ARAQ)
 COMBO(delete_word, &kp LA(BACKSPACE), 5 15, COL)
 COMBO(delete_word_win, &kp LC(BACKSPACE), 5 15, COLW ARAQ)
 
+COMBO(nav1h, &mo_nav, 30 31, COL COLW ARAQ)
+COMBO(nav1hw, &mo_navW, 30 31, COLW ARAQ)
+
 #define GCOMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
     bindings = <BINDINGS>; \
