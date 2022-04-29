@@ -20,8 +20,8 @@ compatible = "zmk,combos";
 /* Missing Alphas */
 COMBO(Z, &kp Z, 20 21, COL COLW ARAQ) // Z and ئ
 COMBO(V, &kp V, 21 22, COL COLW) // V
-COMBO(K, &kp K, 23 24, COL COLW) // K
-COMBO(slash, &kp SLASH, 24 25, COL COLW ARAQ) // slash and ظ
+COMBO(K, &kp J, 7 8, COL COLW) // J
+COMBO(slash, &kp SLASH, 24  25, COL COLW ARAQ) // slash and ظ
 COMBO(taaa, &kp SQT, 18 19, ARAQ) // ط
 COMBO(geem, &kp LBKT, 7 8, ARAQ) // ج
 COMBO(daal, &kp RBKT, 8 9, ARAQ) // د
