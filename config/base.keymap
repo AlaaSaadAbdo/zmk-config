@@ -134,11 +134,11 @@
             label = "NAV";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp LG(Q)     &kp DELETE    &kp UP         &kp ESCAPE    &kp LG(F)         &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(LS(Z))
+     &kp LG(Q)     &kp DELETE    &kp UP         &kp ESCAPE    &kp LG(F)         &kp LG(LS(T)) &kp LG(W)     &kp LG(R)     &kp LG(T)     &kp LG(LC(LA(LS(P)))) 
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp TAB       &kp LEFT      &kp DOWN       &kp RIGHT     &kp BACKSPACE     &kp LG(A)     SK(LSHIFT)    SK(LCTRL)     SK(LALT)      SK(LGUI)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-&kp LA(LC(LEFT)) &kp LA(LC(RIGHT)) &kp LA(LC(ENTER)) &kp LA(LG(I)) &kp ENTER    &kp LG(LS(T)) &kp LG(W)     &kp LG(R)     &kp LG(T)     &kp LG(LC(LA(LS(P))))
+&kp LA(LC(LEFT)) &kp LA(LC(RIGHT)) &kp LA(LC(ENTER)) &kp LA(LG(I)) &kp ENTER    &none         &none         &none         &none         &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &trans          &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -206,11 +206,11 @@
             label = "NAVW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp LA(F4)     &kp DELETE    &kp UP         &kp ESCAPE    &kp LC(F)         &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)
+     &kp LA(F4)     &kp DELETE    &kp UP         &kp ESCAPE    &kp LC(F)        &kp LC(LS(T)) &kp LC(W)     &kp LC(R)     &kp LC(T)       &kp LC(LA(LS(P)))
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp TAB       &kp LEFT      &kp DOWN       &kp RIGHT     &kp BACKSPACE     &kp LC(A)     SK(LSHIFT)    SK(LCTRL)     SK(LALT)      SK(LGUI)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-&kp LG(LS(LEFT)) &kp LG(LS(RIGHT)) &kp LG(UP) &kp LG(TAB)     &kp ENTER         &kp LC(LS(T)) &kp LC(W)     &kp LC(R)     &kp LC(T)       &kp LC(LA(LS(P)))
+&kp LG(LS(LEFT)) &kp LG(LS(RIGHT)) &kp LG(UP) &kp LG(TAB)     &kp ENTER         &none         &none         &none         &none         &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &trans          &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
