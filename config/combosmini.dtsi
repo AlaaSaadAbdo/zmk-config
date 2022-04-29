@@ -29,10 +29,10 @@ COMBO(zthal, &kp GRAVE, 0 1, ARAQ) // ذ
 COMBO(zthal, &kp N, 23 24, ARAQ) // ى
 
 /* Missing Fn */
-COMBO(fn9, &kb F9, 20 21, NUM NUMW)
-COMBO(fn10, &kb F10, 21 22, NUM NUMW)
-COMBO(fn11, &kb F11, 23 24, NUM NUMW)
-COMBO(fn12, &kb F12, 24 25, NUM NUMW)
+COMBO(fn9, &kp F9, 20 21, NUM NUMW)
+COMBO(fn10, &kp F10, 21 22, NUM NUMW)
+COMBO(fn11, &kp F11, 23 24, NUM NUMW)
+COMBO(fn12, &kp F12, 24 25, NUM NUMW)
 
 /* Brackets */
 COMBO(left_brace, &kp LBRC, 1 11, COL COLW ARAQ)
