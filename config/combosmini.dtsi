@@ -72,11 +72,10 @@ COMBO(scopyw, &kp LC(C), 20 21, SYMW)
 COMBO(scutw, &kp LC(X), 21 22, SYMW)
 COMBO(spastew, &kp LC(V), 20 21 22, SYMW)
 
-COMBO(nav1h, &mo_nav, 26 27, COL COLW ARAQ)
-COMBO(nav1hw, &mo_navW, 26 27, COLW ARAQ)
-COMBO(sym1h, &mo_nav, 28 29, COL COLW ARAQ)
-COMBO(sym1hw, &mo_navW, 28 29, COLW ARAQ)
-
+COMBO(nav1h, &mo_nav, 30 31, COL)
+COMBO(nav1hw, &mo_navW, 30 31, COLW ARAQ)
+COMBO(sym1h, &mo_sym, 32 33, COL)
+COMBO(sym1hw, &mo_symW, 32 33, COLW ARAQ)
 
 /*                KEY POSITIONS
 
