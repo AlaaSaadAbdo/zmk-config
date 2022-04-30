@@ -148,13 +148,13 @@
             label = "SYM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp TILDE     &kp LBRC      &kp LBKT      &kp LPAR      &kp SEMI          &kp CARET     &kp RPAR      &kp RBKT      &kp RBRC      &kp GRAVE
+     &none         &kp TILDE     &kp BSLH     &kp AMPS       &kp SEMI          &kp ASTRK     &kp CARET     &kp HASH      &kp GRAVE     &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON         &kp MINUS     &kp PLUS      &kp EQUAL     &kp UNDER     &kp HASH
+     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON         &kp MINUS     &kp PLUS      &kp EQUAL     &kp UNDER     &kp SLASH
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp BSLH      &kp AMPS      &kp DLLR      &kp EXCL      &kp QMARK         &kp ASTRK     &kp PIPE      &kp AT        &kp PRCNT     &none
+     &none         &kp DLLR      &kp EXCL      &kp QMARK     &none             &none         &kp PIPE      &kp AT        &kp PRCNT     &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                              &trans          &trans            &trans        &trans
+                                              &trans          &trans           &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -220,13 +220,13 @@
             label = "SYMW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp TILDE     &kp LBRC      &kp LBKT      &kp LPAR      &kp SEMI          &kp CARET     &kp RPAR      &kp RBKT      &kp RBRC      &kp GRAVE
+     &none         &kp TILDE     &kp BSLH     &kp AMPS       &kp SEMI          &kp ASTRK     &kp CARET     &kp HASH      &kp GRAVE     &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON         &kp MINUS     &kp PLUS      &kp EQUAL     &kp UNDER     &kp HASH
+     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON         &kp MINUS     &kp PLUS      &kp EQUAL     &kp UNDER     &kp SLASH
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp BSLH      &kp AMPS      &kp DLLR      &kp EXCL      &kp QMARK         &kp ASTRK     &kp PIPE      &kp AT        &kp PRCNT     &none
+     &none         &kp DLLR      &kp EXCL      &kp QMARK     &none             &none         &kp PIPE      &kp AT        &kp PRCNT     &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                              &trans          &trans            &trans        &trans
+                                              &trans          &trans           &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
