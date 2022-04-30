@@ -58,13 +58,6 @@ COMBO(pastew, &kp LC(V), 21 22 23, COLW ARAQ HDNW)
 
 COMBO(caps_word, &caps_word, 31 32, COL COLW ARAQ HDN HDNW)
 
-/* one hand */
-COMBO(nav1h, &mo NAV, 30 31, COL)
-COMBO(sym1h, &mo SYM, 32 33, COL)
-
-COMBO(nav1hw, &mo NAVW, 30 31, COLW ARAQ)
-COMBO(sym1hw, &mo SYMW, 32 33, COLW ARAQ)
-
 /*                KEY POSITIONS
 
   ╭────────────────────╮ ╭────────────────────╮
@@ -91,11 +84,11 @@ COMBO(delete_word, &kp LA(BACKSPACE), 5 15, COL HDN)
 COMBO(delete_word_win, &kp LC(BACKSPACE), 5 15, COLW ARAQ HDNW)
 
 /* one hand */
-COMBO(nav1h, &mo_nav, 30 31, COL)
-COMBO(sym1h, &mo_sym, 32 33, COL)
+COMBO(nav1h, &mo_nav, 30 31, COL HDN)
+COMBO(sym1h, &mo_sym, 32 33, COL HDN)
 
-COMBO(nav1hw, &mo_navW, 30 31, COLW ARAQ)
-COMBO(sym1hw, &mo_symW, 32 33, COLW ARAQ)
+COMBO(nav1hw, &mo_navW, 30 31, COLW ARAQ HDNW)
+COMBO(sym1hw, &mo_symW, 32 33, COLW ARAQ HDNW)
 
 #define GCOMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \

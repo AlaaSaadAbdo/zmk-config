@@ -219,8 +219,8 @@
             >;
         };
 
-        hands_down {
-            label = "HDN";
+        hands_down_windows {
+            label = "HDNW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &none         &kp F         &kp M         &kp P          &none             &none         &kp U         &kp O         &kp Y         &none 

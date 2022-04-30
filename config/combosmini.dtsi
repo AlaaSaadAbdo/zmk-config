@@ -71,11 +71,11 @@ COMBO(pastew, &kp LC(V), 20 21 22, COLW ARAQ HDNW)
 COMBO(caps_word, &caps_word, 27 28, COL COLW ARAQ HDN HDNW)
 
 /* one hand */
-COMBO(nav1h, &mo_nav, 26 27, COL)
-COMBO(sym1h, &mo_sym, 28 29, COL)
+COMBO(nav1h, &mo_nav, 26 27, COL HDN)
+COMBO(sym1h, &mo_sym, 28 29, COL HDN)
 
-COMBO(nav1hw, &mo_navW, 26 27, COLW ARAQ)
-COMBO(sym1hw, &mo_symW, 28 29, COLW ARAQ)
+COMBO(nav1hw, &mo_navW, 26 27, COLW ARAQ HDNW)
+COMBO(sym1hw, &mo_symW, 28 29, COLW ARAQ HDNW)
 
 /*                KEY POSITIONS
 
