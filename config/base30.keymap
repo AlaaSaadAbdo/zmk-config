@@ -10,15 +10,16 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define COL 0
-#define NAV 1
-#define SYM 2
-#define NUM 3
-#define COLW 4
-#define ARAQ 5
-#define NAVW 6
-#define SYMW 7
-#define NUMW 8
-#define MISC 9
+#define HDN 1
+#define NAV 2
+#define SYM 3
+#define NUM 4
+#define COLW 5
+#define ARAQ 6
+#define NAVW 7
+#define SYMW 8
+#define NUMW 9
+#define MISC 10
 
 #define SK(KEY) &nk KEY KEY
 // Keep sticky keys active for a long time so they effectively do not time out
@@ -126,6 +127,21 @@
                    &kp X         &kp C         &kp D                                         &kp H         &kp COMMA     &kp DOT
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                               &mo_sym        &kp SPACE         SK(LSHIFT)    &mo_nav
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+        hands_down {
+            label = "HDN";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp W         &kp F         &kp M         &kp P         &kp G             &kp K         &kp U         &kp O         &kp Y         &kp QUOT
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &kp R         &kp S         &kp N         &kp T         &kp B             &kp J         &kp A         &kp E         &kp I         &kp H
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                   &kp C         &kp L         &kp D                                         &kp X         &kp COMMA     &kp DOT
+//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+                                               &trans          &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };

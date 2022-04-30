@@ -23,23 +23,28 @@ COMBO(geem, &kp LBKT, 7 8, ARAQ) // ج
 COMBO(daal, &kp RBKT, 8 9, ARAQ) // د
 COMBO(zthal, &kp GRAVE, 0 1, ARAQ) // ذ
 
+/* HDN experiment */
+COMBO(hdn_z, &kp Z, 21 22, HDN) // Z
+COMBO(hdn_v, &kp V, 22 23, HDN) // V
+COMBO(hdn_q, &kp Q, 1 2, HDN) // Q
+
 /* Brackets */
-COMBO(left_brace, &kp LBRC, 1 11, COL COLW ARAQ)
-COMBO(right_brace, &kp RBRC, 8 18, COL COLW ARAQ)
-COMBO(left_bracket, &kp LBKT, 2 12, COL COLW ARAQ)
-COMBO(right_bracket, &kp RBKT, 7 17, COL COLW ARAQ)
-COMBO(left_parenthesis, &kp LPAR, 3 13, COL COLW ARAQ)
-COMBO(right_parenthesis, &kp RPAR, 6 16, COL COLW ARAQ)
+COMBO(left_brace, &kp LBRC, 1 11, COL COLW ARAQ HDN)
+COMBO(right_brace, &kp RBRC, 8 18, COL COLW ARAQ HDN)
+COMBO(left_bracket, &kp LBKT, 2 12, COL COLW ARAQ HDN)
+COMBO(right_bracket, &kp RBKT, 7 17, COL COLW ARAQ HDN)
+COMBO(left_parenthesis, &kp LPAR, 3 13, COL COLW ARAQ HDN)
+COMBO(right_parenthesis, &kp RPAR, 6 16, COL COLW ARAQ HDN)
 
 /* Text processing */
-COMBO(undo, &kp LG(Z), 20 21, COL)
-COMBO(redo, &kp LG(LS(Z)), 20 22, COL)
+COMBO(undo, &kp LG(Z), 20 21, COL HDN)
+COMBO(redo, &kp LG(LS(Z)), 20 22, COL HDN)
 
-COMBO(select_all, &kp LG(A), 20 23, COL)
+COMBO(select_all, &kp LG(A), 20 23, COL HDN)
 
-COMBO(cut, &kp LG(X), 11 21, COL)
-COMBO(copy, &kp LG(C), 12 22, COL)
-COMBO(paste, &kp LG(V), 21 22 23, COL)
+COMBO(cut, &kp LG(X), 11 21, COL HDN)
+COMBO(copy, &kp LG(C), 12 22, COL HDN)
+COMBO(paste, &kp LG(V), 21 22 23, COL HDN)
 
 COMBO(undow, &kp LC(Z), 20 21, COLW ARAQ)
 COMBO(redow, &kp LC(Y), 20 22, COLW ARAQ)
@@ -50,7 +55,7 @@ COMBO(cutw, &kp LC(X), 11 21, COLW ARAQ)
 COMBO(copyw, &kp LC(C), 12 22, COLW ARAQ)
 COMBO(pastew, &kp LC(V), 21 22 23, COLW ARAQ)
 
-COMBO(caps_word, &caps_word, 31 32, COL COLW ARAQ)
+COMBO(caps_word, &caps_word, 31 32, COL COLW ARAQ HDN)
 
 /* Text processing with thumb key*/
 COMBO(scut, &kp LG(X), 21 22 , SYM)
@@ -61,6 +66,7 @@ COMBO(scopyw, &kp LC(C), 21 22, SYMW)
 COMBO(scutw, &kp LC(X), 22 23, SYMW)
 COMBO(spastew, &kp LC(V), 21 22 23, SYMW)
 
+/* one hand */
 COMBO(nav1h, &mo NAV, 30 31, COL)
 COMBO(sym1h, &mo SYM, 32 33, COL)
 
@@ -106,6 +112,7 @@ COMBO(sym1hw, &mo_symW, 32 33, COLW ARAQ)
 
 /* mac | win */
 GCOMBO(switch_to_mac, &to COL, 12 13 30)
+GCOMBO(switch_to_hdn, &to HDN, 11 12 30)
 GCOMBO(switch_to_win, &to COLW, 16 17 33)
 GCOMBO(switch_to_ara, &to ARAQ, 17 18 33)
 
