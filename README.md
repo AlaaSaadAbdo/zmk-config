@@ -4,7 +4,11 @@ This is my personal [ZMK firmware][1] configuration for my current 34-key wirele
 
 I use this keyboard for both windows and mac, to type in Arabic and English
 
-![](/keeb.jpg) 
+![](keeb.jpg) 
+
+## Layout
+
+![](Layout.jpg) 
 
 ## Parts
 
@@ -24,7 +28,7 @@ To build and use a similar one you will need:
 </a>
 
 The video above shows the wired version. The difference for the wireless is that the battery needs to be soldered on the pcb in the following position:
-![](/sweep.png)
+![](sweep.png)
 
 ## Firmware
 
