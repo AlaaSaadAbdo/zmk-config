@@ -36,18 +36,18 @@ COMBO(fn11, &kp F11, 23 24, NUM NUMW)
 COMBO(fn12, &kp F12, 24 25, NUM NUMW)
 
 /* HDN experiment */
-COMBO(hdn_z, &kp Z, 20 21, HDN) // Z
-COMBO(hdn_v, &kp V, 21 22, HDN) // V
-COMBO(hdn_q, &kp Q, 1 2, HDN) // Q
-COMBO(hdn_slash, &kp SLASH, 24 25, HDN) // Slash
+COMBO(hdn_z, &kp Z, 20 21, HDN HNDW) // Z
+COMBO(hdn_v, &kp V, 21 22, HDN HNDW) // V
+COMBO(hdn_q, &kp Q, 1 2, HDN HNDW) // Q
+COMBO(hdn_slash, &kp SLASH, 24 25, HDN HNDW) // Slash
 
 /* Brackets */
-COMBO(left_brace, &kp LBRC, 1 11, COL COLW ARAQ HDN)
-COMBO(right_brace, &kp RBRC, 8 18, COL COLW ARAQ HDN)
-COMBO(left_bracket, &kp LBKT, 2 12, COL COLW ARAQ HDN)
-COMBO(right_bracket, &kp RBKT, 7 17, COL COLW ARAQ HDN)
-COMBO(left_parenthesis, &kp LPAR, 3 13, COL COLW ARAQ HDN)
-COMBO(right_parenthesis, &kp RPAR, 6 16, COL COLW ARAQ HDN)
+COMBO(left_brace, &kp LBRC, 1 11, COL COLW ARAQ HDN HNDW)
+COMBO(right_brace, &kp RBRC, 8 18, COL COLW ARAQ HDN HNDW)
+COMBO(left_bracket, &kp LBKT, 2 12, COL COLW ARAQ HDN HNDW)
+COMBO(right_bracket, &kp RBKT, 7 17, COL COLW ARAQ HDN HNDW)
+COMBO(left_parenthesis, &kp LPAR, 3 13, COL COLW ARAQ HDN HNDW)
+COMBO(right_parenthesis, &kp RPAR, 6 16, COL COLW ARAQ HDN HNDW)
 
 /* Text processing */
 COMBO(undo, &kp LG(Z), 10 20, COL HDN)
