@@ -117,6 +117,7 @@ GCOMBO(switch_to_mac, &to COL, 12 13 30)
 GCOMBO(switch_to_hdn, &to HDN, 11 12 30)
 GCOMBO(switch_to_win, &to COLW, 16 17 33)
 GCOMBO(switch_to_ara, &to ARAQ, 17 18 33)
+GCOMBO(switch_to_hdnw, &to HDNW, 18 19 33)
 
 GCOMBO(misc_layertL, &to MISC, 11 12 13 14)
 GCOMBO(misc_layerR, &to MISC, 15 16 17 18)
