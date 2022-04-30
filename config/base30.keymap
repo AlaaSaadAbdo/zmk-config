@@ -16,10 +16,11 @@
 #define NUM 4
 #define COLW 5
 #define ARAQ 6
-#define NAVW 7
-#define SYMW 8
-#define NUMW 9
-#define MISC 10
+#define HDNW 7
+#define NAVW 8
+#define SYMW 9
+#define NUMW 10
+#define MISC 11
 
 #define SK(KEY) &nk KEY KEY
 // Keep sticky keys active for a long time so they effectively do not time out
@@ -214,6 +215,21 @@
                    &kp X         &kp C         &kp D                                         &kp H         &kp COMMA     &kp DOT
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &mo_symW      &kp SPACE         SK(LSHIFT)    &mo_navW
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+        hands_down_windows {
+            label = "HDNW";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp W         &kp F         &kp M         &kp P         &kp G             &kp K         &kp U         &kp O         &kp Y         &kp QUOT
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &kp R         &kp S         &kp N         &kp T         &kp B             &kp J         &kp A         &kp E         &kp I         &kp H
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                   &kp C         &kp L         &kp D                                         &kp X         &kp COMMA     &kp DOT
+//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+                                               &trans          &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
