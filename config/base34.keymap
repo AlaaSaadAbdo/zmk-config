@@ -10,17 +10,19 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define COL 0
-#define HDN 1
-#define NAV 2
-#define SYM 3
-#define NUM 4
-#define COLW 5
-#define ARAQ 6
-#define HDNW 7
-#define NAVW 8
-#define SYMW 9
-#define NUMW 10
-#define MISC 11
+#define COL30 1
+#define HDN 3
+#define NAV 3
+#define SYM 4
+#define NUM 5
+#define COLW 6
+#define COLW30 7 
+#define ARAQ 8
+#define HDNW 9
+#define NAVW 10
+#define SYMW 11
+#define NUMW 12
+#define MISC 13
 
 #define SK(KEY) &nk KEY KEY
 // Keep sticky keys active for a long time so they effectively do not time out
@@ -132,6 +134,22 @@
             >;
         };
 
+        colemak_30 {
+            label = "COL30";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp Q         &kp W         &kp F         &kp P         &kp B             &kp M         &kp L         &kp U         &kp Y         &kp SQT
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &kp A         &kp R         &kp S         &kp T         &kp G             &kp K         &kp N         &kp E         &kp I         &kp O
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &none         &kp X         &kp C         &kp D         &none             &none         &kp H         &kp COMMA     &kp DOT       &none
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                              &mo_sym        &kp SPACE         SK(LSHIFT)    &mo_nav
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+
         hands_down {
             label = "HDN";
             bindings = <
@@ -151,11 +169,11 @@
             label = "NAV";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp LG(Q)     &kp DELETE    &kp UP         &kp ESCAPE    &kp LG(F)         &kp LG(LS(T)) &kp LG(W)     &kp LG(R)     &kp LG(T)     &kp LG(LC(LA(LS(P)))) 
+     &kp LG(Q)     &kp DELETE    &kp UP         &kp LG(F)    &kp BACKSPACE      &kp LG(LS(T)) &kp LG(W)     &kp LG(R)     &kp LG(T)     &kp LG(LC(LA(LS(P)))) 
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp TAB       &kp LEFT      &kp DOWN       &kp RIGHT     &kp BACKSPACE     &kp LG(A)     SK(LSHIFT)    SK(LCTRL)     SK(LALT)      SK(LGUI)
+     &kp TAB       &kp LEFT      &kp DOWN       &kp RIGHT    &kp ENTER          &kp LG(A)     SK(LSHIFT)    SK(LCTRL)     SK(LALT)      SK(LGUI)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-&kp LA(LC(LEFT)) &kp LA(LC(RIGHT)) &kp LA(LC(ENTER)) &kp LA(LG(I)) &kp ENTER    &none         &none         &none         &none         &none
+     &none  &kp LA(LC(LEFT)) &kp LA(LC(ENTER)) &kp LA(LC(RIGHT)) &none          &none         &none         &none         &none         &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &trans          &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -204,6 +222,22 @@
             >;
         };
 
+        colemak_windows_30 {
+            label = "COLW30";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp Q         &kp W         &kp F         &kp P         &kp B             &kp M         &kp L         &kp U         &kp Y         &kp SQT
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &kp A         &kp R         &kp S         &kp T         &kp G             &kp K         &kp N         &kp E         &kp I         &kp O
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &none         &kp X         &kp C         &kp D         &none             &none         &kp H         &kp COMMA     &kp DOT       &none
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                              &mo_sym        &kp SPACE         SK(LSHIFT)    &mo_nav
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+
         arabic_qwerty {
             label = "ARAQ";
             bindings = <
@@ -238,11 +272,11 @@
             label = "NAVW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp LA(F4)     &kp DELETE    &kp UP         &kp ESCAPE    &kp LC(F)        &kp LC(LS(T)) &kp LC(W)     &kp LC(R)     &kp LC(T)       &kp LC(LA(LS(P)))
+     &kp LA(F4)     &kp DELETE    &kp UP          &kp LC(F)   &kp BACKSPACE     &kp LC(LS(T)) &kp LC(W)     &kp LC(R)     &kp LC(T)       &kp LC(LA(LS(P)))
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp TAB       &kp LEFT      &kp DOWN       &kp RIGHT     &kp BACKSPACE     &kp LC(A)     SK(LSHIFT)    SK(LCTRL)     SK(LALT)      SK(LGUI)
+     &kp TAB       &kp LEFT      &kp DOWN       &kp RIGHT     &kp ENTER         &kp LC(A)     SK(LSHIFT)    SK(LCTRL)     SK(LALT)      SK(LGUI)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-&kp LG(LS(LEFT)) &kp LG(LS(RIGHT)) &kp LG(UP) &kp LG(TAB)     &kp ENTER         &none         &none         &none         &none         &none
+     &none    &kp LG(LS(LEFT)) &kp LG(LS(RIGHT)) &kp LG(UP)   &none             &none         &none         &none         &none         &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &trans          &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -266,11 +300,11 @@
             label = "NUMW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5            &kp N6        &kp N7       &kp N8         &kp N9        &kp N0
+     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5            &kp N6        &kp N7        &kp N8         &kp N9        &kp N0
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp F11           &kp F12       SK(LSHIFT)    SK(LCTRL)     SK(LALT)      SK(LGUI)
+     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp F4            &kp F5        SK(LSHIFT)    SK(LCTRL)      SK(LALT)      SK(LGUI)
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp F6        &kp F7        &kp F8         &kp F9        &kp F10
+     &none         &kp F1        &kp F2        &kp F3        &none             &none         &kp F6        &kp F7         &kp F8         &none 
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &trans          &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯

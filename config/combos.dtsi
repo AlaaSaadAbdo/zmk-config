@@ -23,6 +23,17 @@ COMBO(geem, &kp LBKT, 7 8, ARAQ) // ج
 COMBO(daal, &kp RBKT, 8 9, ARAQ) // د
 COMBO(zthal, &kp GRAVE, 0 1, ARAQ) // ذ
 
+COMBO(Z, &kp Z, 21 22, COL COLW ARAQ) // Z and ئ
+COMBO(V, &kp V, 22 23, COL COLW) // V
+COMBO(J, &kp J, 6 7, COL COLW) // J
+COMBO(J2, &kp J, 2 3, COL COLW) // J on alternate hand
+
+/* Missing Fn */
+COMBO(fn9, &kp F9, 21 22, NUM NUMW)
+COMBO(fn10, &kp F10, 22 23, NUM NUMW)
+COMBO(fn11, &kp F11, 26 27, NUM NUMW)
+COMBO(fn12, &kp F12, 27 28, NUM NUMW)
+
 /* HDN experiment */
 COMBO(hdn_z, &kp Z, 21 22, HDN HDNW) // Z
 COMBO(hdn_v, &kp V, 22 23, HDN HDNW) // V
@@ -98,8 +109,10 @@ COMBO(sym1hw, &mo_symW, 32 33, COLW ARAQ HDNW)
 
 /* mac | win */
 GCOMBO(switch_to_mac, &to COL, 12 13 30)
+GCOMBO(switch_to_mac30, &to COL30, 11 12 13 30)
 GCOMBO(switch_to_hdn, &to HDN, 11 12 30)
 GCOMBO(switch_to_win, &to COLW, 16 17 33)
+GCOMBO(switch_to_win30, &to COLW30, 16 17 18 33)
 GCOMBO(switch_to_ara, &to ARAQ, 17 18 33)
 GCOMBO(switch_to_hdnw, &to HDNW, 18 19 33)
 

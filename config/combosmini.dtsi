@@ -20,7 +20,7 @@ compatible = "zmk,combos";
 /* Missing Alphas */
 COMBO(Z, &kp Z, 20 21, COL COLW ARAQ) // Z and ئ
 COMBO(V, &kp V, 21 22, COL COLW) // V
-COMBO(J, &kp J, 7 8, COL COLW) // J
+COMBO(J, &kp J, 6 7, COL COLW) // J
 COMBO(J2, &kp J, 2 3, COL COLW) // J on alternate hand
 COMBO(slash, &kp SLASH, 24 25, COL COLW ARAQ) // slash and ظ
 COMBO(taaa, &kp SQT, 18 19, ARAQ) // ط
