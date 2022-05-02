@@ -13,13 +13,13 @@
 #define COL30 1
 #define HDN 2
 #define NAV 3
-#define NUM 4
+#define SYM 4
 #define COLW 5
 #define COLW30 6 
 #define ARAQ 7
 #define HDNW 8
 #define NAVW 9
-#define NUMW 10
+#define SYMW 10
 #define MISC 11
 
 #define SK(KEY) &nk KEY KEY
