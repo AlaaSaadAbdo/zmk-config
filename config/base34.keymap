@@ -100,19 +100,6 @@
 
 
   };
-
-     cond_layers {
-        compatible = "zmk,conditional-layers";
-        num {
-            if-layers = <NAV SYM>;
-            then-layer = <NUM>;
-        };
-      
-        numw {
-            if-layers = <NAVW SYMW>;
-            then-layer = <NUMW>;
-        };
-    };
  
         keymap {
                 compatible = "zmk,keymap";
