@@ -11,18 +11,16 @@
 
 #define COL 0
 #define COL30 1
-#define HDN 3
+#define HDN 2
 #define NAV 3
-#define SYM 4
-#define NUM 5
-#define COLW 6
-#define COLW30 7 
-#define ARAQ 8
-#define HDNW 9
-#define NAVW 10
-#define SYMW 11
-#define NUMW 12
-#define MISC 13
+#define NUM 4
+#define COLW 5
+#define COLW30 6 
+#define ARAQ 7
+#define HDNW 8
+#define NAVW 9
+#define NUMW 10
+#define MISC 11
 
 #define SK(KEY) &nk KEY KEY
 // Keep sticky keys active for a long time so they effectively do not time out
@@ -183,30 +181,17 @@
             label = "SYM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &none         &kp TILDE     &kp BSLH     &kp AMPS       &kp SEMI          &kp ASTRK     &kp CARET     &kp HASH      &kp GRAVE     &none
+     &none         &kp GRAVE      &kp BSLH     &kp EQUAL     &kp SEMI           &kp EQUAL     &kp N7       &kp N8         &kp N9       &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON         &kp MINUS     &kp PLUS      &kp EQUAL     &kp UNDER     &kp SLASH
+     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON          &kp MINUS     &kp N4       &kp N5         &kp N6       &kp SLASH
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none         &kp DLLR      &kp EXCL      &kp QMARK     &none             &none         &kp PIPE      &kp AT        &kp PRCNT     &none
+     &none         &kp DLLR      &kp EXCL      &kp QMARK     &none              &none         &kp N1       &kp N2         &kp N3      &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &trans          &trans           &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
-        numbers {
-            label = "NUM";
-            bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5            &kp N6        &kp N7       &kp N8         &kp N9        &kp N0
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp F11           &kp F12       SK(LSHIFT)    SK(LCTRL)     SK(LALT)      SK(LGUI)
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp F6        &kp F7        &kp F8         &kp F9        &kp F10
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                              &trans          &trans            &trans        &trans
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
-        };
+
         colemak_windows {
             label = "COLW";
             bindings = <
@@ -282,31 +267,18 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
+
         symbols_windows {
             label = "SYMW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &none         &kp TILDE     &kp BSLH     &kp AMPS       &kp SEMI          &kp ASTRK     &kp CARET     &kp HASH      &kp GRAVE     &none
+     &none         &kp GRAVE      &kp BSLH     &kp EQUAL     &kp SEMI           &kp EQUAL     &kp N7       &kp N8         &kp N9       &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON         &kp MINUS     &kp PLUS      &kp EQUAL     &kp UNDER     &kp SLASH
+     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON          &kp MINUS     &kp N4       &kp N5         &kp N6       &kp SLASH
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none         &kp DLLR      &kp EXCL      &kp QMARK     &none             &none         &kp PIPE      &kp AT        &kp PRCNT     &none
+     &none         &kp DLLR      &kp EXCL      &kp QMARK     &none              &none         &kp N1       &kp N2         &kp N3      &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &trans          &trans           &trans        &trans
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
-        };
-        numbers_windows {
-            label = "NUMW";
-            bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5            &kp N6        &kp N7        &kp N8         &kp N9        &kp N0
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp F4            &kp F5        SK(LSHIFT)    SK(LCTRL)      SK(LALT)      SK(LGUI)
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none         &kp F1        &kp F2        &kp F3        &none             &none         &kp F6        &kp F7         &kp F8         &none 
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                              &trans          &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
