@@ -46,22 +46,22 @@ jobs:
           echo ::set-output name=display-name::${DISPLAY_NAME}
       - name: Checkout
         uses: actions/checkout@v2
-      # - name: Cache west modules
-      #   uses: actions/cache@v2
-      #   env:
-      #     cache-name: cache-zephyr-modules
-      #   with:
-      #     path: |
-      #       modules/
-      #       tools/
-      #       zephyr/
-      #       bootloader/
-      #       zmk/
-      #     key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('manifest-dir/west.yml') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-build-${{ env.cache-name }}-
-      #       ${{ runner.os }}-build-
-      #       ${{ runner.os }}-
+      - name: Cache west modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-zephyr-modules
+        with:
+          path: |
+            modules/
+            tools/
+            zephyr/
+            bootloader/
+            zmk/
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('manifest-dir/west.yml') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
       - name: West Init
         run: west init -l config
       - name: West Update
