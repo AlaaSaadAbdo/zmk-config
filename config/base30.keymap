@@ -150,9 +150,9 @@
             label = "SYM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp SLASH     &kp GRAVE      &kp BSLH     &kp ASTRK     &kp COLON         &kp EQUAL     &kp N7       &kp N8         &kp N9       &kp COMMA
+     &kp GRAVE      &kp SLASH    &kp BSLH     &kp ASTRK      &kp SEMI           &kp EQUAL     &kp N7       &kp N8         &kp N9       &kp COMMA
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp SEMI          &kp MINUS     &kp N4       &kp N5         &kp N6       &kp DOT
+     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON          &kp MINUS     &kp N4       &kp N5         &kp N6       &kp DOT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    &kp DLLR      &kp EXCL      &kp QMARK                                     &kp N1       &kp N2         &kp N3
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
@@ -224,9 +224,9 @@
             label = "SYMW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp SLASH     &kp GRAVE      &kp BSLH     &kp ASTRK     &kp COLON         &kp EQUAL     &kp N7       &kp N8         &kp N9       &kp COMMA
+     &kp GRAVE      &kp SLASH    &kp BSLH     &kp ASTRK      &kp SEMI           &kp EQUAL     &kp N7       &kp N8         &kp N9       &kp COMMA
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp SEMI          &kp MINUS     &kp N4       &kp N5         &kp N6       &kp DOT
+     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON          &kp MINUS     &kp N4       &kp N5         &kp N6       &kp DOT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    &kp DLLR      &kp EXCL      &kp QMARK                                     &kp N1       &kp N2         &kp N3
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
