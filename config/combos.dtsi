@@ -23,10 +23,12 @@ COMBO(geem, &kp LBKT, 7 8, ARAQ) // ج
 COMBO(daal, &kp RBKT, 8 9, ARAQ) // د
 COMBO(zthal, &kp GRAVE, 0 1, ARAQ) // ذ
 
+
 COMBO(Z, &kp Z, 21 22, COL30 COLW30) // Z 
-COMBO(V, &kp V, 22 23, COL30 COLW30) // V
-COMBO(J, &kp J, 6 7, COL30 COLW30) // J
-COMBO(J2, &kp J, 2 3, COL30 COLW30) // J on alternate hand
+COMBO(Q, &kp Q, 1 2, COL30 COLW30) // Q
+COMBO(J, &kp J, 2 3, COL30 COLW30) // J 
+COMBO(slash, &kp SLASH, 27 28, COL COL30) // Slash
+
 
 /* HDN experiment */
 COMBO(hdn_z, &kp Z, 21 22, HDN HDNW) // Z
@@ -82,12 +84,12 @@ COMBO(ditto, &kp LG(LC(LA(LS(Z)))), 14 15, COLW ARAQ HDNW COLW30)
 COMBO(ditto, &kp LG(LC(LA(LS(Z)))), 13 14, COLW ARAQ HDNW COLW30)
 
 COMBO(esc, &kp ESC, 23 30, COL COLW ARAQ HDN HDNW COL30 COLW30) 
-COMBO(enter, &kp ENTER, 3 13, COL COLW ARAQ HDN HDNW COL30 COLW30)
+COMBO(enter, &kp ENTER, 13 23, COL COLW ARAQ HDN HDNW COL30 COLW30)
+
 COMBO(backspace, &kp BACKSPACE, 4 14, COL COLW ARAQ HDN HDNW COL30 COLW30)
 COMBO(key_repeat, &key_repeat, 16 26, COL COLW ARAQ HDN HDNW COL30 COLW30)
 
 COMBO(delete_word, &kp LA(BACKSPACE), 5 15, COL HDN COL30)
-
 COMBO(delete_word_win, &kp LC(BACKSPACE), 5 15, COLW ARAQ HDNW COLW30)
 
 /* one hand */
