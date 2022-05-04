@@ -18,15 +18,16 @@ compatible = "zmk,combos";
   };
 
 /* Missing Alphas */
-COMBO(Z, &kp Z, 20 21, COL COLW ARAQ) // Z and ئ
-COMBO(Q, &kp Q, 1 2, COL COLW) // Q
-COMBO(J, &kp J, 2 3, COL COLW) // J
+COMBO(Z, &kp Z, 2 3, COL COLW) // Z 
+COMBO(Q, &kp Q, 21 22, COL COLW) // Q
+COMBO(J, &kp J, 1 2, COL COLW) // J 
 COMBO(slash, &kp SLASH, 24 25, COL COLW ARAQ) // slash and ظ
 COMBO(taaa, &kp SQT, 18 19, ARAQ) // ط
 COMBO(geem, &kp LBKT, 7 8, ARAQ) // ج
 COMBO(daal, &kp RBKT, 8 9, ARAQ) // د
 COMBO(zthal, &kp GRAVE, 0 1, ARAQ) // ذ
 COMBO(zthal, &kp N, 23 24, ARAQ) // ى
+COMBO(YA2, &kp Z, 20 21, ARAQ) // ئ
 
 /* Brackets */
 COMBO(left_brace, &kp LBRC, 1 11, COL COLW ARAQ)
