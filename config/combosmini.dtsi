@@ -30,12 +30,12 @@ COMBO(zthal, &kp N, 23 24, ARAQ) // ى
 COMBO(YA2, &kp Z, 20 21, ARAQ) // ئ
 
 /* Brackets */
-COMBO(left_brace, &kp LBRC, 1 11, COL COLW ARAQ)
-COMBO(right_brace, &kp RBRC, 8 18, COL COLW ARAQ)
-COMBO(left_bracket, &kp LBKT, 2 12, COL COLW ARAQ)
-COMBO(right_bracket, &kp RBKT, 7 17, COL COLW ARAQ)
-COMBO(left_parenthesis, &kp LPAR, 3 13, COL COLW ARAQ)
-COMBO(right_parenthesis, &kp RPAR, 6 16, COL COLW ARAQ)
+COMBO(left_bracket, &kp LBKT, 1 11, COL COLW ARAQ)
+COMBO(right_bracket, &kp RBKT, 8 18, COL COLW ARAQ)
+COMBO(left_parenthesis, &kp LPAR, 2 12, COL COLW ARAQ)
+COMBO(right_parenthesis, &kp RPAR, 7 17, COL COLW ARAQ)
+COMBO(left_brace, &kp LBRC, 3 13, COL COLW ARAQ)
+COMBO(right_brace, &kp RBRC, 6 16, COL COLW ARAQ)
 
 /* Text processing */
 COMBO(undo, &kp LG(Z), 10 20, COL)
