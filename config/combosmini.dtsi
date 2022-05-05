@@ -29,8 +29,8 @@ COMBO(zthal, &kp GRAVE, 0 1, ARAQ) // ذ
 COMBO(zthal, &kp N, 23 24, ARAQ) // ى
 COMBO(YA2, &kp Z, 20 21, ARAQ) // ئ
 
-COMBO(xero, &kp N0, 16 17, SYM SYMW) // 0
-
+COMBO(dot, &kp DOT, 16 17, SYM SYMW) // .
+COMBO(comma, &kp COMMA, 17 18, SYM SYMW) // ,
 
 /* Brackets */
 COMBO(left_bracket, &kp LBKT, 1 11, COL COLW ARAQ)

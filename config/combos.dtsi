@@ -27,8 +27,8 @@ COMBO(Q, &kp Q, 21 22, COL COLW) // Q
 COMBO(J, &kp J, 1 2, COL COLW) // J 
 COMBO(slash, &kp SLASH, 27 28, COL COLW) // Slash
 
-COMBO(xero, &kp N0, 16 17, SYM SYMW) // 0
-
+COMBO(dot, &kp DOT, 16 17, SYM SYMW) // .
+COMBO(comma, &kp COMMA, 17 18, SYM SYMW) // ,
 
 /* Brackets */
 COMBO(left_bracket, &kp LBKT, 1 11, COL COLW ARAQ)
