@@ -48,7 +48,7 @@
           #binding-cells = <0>;
           bindings = <&kp N0>, <&kp KP_DOT>;
           mods = <(MOD_LSFT)>;
-     };
+     }; 
 
     // Sticky key on tap, normal key on hold
     // Useful for modifier-clicking without the modifier remaining active
@@ -205,7 +205,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON          &kp MINUS     &odot        &kp N1       &kp N2         &kp N3
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none         &kp DLLR      &kp EXCL      &kp QMARK     &none              &none        &kp N4       &kp N5         &kp N6       &none
+     &none         &kp DLLR      &kp EXCL      &kp QMARK     &none              &none        &kp N4       &kp N5         &kp N6       &kp KP_DOT 
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &trans          &trans           &trans       &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
