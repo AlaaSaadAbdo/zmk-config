@@ -6,7 +6,7 @@
 
 #include "battoota.dtsi"
 
-&kscan_faceup {
+&kscan_facdown {
     input-gpios =
         <&pro_micro  6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
         <&pro_micro  3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
@@ -27,7 +27,7 @@
 };
 
 
-&kscan_facedown {
+&kscan_faceup {
     input-gpios =
         <&pro_micro 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
         <&pro_micro 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
