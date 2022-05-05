@@ -46,7 +46,7 @@
           compatible = "zmk,behavior-mod-morph";
           label = "ZERO_DOT";
           #binding-cells = <0>;
-          bindings = <&kp N0>, <&kp KP_DOT>;
+          bindings = <&kp N0>, <&dot_dot>;
           mods = <(MOD_LSFT)>;
      }; 
 
@@ -60,6 +60,12 @@
       flavor = "tap-preferred";
       bindings = <&kp>, <&sk>;
     };
+
+     ZMK_MACRO(dot_dot,
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings
+        = <&macro_tap &kp K_CANCEL &kp dot>;)
 
      ZMK_MACRO(mo_nav,
         wait-ms = <0>;
