@@ -42,6 +42,13 @@
 / { 
   
   behaviors {
+     odot: zero_dot {
+          compatible = "zmk,behavior-mod-morph";
+          label = "ZERO_DOT";
+          #binding-cells = <0>;
+          bindings = <&kp N0>, <&kp DOT>;
+          mods = <(MOD_LSFT)>;
+     };
 
     // Sticky key on tap, normal key on hold
     // Useful for modifier-clicking without the modifier remaining active
@@ -135,7 +142,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp GRAVE     &kp SLASH     &kp BSLH      &kp ASTRK     &kp SEMI           &kp EQUAL    &kp N7       &kp N8         &kp N9       &kp COMMA
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON          &kp MINUS    &kp N1       &kp N2         &kp N3       &kp DOT
+     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON          &kp MINUS     &odot        &kp N1       &kp N2         &kp N3
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &none         &kp DLLR      &kp EXCL      &kp QMARK     &none              &none        &kp N4       &kp N5         &kp N6       &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
@@ -196,7 +203,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp GRAVE     &kp SLASH     &kp BSLH      &kp ASTRK     &kp SEMI           &kp EQUAL    &kp N7       &kp N8         &kp N9       &kp COMMA
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON          &kp MINUS    &kp N1       &kp N2         &kp N3       &kp DOT
+     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON          &kp MINUS     &odot        &kp N1       &kp N2         &kp N3
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &none         &kp DLLR      &kp EXCL      &kp QMARK     &none              &none        &kp N4       &kp N5         &kp N6       &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯

@@ -43,16 +43,24 @@
   
   behaviors {
 
+     odot: zero_dot {
+          compatible = "zmk,behavior-mod-morph";
+          label = "ZERO_DOT";
+          #binding-cells = <0>;
+          bindings = <&kp N0>, <&kp DOT>;
+          mods = <(MOD_LSFT)>;
+     };
+
     // Sticky key on tap, normal key on hold
     // Useful for modifier-clicking without the modifier remaining active
-    nk: not_so_sticky_key {
-      compatible = "zmk,behavior-hold-tap";
-      label = "NOT_SO_STICKY_KEY";
-      #binding-cells = <2>;
-      tapping_term_ms = <200>;
-      flavor = "tap-preferred";
-      bindings = <&kp>, <&sk>;
-    };
+     nk: not_so_sticky_key {
+       compatible = "zmk,behavior-hold-tap";
+       label = "NOT_SO_STICKY_KEY";
+       #binding-cells = <2>;
+       tapping_term_ms = <200>;
+       flavor = "tap-preferred";
+       bindings = <&kp>, <&sk>;
+     };
 
      ZMK_MACRO(mo_nav,
         wait-ms = <0>;
@@ -135,7 +143,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp GRAVE      &kp SLASH    &kp BSLH     &kp ASTRK      &kp SEMI           &kp EQUAL     &kp N7       &kp N8         &kp N9       &kp COMMA
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON          &kp MINUS     &kp N1       &kp N2         &kp N3       &kp DOT
+     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON          &kp MINUS     &odot        &kp N1       &kp N2         &kp N3
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    &kp DLLR      &kp EXCL      &kp QMARK                                      &kp N4       &kp N5         &kp N6
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
@@ -194,7 +202,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp GRAVE      &kp SLASH    &kp BSLH     &kp ASTRK      &kp SEMI           &kp EQUAL     &kp N7       &kp N8         &kp N9       &kp COMMA
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON          &kp MINUS     &kp N1       &kp N2         &kp N3       &kp DOT
+     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON          &kp MINUS     &odot        &kp N1       &kp N2         &kp N3
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    &kp DLLR      &kp EXCL      &kp QMARK                                      &kp N4       &kp N5         &kp N6
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
