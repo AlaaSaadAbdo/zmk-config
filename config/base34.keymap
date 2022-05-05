@@ -46,10 +46,17 @@
           compatible = "zmk,behavior-mod-morph";
           label = "ZERO_DOT";
           #binding-cells = <0>;
-          bindings = <&kp N0>, <&dot_dot>;
+          bindings = <&kp N0>, <&kp KP_DOT>;
           mods = <(MOD_LSFT)>;
      }; 
 
+     odotw: zero_dotw {
+          compatible = "zmk,behavior-mod-morph";
+          label = "ZERO_DOTW";
+          #binding-cells = <0>;
+          bindings = <&kp N0>, <&dot_dot>;
+          mods = <(MOD_LSFT)>;
+     }; 
     // Sticky key on tap, normal key on hold
     // Useful for modifier-clicking without the modifier remaining active
     nk: not_so_sticky_key {
@@ -66,7 +73,8 @@
         tap-ms = <0>;
         bindings
         = <&macro_release &kp LSHFT>
-        , <&macro_tap &kp DOT>;)
+        , <&macro_tap &kp DOT>
+        , <&macro_press &kp LSHFT>;)
                 
      ZMK_MACRO(mo_nav,
         wait-ms = <0>;
@@ -210,7 +218,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp GRAVE     &kp SLASH     &kp BSLH      &kp ASTRK     &kp SEMI           &kp EQUAL    &kp N7       &kp N8         &kp N9       &kp COMMA
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON          &kp MINUS     &odot        &kp N1       &kp N2         &kp N3
+     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON          &kp MINUS     &odotw        &kp N1       &kp N2         &kp N3
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &none         &kp DLLR      &kp EXCL      &kp QMARK     &none              &none        &kp N4       &kp N5         &kp N6       &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
