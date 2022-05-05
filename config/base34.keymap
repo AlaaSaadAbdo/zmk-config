@@ -46,7 +46,7 @@
           compatible = "zmk,behavior-mod-morph";
           label = "ZERO_DOT";
           #binding-cells = <0>;
-          bindings = <&kp N0>, <&kp DOT>;
+          bindings = <&kp N0>, <&kp KP_DOT>;
           mods = <(MOD_LSFT)>;
      };
 
