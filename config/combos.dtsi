@@ -24,6 +24,7 @@ COMBO(daal, &kp RBKT, 8 9, ARAQ) // د
 COMBO(zthal, &kp GRAVE, 0 1, ARAQ) // ذ
 COMBO(Z, &kp Z, 22 23, COL COLW) // Z 
 COMBO(Q, &kp Q, 21 22, COL COLW) // Q
+COMBO(Q2, &kp Q, 2 3, COL COLW) // Q for vim wq
 COMBO(J, &kp J, 1 2, COL COLW) // J 
 COMBO(slash, &kp SLASH, 27 28, COL COLW) // Slash
 

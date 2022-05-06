@@ -20,6 +20,7 @@ compatible = "zmk,combos";
 /* Missing Alphas */
 COMBO(Z, &kp Z, 21 22, COL COLW) // Z 
 COMBO(Q, &kp Q, 20 21, COL COLW) // Q
+COMBO(Q2, &kp Q, 2 3, COL COLW) // Q for vim wq
 COMBO(J, &kp J, 1 2, COL COLW) // J 
 COMBO(slash, &kp SLASH, 24 25, COL COLW ARAQ) // slash and ظ
 COMBO(taaa, &kp SQT, 18 19, ARAQ) // ط
