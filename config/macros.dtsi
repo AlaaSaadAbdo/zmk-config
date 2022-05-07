@@ -5,8 +5,8 @@
       compatible = "zmk,behavior-macro"; \
       label = str(macro_##NAME); \
       #binding-cells = <0>; \
-      wait-ms = <30>; \
-      tap-ms = <40>; \
+      wait-ms = <WAITMS>; \
+      tap-ms = <TAPMS>; \
       bindings = <BINDINGS>; \
   };
 
