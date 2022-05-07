@@ -85,11 +85,11 @@ COMBO(delete_word, &kp LA(BACKSPACE), 5 15, COL)
 COMBO(delete_word_win, &kp LC(BACKSPACE), 5 15, COLW ARAQ)
 
 /* one hand */
-COMBO(nav1h, &mo_nav, 30 31, COL)
-COMBO(sym1h, &mo_sym, 32 33, COL)
+COMBO(nav1h, &macro_nav, 30 31, COL)
+COMBO(sym1h, &macro_sym, 32 33, COL)
 
-COMBO(nav1hw, &mo_navW, 30 31, COLW ARAQ)
-COMBO(sym1hw, &mo_symW, 32 33, COLW ARAQ)
+COMBO(nav1hw, &macro_navW, 30 31, COLW ARAQ)
+COMBO(sym1hw, &macro_symW, 32 33, COLW ARAQ)
 
 #define GCOMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
