@@ -98,13 +98,14 @@ COMBO(sym1hw, &macro_symW, 32 33, COLW ARAQ CUSW)
   };
 
 /* mac | win */
-GCOMBO(switch_to_mac, &to COL, 11 12 13 30)
-GCOMBO(switch_to_mac, &to COL, 11 12 13 30)
+GCOMBO(switch_to_mac, &to COL, 12 13 30)
+GCOMBO(switch_to_cus_mac, &to CUS, 10 11 30)
 
-GCOMBO(switch_to_win, &to COLW, 16 17 18 33)
-GCOMBO(switch_to_win, &to COLW, 16 17 18 33)
+GCOMBO(switch_to_win, &to COLW, 16 17 33)
+GCOMBO(switch_to_cus_win, &to CUSW, 18 19 33)
 
 GCOMBO(switch_to_ara, &to ARAQ, 17 18 33)
+
 
 GCOMBO(misc_layertL, &to MISC, 11 12 13 14)
 GCOMBO(misc_layerR, &to MISC, 15 16 17 18)
