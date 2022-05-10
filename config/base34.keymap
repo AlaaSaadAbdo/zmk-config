@@ -10,8 +10,8 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define COL 0
-#define NAV 1
-#define CUS 2
+#define CUS 1
+#define NAV 2
 #define SYM 3
 #define COLW 4
 #define ARAQ 5
