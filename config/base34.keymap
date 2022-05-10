@@ -55,15 +55,22 @@
   behaviors {
     // Sticky key on tap, normal key on hold
     // Useful for modifier-clicking without the modifier remaining active
-    nk: not_so_sticky_key {
-      compatible = "zmk,behavior-hold-tap";
-      label = "NOT_SO_STICKY_KEY";
-      #binding-cells = <2>;
-      tapping_term_ms = <200>;
-      flavor = "tap-preferred";
-      bindings = <&kp>, <&sk>;
-    };
+     nk: not_so_sticky_key {
+       compatible = "zmk,behavior-hold-tap";
+       label = "NOT_SO_STICKY_KEY";
+       #binding-cells = <2>;
+       tapping_term_ms = <200>;
+       flavor = "tap-preferred";
+       bindings = <&kp>, <&sk>;
+     };
 
+     ltgt: smaller_bigger {
+       compatible = "zmk,behavior-mod-morph";
+       label = "SMALLER_BIGGER";
+       #binding-cells = <0>;
+       bindings = <&kp LT>, <&kp GT>;
+       mods = <(MOD_LSFT)>;
+     };
   };
  
         keymap {
@@ -117,7 +124,7 @@
             label = "SYM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp GRAVE      &kp SLASH    &kp BSLH     &kp ASTRK      &kp SEMI           &kp EQUAL     &kp N7       &kp N8         &kp N9       &lt
+     &kp GRAVE      &kp SLASH    &kp BSLH     &kp ASTRK      &kp SEMI           &kp EQUAL     &kp N7       &kp N8         &kp N9       &ltgt
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON          &kp MINUS     &kp N0       &kp N1       &kp N2         &kp N3
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -194,7 +201,7 @@
             label = "SYMW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp GRAVE      &kp SLASH    &kp BSLH     &kp ASTRK      &kp SEMI           &kp EQUAL     &kp N7       &kp N8         &kp N9       &gt
+     &kp GRAVE      &kp SLASH    &kp BSLH     &kp ASTRK      &kp SEMI           &kp EQUAL     &kp N7       &kp N8         &kp N9       &ltgt
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp COLON          &kp MINUS     &kp N0       &kp N1        &kp N2         &kp N3
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
