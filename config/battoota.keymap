@@ -101,7 +101,7 @@
         COMBO(sym1h, &macro_sym, 28 29, COL)
 
         /* misc */
-        COMBO(alfred, &kp LG(SPACE), 22 23, COL)
+        COMBO(alfred, &kp LG(SPACE), 26 29, COL)
         COMBO(clpbrd, &kp LG(LC(LA(LS(Z)))), 14 15, COL)
         COMBO(esc, &kp ESC, 22 26, COL)
         COMBO(enter, &kp ENTER, 13 22, COL)
