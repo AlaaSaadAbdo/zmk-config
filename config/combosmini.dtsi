@@ -79,10 +79,10 @@ COMBO(sym1hw, &macro_symW, 28 29, COLW ARAQ)
               ╰────────╯ ╰────────╯            */
 
 /* misc */
-COMBO(alfred, &kp LG(SPACE), 22 23, COL)
+COMBO(alfred, &kp LG(SPACE), 26 29, COL)
 COMBO(clpbrd, &kp LG(LC(LA(LS(Z)))), 14 15, COL)
 
-COMBO(pwrtys, &kp LG(SPACE), 22 23, COLW ARAQ)
+COMBO(pwrtys, &kp LG(SPACE), 26 29, COLW ARAQ)
 COMBO(ditto, &kp LG(LC(LA(LS(Z)))), 14 15, COLW ARAQ)
 
 COMBO(esc, &kp ESC, 22 26, COL COLW ARAQ)
