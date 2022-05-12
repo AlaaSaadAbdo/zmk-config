@@ -42,19 +42,9 @@ COMBO(left_brace, &kp LBRC, 3 13, COL COLW ARAQ)
 COMBO(right_brace, &kp RBRC, 6 16, COL COLW ARAQ)
 
 /* Text processing */
-COMBO(undo, &kp LG(Z), 10 20, COL)
-COMBO(redo, &kp LG(LS(Z)), 10 21, COL)
-
-COMBO(select_all, &kp LG(A), 10 22, COL)
-
 COMBO(cut, &kp LG(X), 11 20 , COL)
 COMBO(copy, &kp LG(C), 12 21, COL)
 COMBO(paste, &kp LG(V), 20 21 22, COL)
-
-COMBO(undow, &kp LC(Z), 10 20, COLW ARAQ)
-COMBO(redow, &kp LC(Y), 10 21, COLW ARAQ)
-
-COMBO(select_allw, &kp LC(A), 10 22, COLW ARAQ)
 
 COMBO(cutw, &kp LC(X), 11 20, COLW ARAQ)
 COMBO(copyw, &kp LC(C), 12 21, COLW ARAQ)
