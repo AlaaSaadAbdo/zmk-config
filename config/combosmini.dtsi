@@ -59,6 +59,10 @@ COMBO(sym1h, &macro_sym, 28 29, COL)
 COMBO(nav1hw, &macro_navW, 26 27, COLW ARAQ)
 COMBO(sym1hw, &macro_symW, 28 29, COLW ARAQ)
 
+COMBO(clpbrd1hand, &kp LG(LC(LA(LS(Z)))), 13 14, COL)
+COMBO(ditto1hand, &kp LG(LC(LA(LS(Z)))), 13 14, COLW ARAQ)
+
+
 /*                KEY POSITIONS
 
   ╭────────────────────╮ ╭────────────────────╮
