@@ -99,8 +99,8 @@ GCOMBO(switch_to_mac, &to COL, 12 13 26)
 GCOMBO(switch_to_win, &to COLW, 16 17 29)
 GCOMBO(switch_to_ara, &to ARAQ, 17 18 29)
 
-GCOMBO(switch_to_cus_mac, &to CUS, 11 12 26)
-GCOMBO(switch_to_cus_win, &to CUSW, 17 18 29)
+GCOMBO(switch_to_cus_mac, &to CUS, 10 11 26)
+GCOMBO(switch_to_cus_win, &to CUSW, 18 19 29)
 
 GCOMBO(misc_layertL, &to MISC, 11 12 13 14)
 GCOMBO(misc_layerR, &to MISC, 15 16 17 18)
