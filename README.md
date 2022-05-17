@@ -1,6 +1,6 @@
 # zmk-config
 
-This is my personal [ZMK firmware][1] configuration for my current 30-key wireless keyboards [Sweep](sweep).
+This is my personal [ZMK firmware][1] configuration for my current 30-key wireless keyboards [Battoota](https://github.com/AlaaSaadAbdo/battoota).
 
 I use this keyboard for both windows and mac, to type in Arabic and English
 
