@@ -105,9 +105,9 @@
             label = "NAV";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp ESC       &kp DELETE    &kp LG(A)     &kp TAB       &kp BACKSPACE     &kp LA(BACKSPACE)  &none      &kp UP      &kp LG(Q)     &none 
-     SK(LCTRL)     SK(LALT)      SK(LGUI)      SK(LSHIFT)    &kp ENTER         &kp LG(A)          &kp LEFT   &kp DOWN    &kp RIGHT     &kp LG(LC(LA(LS(P))))
-                   &kp LG(X)     &kp LG(C)     &kp LG(V)                                          &none      &none       &none
+     &kp ESC       &kp DELETE    &kp LG(A)     &kp TAB       &kp BACKSPACE     &none         &none         &kp UP        &kp LG(Q)     &none 
+     SK(LCTRL)     SK(LALT)      SK(LGUI)      SK(LSHIFT)    &kp ENTER         &kp LG(A)     &kp LEFT      &kp DOWN      &kp RIGHT     &kp LG(LC(LA(LS(P))))
+                   &kp LG(X)     &kp LG(C)     &kp LG(V)                                     &none         &none         &none
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                               &trans         &trans             &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -170,9 +170,9 @@
             label = "NAVW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp ESC       &kp DELETE    &kp LC(A)     &kp TAB       &kp BACKSPACE     &kp LA(BACKSPACE)  &none       &kp UP     &kp LA(F4)    &none 
-     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp ENTER         &none              &kp LEFT    &kp DOWN   &kp RIGHT     &kp LC(LA(LS(P)))
-                   &kp LC(X)     &kp LC(C)     &kp LC(V)                                          &none       &none      &none
+     &kp ESC       &kp DELETE    &kp LC(A)     &kp TAB       &kp BACKSPACE     &none         &none         &kp UP        &kp LA(F4)    &none 
+     SK(LGUI)      SK(LALT)      SK(LCTRL)     SK(LSHIFT)    &kp ENTER         &none         &kp LEFT      &kp DOWN      &kp RIGHT     &kp LC(LA(LS(P)))
+                   &kp LC(X)     &kp LC(C)     &kp LC(V)                                     &none         &none         &none
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                 &trans          &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
