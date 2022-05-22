@@ -29,8 +29,7 @@ COMBO(daal, &kp RBKT, 8 9, ARAQ) // د
 COMBO(zthal, &kp GRAVE, 0 1, ARAQ) // ذ
 COMBO(zthal, &kp N, 23 24, ARAQ) // ى
 COMBO(YA2, &kp Z, 20 21, ARAQ) // ئ
-
-COMBO(space, &kp SPACE, 12 13, SYM SYMW) // space on sym
+COMBO(space, &kp SPACE, 12 13, SYM SYMW) // space on SYM
 
 /* Brackets */
 COMBO(left_bracket, &kp LBKT, 1 11, COL COLW ARAQ CUS CUSW)
@@ -43,24 +42,26 @@ COMBO(right_brace, &kp RBRC, 6 16, COL COLW ARAQ CUS CUSW)
 /* Text processing */
 COMBO(redo, &kp LG(LS(Z)), 3 4, COL CUS)
 COMBO(undo, &kp LG(Z), 13 14, COL CUS)
-
 COMBO(redow, &kp LC(Y), 3 4, COLW ARAQ CUSW)
 COMBO(undow, &kp LC(Z), 13 14, COLW ARAQ CUSW)
-
 COMBO(caps_word, &caps_word, 27 28, COL COLW ARAQ CUS CUSW)
 
 /* misc */
 COMBO(clpbrd1hand, &kp LG(LC(LA(LS(Z)))), 11 26, COL CUS)
 COMBO(ditto1hand, &kp LG(LC(LA(LS(Z)))), 11 26, COLW ARAQ CUSW)
-
 COMBO(pwrtys, &kp LG(SPACE), 26 29, COLW ARAQ CUSW)
 COMBO(ditto, &kp LG(LC(LA(LS(Z)))), 14 15, COLW ARAQ CUSW)
-
 COMBO(esc, &kp ESC, 22 26, COL COLW ARAQ CUS CUSW)
 COMBO(key_repeat, &key_repeat, 23 24, COL COLW ARAQ CUS CUSW)
-
 COMBO(lock_screen, &kp LG(LC(Q)), 6 7 8, NAV)
 COMBO(lock_screenw, &kp LG(L), 6 7 8, NAVW)
+
+/* bluetooth */
+COMBO(bt_clear, &bt BT_CLR, 11 12 13, NAV NAVW)
+COMBO(bt_0, &bt BT_SEL 0, 1 2, NAV NAVW)
+COMBO(bt_1, &bt BT_SEL 1, 2 3, NAV NAVW)
+COMBO(bt_2, &bt BT_SEL 2, 3 4, NAV NAVW)
+COMBO(bt_3, &bt BT_SEL 3, 0 1, NAV NAVW)
 
 #define GCOMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
@@ -75,10 +76,3 @@ GCOMBO(switch_to_ara, &to ARAQ, 17 18 29)
 
 GCOMBO(switch_to_cus_mac, &to CUS, 10 11 26)
 GCOMBO(switch_to_cus_win, &to CUSW, 18 19 29)
-
-/* bluetooth */
-COMBO(bt_clear, &bt BT_CLR, 11 12 13, NAV NAVW)
-COMBO(bt_0, &bt BT_SEL 0, 1 2, NAV NAVW)
-COMBO(bt_1, &bt BT_SEL 1, 2 3, NAV NAVW)
-COMBO(bt_2, &bt BT_SEL 2, 3 4, NAV NAVW)
-COMBO(bt_3, &bt BT_SEL 3, 0 1, NAV NAVW)
