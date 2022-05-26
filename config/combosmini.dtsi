@@ -55,11 +55,12 @@ COMBO(ditto1hand, &kp LG(LC(LA(LS(Z)))), 11 12 26, COLW ARAQ CUSW)
 COMBO(alfred, &kp LG(SPACE), 12 13 26, COL CUS)
 COMBO(pwrtys, &kp LG(SPACE), 12 13 26, COLW ARAQ CUSW)
 COMBO(esc, &kp ESC, 22 26, COL COLW ARAQ CUS CUSW)
-COMBO(key_repeat, &key_repeat, 23 24, COL COLW ARAQ CUS CUSW)
 COMBO(lock_screen, &kp LG(LC(Q)), 6 7 8, NAV)
 COMBO(lock_screenw, &kp LG(L), 6 7 8, NAVW)
 COMBO(sym1h, &macro_sym, 26 27, COL CUS)
 COMBO(sym1hw, &macro_symW, 26 27, COLW ARAQ CUSW)
+COMBO(key_repeat_r, &key_repeat, 23 24, COL COLW ARAQ CUS CUSW)
+COMBO(key_repeat_l, &key_repeat, 22 14, COL COLW ARAQ CUS CUSW)
 
 /* bluetooth */
 COMBO(bt_clear, &bt BT_CLR, 11 12 13, NAV NAVW)
