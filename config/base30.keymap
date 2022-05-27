@@ -118,8 +118,8 @@
             label = "SYM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &ltgt         &kp N9       &kp N8         &kp N7         &kp SEMI          &kp EQUAL     &kp ASTRK     &kp BSLH     &kp SLASH     &kp GRAVE
-     &kp N3        &kp N2       &kp N1         &kp N0         &kp COLON         &kp MINUS     SK(LSHIFT)    SK(LGUI)     SK(LALT)      SK(LCTRL)
+     &ltgt         &kp N9       &kp N8         &kp N7         &kp EQUAL         &kp SEMI      &kp ASTRK     &kp BSLH     &kp SLASH     &kp GRAVE
+     &kp N3        &kp N2       &kp N1         &kp N0         &kp MINUS         &kp COLON     SK(LSHIFT)    SK(LGUI)     SK(LALT)      SK(LCTRL)
                    &kp N6       &kp N5         &kp N4                                         &kp QMARK     &kp EXCL     &kp DLLR
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &trans          &trans           &trans       &trans
@@ -183,8 +183,8 @@
             label = "SYMW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &ltgt         &kp N9       &kp N8         &kp N7         &kp SEMI          &kp EQUAL     &kp ASTRK     &kp BSLH     &kp SLASH     &kp GRAVE
-     &kp N3        &kp N2       &kp N1         &kp N0         &kp COLON         &kp MINUS     SK(LSHIFT)    SK(LGUI)     SK(LALT)      SK(LCTRL)
+     &ltgt         &kp N9       &kp N8         &kp N7         &kp EQUAL         &kp SEMI      &kp ASTRK     &kp BSLH     &kp SLASH     &kp GRAVE
+     &kp N3        &kp N2       &kp N1         &kp N0         &kp MINUS         &kp COLON     SK(LSHIFT)    SK(LGUI)     SK(LALT)      SK(LCTRL)
                    &kp N6       &kp N5         &kp N4                                         &kp QMARK     &kp EXCL     &kp DLLR
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &trans          &trans           &trans       &trans

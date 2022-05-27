@@ -46,8 +46,10 @@ COMBO(undo, &kp LG(Z), 13 14, COL CUS)
 COMBO(redow, &kp LC(Y), 3 4, COLW ARAQ CUSW)
 COMBO(undow, &kp LC(Z), 13 14, COLW ARAQ CUSW)
 COMBO(caps_word, &caps_word, 27 28, COL COLW ARAQ CUS CUSW)
-COMBO(delete_word, &kp LA(BACKSPACE), 2 12, NAV)
-COMBO(delete_wordw, &kp LC(BACKSPACE), 2 12, NAVW)
+COMBO(delete_word_l, &kp LA(BACKSPACE), 2 12, NAV)
+COMBO(delete_word_r, &kp LA(BACKSPACE), 17 24, NAV)
+COMBO(delete_wordw_l, &kp LC(BACKSPACE), 2 12, NAVW)
+COMBO(delete_wordw_r, &kp LC(BACKSPACE), 17 24, NAVW)
 
 /* misc */
 COMBO(clpbrd1hand, &kp LG(LC(LA(LS(Z)))), 11 12 26, COL CUS)
