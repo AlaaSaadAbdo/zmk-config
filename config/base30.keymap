@@ -95,10 +95,6 @@ v c m d w  / , q j k
         custom {
             label = "CUS";
             bindings = <
-x f l p b v u o y k
-r s n t g . a e i h
-q c m d z / , ' w j
-
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp X         &kp F         &kp L         &kp P         &kp B             &kp V         &kp U         &kp O         &kp Y         &kp K
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
