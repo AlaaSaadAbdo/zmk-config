@@ -53,26 +53,21 @@ COMBO(delete_wordw_r, &kp LC(BACKSPACE), 17 27, NAVW)
 
 
 /* misc */
-COMBO(alfred, &kp LG(SPACE), 23 26, COL CUS)
+COMBO(alfred, &kp LG(SPACE), 23 26, COL CUS COLW ARAQ CUSW)
 COMBO(clpbrd, &kp LG(LC(LA(LS(Z)))), 14 15, COL CUS COLW ARAQ CUSW)
-
-COMBO(pwrtys, &kp LG(SPACE), 23 26, COLW ARAQ CUSW)
-
 COMBO(esc, &kp ESC, 23 30, COL CUS COLW ARAQ CUSW) 
-COMBO(enter, &kp ENTER, 13 23, COL CUS COLW ARAQ CUSW)
-COMBO(backspace, &kp BACKSPACE, 4 14, COL CUS COLW ARAQ CUSW)
+COMBO(key_repeat_r, &key_repeat, 26 27, COL COLW ARAQ CUS CUSW)
+COMBO(key_repeat_l, &key_repeat, 23 24, COL COLW ARAQ CUS CUSW)
 
-COMBO(key_repeat, &key_repeat, 16 26, COL CUS COLW ARAQ CUSW)
+COMBO(sym1h, &macro_sym, 30 31, COL CUS)
+COMBO(sym1hw, &macro_symW, 30 31, COLW ARAQ CUSW)
 
-COMBO(delete_word, &kp LA(BACKSPACE), 5 15, COL CUS)
-COMBO(delete_word_win, &kp LC(BACKSPACE), 5 15, COLW ARAQ CUSW)
-
-/* one hand */
-COMBO(nav1h, &macro_nav, 30 31, COL CUS)
-COMBO(sym1h, &macro_sym, 32 33, COL CUS)
-
-COMBO(nav1hw, &macro_navW, 30 31, COLW ARAQ CUSW)
-COMBO(sym1hw, &macro_symW, 32 33, COLW ARAQ CUSW)
+/* bluetooth */
+COMBO(bt_clear, &bt BT_CLR, 11 12 13, NAV NAVW)
+COMBO(bt_0, &bt BT_SEL 0, 1 2, NAV NAVW)
+COMBO(bt_1, &bt BT_SEL 1, 2 3, NAV NAVW)
+COMBO(bt_2, &bt BT_SEL 2, 3 4, NAV NAVW)
+COMBO(bt_3, &bt BT_SEL 3, 0 1, NAV NAVW)
 
 #define GCOMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
@@ -81,14 +76,9 @@ COMBO(sym1hw, &macro_symW, 32 33, COLW ARAQ CUSW)
   };
 
 /* mac | win */
-GCOMBO(switch_to_mac, &to COL, 12 13 30)
-GCOMBO(switch_to_cus_mac, &to CUS, 10 11 30)
+GCOMBO(switch_to_mac, &to COL, 0 10)
+GCOMBO(switch_to_win, &to COLW, 9 19)
+GCOMBO(switch_to_ara, &to ARAQ, 8 9 19)
 
-GCOMBO(switch_to_win, &to COLW, 16 17 33)
-GCOMBO(switch_to_cus_win, &to CUSW, 18 19 33)
-
-GCOMBO(switch_to_ara, &to ARAQ, 17 18 33)
-
-
-GCOMBO(misc_layertL, &to MISC, 11 12 13 14)
-GCOMBO(misc_layerR, &to MISC, 15 16 17 18)
+GCOMBO(switch_to_cus_mac, &to CUS, 0 10 30)
+GCOMBO(switch_to_cus_win, &to CUSW, 9 19 33)

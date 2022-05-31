@@ -53,8 +53,7 @@ COMBO(delete_wordw_r, &kp LC(BACKSPACE), 17 24, NAVW)
 
 /* misc */
 COMBO(clpbrd1hand, &kp LG(LC(LA(LS(Z)))), 11 12 26, COL CUS COLW ARAQ CUSW)
-COMBO(alfred, &kp LG(SPACE), 12 13 26, COL CUS)
-COMBO(pwrtys, &kp LG(SPACE), 12 13 26, COLW ARAQ CUSW)
+COMBO(alfred, &kp LG(SPACE), 12 13 26, COL CUS COLW ARAQ CUSW)
 COMBO(esc, &kp ESC, 22 26, COL COLW ARAQ CUS CUSW)
 COMBO(lock_screen, &kp LG(LC(Q)), 6 7 8, NAV)
 COMBO(lock_screenw, &kp LG(L), 6 7 8, NAVW)
