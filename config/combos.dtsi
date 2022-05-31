@@ -27,9 +27,8 @@ COMBO(Q, &kp Q, 21 22, COL CUS COLW CUSW) // Q
 COMBO(Q2, &kp Q, 2 3, COL CUS COLW CUSW) // Q for vim wq
 COMBO(J, &kp J, 1 2, COL CUS COLW CUSW) // J 
 COMBO(slash, &kp SLASH, 27 28, COL CUS COLW CUSW) // Slash
-
-COMBO(dot, &kp DOT, 17 18, SYM SYMW) // .
-COMBO(comma, &kp COMMA, 16 17, SYM SYMW) // ,
+COMBO(dot, &kp DOT, 12 13, SYM SYMW) // .
+COMBO(comma, &kp COMMA, 11 12, SYM SYMW) // ,
 
 /* Brackets */
 COMBO(left_bracket, &kp LBKT, 1 11, COL CUS COLW ARAQ CUSW)
@@ -40,40 +39,24 @@ COMBO(left_brace, &kp LBRC, 3 13, COL CUS COLW ARAQ CUSW)
 COMBO(right_brace, &kp RBRC, 6 16, COL CUS COLW ARAQ CUSW)
 
 
-/* Text processing */
-COMBO(undo, &kp LG(Z), 20 21, COL CUS)
-COMBO(redo, &kp LG(LS(Z)), 20 22, COL CUS)
+/* Text */
+COMBO(redo, &kp LG(LS(Z)), 3 4, COL CUS)
+COMBO(undo, &kp LG(Z), 13 14, COL CUS)
+COMBO(redow, &kp LC(Y), 3 4, COLW ARAQ CUSW)
+COMBO(undow, &kp LC(Z), 13 14, COLW ARAQ CUSW)
 COMBO(select_all, &kp LG(A), 20 23, COL CUS)
-COMBO(cut, &kp LG(X), 11 21, COL CUS)
-COMBO(copy, &kp LG(C), 12 22, COL CUS)
-COMBO(paste, &kp LG(V), 21 22 23, COL CUS)
-
-COMBO(undow, &kp LC(Z), 20 21, COLW ARAQ CUSW)
-COMBO(redow, &kp LC(Y), 20 22, COLW ARAQ CUSW)
-COMBO(select_allw, &kp LC(A), 20 23, COLW ARAQ CUSW)
-COMBO(cutw, &kp LC(X), 11 21, COLW ARAQ CUSW)
-COMBO(copyw, &kp LC(C), 12 22, COLW ARAQ CUSW)
-COMBO(pastew, &kp LC(V), 21 22 23, COLW ARAQ CUSW)
-
 COMBO(caps_word, &caps_word, 31 32, COL CUS COLW ARAQ CUSW)
+COMBO(delete_word_l, &kp LA(BACKSPACE), 2 12, NAV)
+COMBO(delete_word_r, &kp LA(BACKSPACE), 17 27, NAV)
+COMBO(delete_wordw_l, &kp LC(BACKSPACE), 2 12, NAVW)
+COMBO(delete_wordw_r, &kp LC(BACKSPACE), 17 27, NAVW)
 
-/*                KEY POSITIONS
-
-  ╭────────────────────╮ ╭────────────────────╮
-  │  0   1   2   3   4 │ │  5   6   7   8   9 │
-  │ 10  11  12  13  14 │ │ 15  16  17  18  19 │
-  │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
-  ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
-              ╰────────╯ ╰────────╯            */
 
 /* misc */
 COMBO(alfred, &kp LG(SPACE), 23 26, COL CUS)
-COMBO(clpbrd, &kp LG(LC(LA(LS(Z)))), 14 15, COL CUS)
-COMBO(clpbrd1hand, &kp LG(LC(LA(LS(Z)))), 13 14, COL CUS)
+COMBO(clpbrd, &kp LG(LC(LA(LS(Z)))), 14 15, COL CUS COLW ARAQ CUSW)
 
 COMBO(pwrtys, &kp LG(SPACE), 23 26, COLW ARAQ CUSW)
-COMBO(ditto, &kp LG(LC(LA(LS(Z)))), 14 15, COLW ARAQ CUSW)
-COMBO(ditto1hand, &kp LG(LC(LA(LS(Z)))), 13 14, COLW ARAQ CUSW)
 
 COMBO(esc, &kp ESC, 23 30, COL CUS COLW ARAQ CUSW) 
 COMBO(enter, &kp ENTER, 13 23, COL CUS COLW ARAQ CUSW)
