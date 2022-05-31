@@ -86,7 +86,7 @@ v c m d w  / , q j k
      &kp A         &kp R         &kp S         &kp T         &kp G             &kp M         &kp N         &kp E         &kp I         &kp O
      &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_sym    &kp SPACE         SK(LSHIFT)    &macro_nav
+                                               &macro_nav   &kp SPACE         SK(LSHIFT)    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -99,7 +99,7 @@ v c m d w  / , q j k
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
      &kp V         &kp C         &kp M         &kp D         &kp W             &kp SLASH     &kp COMMA     &kp Q         &kp DOT       &kp K
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_sym    &kp SPACE         SK(LSHIFT)    &macro_nav
+                                               &macro_nav   &kp SPACE         SK(LSHIFT)    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -137,7 +137,7 @@ v c m d w  / , q j k
      &kp A         &kp R         &kp S         &kp T         &kp G             &kp M         &kp N         &kp E         &kp I         &kp O
      &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_symW   &kp SPACE         SK(LSHIFT)    &macro_navW
+                                               &macro_navW   &kp SPACE         SK(LSHIFT)    &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -151,7 +151,7 @@ v c m d w  / , q j k
      &kp A         &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L         &kp SEMICOLON
      &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_symW   &kp SPACE         SK(LSHIFT)    &macro_navW
+                                               &macro_navW   &kp SPACE         SK(LSHIFT)    &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -164,7 +164,7 @@ v c m d w  / , q j k
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
      &kp V         &kp C         &kp M         &kp D         &kp W             &kp SLASH     &kp COMMA     &kp Q         &kp DOT       &kp K
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_symW   &kp SPACE         SK(LSHIFT)    &macro_navW
+                                               &macro_navW   &kp SPACE         SK(LSHIFT)    &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
