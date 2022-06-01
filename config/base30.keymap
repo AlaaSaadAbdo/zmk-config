@@ -96,10 +96,10 @@ v c m d w  / , q j k
             label = "CUS";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp X         &kp F         &kp L         &kp P         &kp B             &kp V         &kp U         &kp O         &kp Y         &kp SQT
-     &kp R         &kp S         &kp N         &kp T         &kp G             &kp K         &kp A         &kp E         &kp I         &kp H
-                   &kp C         &kp M         &kp D                                         &kp COMMA     &kp DOT       &kp W
-//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+     &kp V         &kp F         &kp L         &kp P         &kp B             &kp W         &kp COMMA     &kp X         &kp K         &kp SQT
+     &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp C         &kp M         &kp D                                         &kp U         &kp O         &kp Y
+//               ╰─────────────┴─────────────┼─────────────┤                                ├─────────────┼─────────────┴─────────────╯
                                                &macro_nav    &kp SPACE         SK(LSHIFT)    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
@@ -161,9 +161,9 @@ v c m d w  / , q j k
             label = "CUSW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp X         &kp F         &kp L         &kp P         &kp B             &kp V         &kp U         &kp O         &kp Y         &kp SQT
+     &kp X         &kp F         &kp L         &kp P         &kp B             &kp V         &kp COMMA     &kp DOT       &kp W         &kp SQT
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp K         &kp A         &kp E         &kp I         &kp H
-                   &kp C         &kp M         &kp D                                         &kp COMMA     &kp DOT       &kp W
+                   &kp C         &kp M         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_navW   &kp SPACE         SK(LSHIFT)    &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
