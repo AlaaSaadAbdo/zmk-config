@@ -17,12 +17,25 @@ compatible = "zmk,combos";
     layers = <LAYERS>; \
   };
 
+#define GCOMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    timeout-ms = <25>; \
+    key-positions = <KEYPOS>; \
+  };
+
+#define ALPHA_ALL COL CUS HDT COLW CUSW ARAQ HDTW
+#define ALPHA_MAC COL CUS HDT
+#define ALPHA_WIN COLW ARAQ CUSW HDTW
+#define ALPHA_NO_QWERTY COL COLW CUS CUSW HDT HDTW
+#define ALL COL COLW CUS CUSW HDT HDTW ARAQ NAV NAVW SYM SYMW
+
 /* Missing Alphas */
-COMBO(Z, &kp Z, 21 22, COL COLW CUS CUSW) // Z 
-COMBO(Q, &kp Q, 20 21, COL COLW CUS CUSW) // Q
+COMBO(Z, &kp Z, 21 22, ALPHA_NO_QWERTY) // Z 
+COMBO(Q, &kp Q, 20 21, ALPHA_NO_QWERTY) // Q
 COMBO(Q2, &kp Q, 2 3, COL COLW CUS CUSW) // Q for vim wq
 COMBO(J, &kp J, 1 2, COL COLW CUS CUSW) // J 
-COMBO(slash, &kp SLASH, 24 25, COL COLW ARAQ CUS CUSW) // slash and ظ
+COMBO(slash, &kp SLASH, 24 25, ALPHA_ALL) // slash and ظ
 COMBO(taaa, &kp SQT, 18 19, ARAQ) // ط
 COMBO(geem, &kp LBKT, 7 8, ARAQ) // ج
 COMBO(daal, &kp RBKT, 8 9, ARAQ) // د
@@ -33,34 +46,34 @@ COMBO(dot, &kp DOT, 12 13, SYM SYMW) // .
 COMBO(comma, &kp COMMA, 11 12, SYM SYMW) // ,
 
 /* Brackets */
-COMBO(left_bracket, &kp LBKT, 1 11, COL COLW ARAQ CUS CUSW)
-COMBO(right_bracket, &kp RBKT, 8 18, COL COLW ARAQ CUS CUSW)
-COMBO(left_parenthesis, &kp LPAR, 2 12, COL COLW ARAQ CUS CUSW)
-COMBO(right_parenthesis, &kp RPAR, 7 17, COL COLW ARAQ CUS CUSW)
-COMBO(left_brace, &kp LBRC, 3 13, COL COLW ARAQ CUS CUSW)
-COMBO(right_brace, &kp RBRC, 6 16, COL COLW ARAQ CUS CUSW)
+COMBO(left_bracket, &kp LBKT, 1 11, ALPHA_ALL)
+COMBO(right_bracket, &kp RBKT, 8 18, ALPHA_ALL)
+COMBO(left_parenthesis, &kp LPAR, 2 12, ALPHA_ALL)
+COMBO(right_parenthesis, &kp RPAR, 7 17, ALPHA_ALL)
+COMBO(left_brace, &kp LBRC, 3 13, ALPHA_ALL)
+COMBO(right_brace, &kp RBRC, 6 16, ALPHA_ALL)
 
 /* Text */
-COMBO(redo, &kp LG(LS(Z)), 3 4, COL CUS)
-COMBO(undo, &kp LG(Z), 13 14, COL CUS)
-COMBO(redow, &kp LC(Y), 3 4, COLW ARAQ CUSW)
-COMBO(undow, &kp LC(Z), 13 14, COLW ARAQ CUSW)
-COMBO(caps_word, &caps_word, 27 28, COL COLW ARAQ CUS CUSW)
+COMBO(redo, &kp LG(LS(Z)), 3 4, ALPHA_MAC)
+COMBO(undo, &kp LG(Z), 13 14, ALPHA_MAC)
+COMBO(redow, &kp LC(Y), 3 4, ALPHA_WIN)
+COMBO(undow, &kp LC(Z), 13 14, ALPHA_WIN)
+COMBO(caps_word, &caps_word, 27 28, ALPHA_ALL)
 COMBO(delete_word_l, &kp LA(BACKSPACE), 2 12, NAV)
 COMBO(delete_word_r, &kp LA(BACKSPACE), 17 24, NAV)
 COMBO(delete_wordw_l, &kp LC(BACKSPACE), 2 12, NAVW)
 COMBO(delete_wordw_r, &kp LC(BACKSPACE), 17 24, NAVW)
 
 /* misc */
-COMBO(clpbrd1hand, &kp LG(LC(LA(LS(Z)))), 11 12 26, COL CUS COLW ARAQ CUSW)
-COMBO(alfred, &kp LG(SPACE), 12 13 26, COL CUS COLW ARAQ CUSW)
-COMBO(esc, &kp ESC, 22 26, COL COLW ARAQ CUS CUSW)
+COMBO(clpbrd1hand, &kp LG(LC(LA(LS(Z)))), 11 12 26, COL CUS ALPHA_WIN)
+COMBO(alfred, &kp LG(SPACE), 12 13 26, COL CUS ALPHA_WIN)
+COMBO(esc, &kp ESC, 22 26, ALPHA_ALL)
 COMBO(lock_screen, &kp LG(LC(Q)), 6 7 8, NAV)
 COMBO(lock_screenw, &kp LG(L), 6 7 8, NAVW)
-COMBO(sym1h, &macro_sym, 26 27, COL CUS)
-COMBO(sym1hw, &macro_symW, 26 27, COLW ARAQ CUSW)
-COMBO(key_repeat_r, &key_repeat, 23 24, COL COLW ARAQ CUS CUSW)
-COMBO(key_repeat_l, &key_repeat, 22 14, COL COLW ARAQ CUS CUSW)
+COMBO(sym1h, &macro_sym, 26 27, ALPHA_MAC)
+COMBO(sym1hw, &macro_symW, 26 27, ALPHA_WIN)
+COMBO(key_repeat_r, &key_repeat, 23 24, ALPHA_ALL)
+COMBO(key_repeat_l, &key_repeat, 22 14, ALPHA_ALL)
 
 /* bluetooth */
 COMBO(bt_clear, &bt BT_CLR, 11 12 13, NAV NAVW)
@@ -68,12 +81,6 @@ COMBO(bt_0, &bt BT_SEL 0, 1 2, NAV NAVW)
 COMBO(bt_1, &bt BT_SEL 1, 2 3, NAV NAVW)
 COMBO(bt_2, &bt BT_SEL 2, 3 4, NAV NAVW)
 COMBO(bt_3, &bt BT_SEL 3, 0 1, NAV NAVW)
-
-#define GCOMBO(NAME, BINDINGS, KEYPOS) \
-  combo_##NAME { \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-  };
   
 /* mac | win */
 GCOMBO(switch_to_mac, &to COL, 0 10)
@@ -82,3 +89,6 @@ GCOMBO(switch_to_ara, &to ARAQ, 8 9 19)
 
 GCOMBO(switch_to_cus_mac, &to CUS, 0 10 26)
 GCOMBO(switch_to_cus_win, &to CUSW, 9 19 29)
+
+GCOMBO(switch_to_hdt_mac, &to HDT, 1 11 26)
+GCOMBO(switch_to_hdt_win, &to HDTW, 8 18 29)
