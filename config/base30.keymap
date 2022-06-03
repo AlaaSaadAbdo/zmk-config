@@ -137,7 +137,7 @@ v c m d w  / , q j k
      &kp C         &kp S         &kp N         &kp T         &kp B             &kp K         &kp A         &kp E         &kp I         &kp H
                    &kp G         &kp M         &kp D                                         &kp X         &kp COMMA     &kp DOT
 //               ╰─────────────┴─────────────┼─────────────┤                                ├─────────────┼─────────────┴─────────────╯
-                                               &lal NAV R    &kp SPACE         SK(LSHIFT)    &macro_sym
+                                               &trans        &kp SPACE         SK(LSHIFT)    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
