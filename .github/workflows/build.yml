@@ -69,7 +69,6 @@ jobs:
       - name: West Zephyr export
         run: west zephyr-export
       - name: West Build (${{ steps.variables.outputs.display-name }})
-        run: |
         shell: bash
         run: |
           west build -s zmk/app -b ${{ matrix.board }} -- -DZMK_CONFIG=${GITHUB_WORKSPACE}/config ${{ steps.variables.outputs.extra-cmake-args }} ${{ matrix.cmake-args }} 2>&1 | tee build.log
