@@ -71,17 +71,6 @@ v c m d w  / , q j k
         global-quick-tap;
         bindings = <&kp>, <&kp>;
     };
-
-    navr: nav-r {
-        compatible = "zmk,behavior-hold-tap";
-        label = "LAYER_ALPHA";
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <200>;
-        quick-tap-ms = <125>;
-        global-quick-tap;
-        bindings = <&macro_nav>, <&kp R>;
-    };
      
     ltgt: smaller_bigger {
         compatible = "zmk,behavior-mod-morph";
@@ -107,7 +96,7 @@ v c m d w  / , q j k
             label = "COL";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp X         &kp W         &kp F         &kp P         &kp B             &kp M         &kp L     o    &kp U         &kp Y         &kp SQT
+     &kp X         &kp W         &kp F         &kp P         &kp B             &kp M         &kp L         &kp U         &kp Y         &kp SQT
      &kp A         &kp R         &kp S         &kp T         &kp G             &kp K         &kp N         &kp E         &kp I         &kp O
                    &kp V         &kp C         &kp D                                         &kp H         &kp COMMA     &kp DOT
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
@@ -133,11 +122,11 @@ v c m d w  / , q j k
             label = "HDT";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp V         &kp F         &kp L         &kp P         &kp W             &kp J         &kp U         &kp O         &kp Y         &kp SQT
-     &kp C         &kp S         &kp N         &kp T         &kp B             &kp K         &kp A         &kp E         &kp I         &kp H
-                   &kp G         &kp M         &kp D                                         &kp X         &kp COMMA     &kp DOT
+     &kp V         &kp F         &kp L         &kp P         &kp B             &kp W         &kp COMMA     &kp X         &kp K         &kp SQT
+     &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp C         &kp M         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                                ├─────────────┼─────────────┴─────────────╯
-                                               &navr        &kp SPACE         SK(LSHIFT)    &macro_sym
+                                               &macro_nav    &kp SPACE         SK(LSHIFT)    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -150,7 +139,7 @@ v c m d w  / , q j k
      SK(LCTRL)     SK(LALT)      SK(LGUI)       SK(LSHIFT)    &kp LG(A)         &kp LG(A)         &kp LEFT      &kp DOWN      &kp RIGHT     &kp LG(LC(LA(LS(P))))
                    &kp LG(X)     &kp LG(C)      &kp LG(V)                                         &kp ENTER     &kp BACKSPACE &kp TAB
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                                &trans        &trans             &trans        &trans
+                                              &trans         &trans             &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -163,7 +152,7 @@ v c m d w  / , q j k
      &kp N3        &kp N2       &kp N1         &kp N0         &kp MINUS         &kp COLON     SK(LSHIFT)    SK(LGUI)     SK(LALT)      SK(LCTRL)
                    &kp N6       &kp N5         &kp N4                                         &kp QMARK     &kp EXCL     &kp DLLR
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &trans        &trans           &trans       &trans
+                                               &trans          &trans           &trans       &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
