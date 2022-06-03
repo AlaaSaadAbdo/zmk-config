@@ -50,13 +50,6 @@ v c m d w  / , q j k
   
   behaviors {
 
-     combos {
-          #include "combosmini.dtsi"
-     };
-     macros {
-          #include "macros.dtsi"
-     };
-
     // Sticky key on tap, normal key on hold
     // Useful for modifier-clicking without the modifier remaining active
     nk: not_so_sticky_key {
@@ -68,26 +61,15 @@ v c m d w  / , q j k
         bindings = <&kp>, <&sk>;
     };
 
-    rnav: r-nav {
+    lal: layer-alpha {
         compatible = "zmk,behavior-hold-tap";
-        label = "R_NAV";
+        label = "LAYER_ALPHA";
         #binding-cells = <2>;
         flavor = "tap-preferred";
         tapping-term-ms = <150>;
         quick-tap-ms = <100>;
         global-quick-tap;
-        bindings = <&mo NAV>, <&kp R>;
-    };
-
-    rnavW: r-nav-win {
-        compatible = "zmk,behavior-hold-tap";
-        label = "R_NAV_WIN";
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <150>;
-        quick-tap-ms = <100>;
-        global-quick-tap;
-        bindings = <&mo NAVW>, <&kp R>;
+        bindings = <&mo>, <&kp>;
     };
      
     ltgt: smaller_bigger {
@@ -97,6 +79,13 @@ v c m d w  / , q j k
         bindings = <&kp LT>, <&kp GT>;
         mods = <(MOD_LSFT)>;
     };
+
+     combos {
+          #include "combosmini.dtsi"
+     };
+     macros {
+          #include "macros.dtsi"
+     };
 
   };
  
@@ -137,7 +126,7 @@ v c m d w  / , q j k
      &kp C         &kp S         &kp N         &kp T         &kp B             &kp K         &kp A         &kp E         &kp I         &kp H
                    &kp G         &kp M         &kp D                                         &kp X         &kp COMMA     &kp DOT
 //               ╰─────────────┴─────────────┼─────────────┤                                ├─────────────┼─────────────┴─────────────╯
-                                               &rnav    &kp SPACE              SK(LSHIFT)    &macro_sym
+                                       &lal &macro_nav R    &kp SPACE         SK(LSHIFT)    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -215,7 +204,7 @@ v c m d w  / , q j k
      &kp C         &kp S         &kp N         &kp T         &kp B             &kp K         &kp A         &kp E         &kp I         &kp H
                    &kp G         &kp M         &kp D                                         &kp X         &kp COMMA     &kp DOT
 //               ╰─────────────┴─────────────┼─────────────┤                                ├─────────────┼─────────────┴─────────────╯
-                                               &rnavW   &kp SPACE              SK(LSHIFT)    &macro_symW
+                                      &lal &macro_navW R    &kp SPACE         SK(LSHIFT)    &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
