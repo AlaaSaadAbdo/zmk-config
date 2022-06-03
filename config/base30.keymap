@@ -61,24 +61,13 @@ v c m d w  / , q j k
         bindings = <&kp>, <&sk>;
     };
 
-    gqt: global-quick-tap {
-        compatible = "zmk,behavior-hold-tap";
-        label = "GLOBAL_QUICK_TAP";
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <200>;
-        quick-tap-ms = <125>;
-        global-quick-tap;
-        bindings = <&kp>, <&kp>;
-    };
-
     lal: layer-alpha {
         compatible = "zmk,behavior-hold-tap";
         label = "LAYER_ALPHA";
         #binding-cells = <2>;
         flavor = "tap-preferred";
-        tapping-term-ms = <200>;
-        quick-tap-ms = <125>;
+        tapping-term-ms = <150>;
+        quick-tap-ms = <100>;
         global-quick-tap;
         bindings = <&mo>, <&kp>;
     };
@@ -137,7 +126,7 @@ v c m d w  / , q j k
      &kp C         &kp S         &kp N         &kp T         &kp B             &kp K         &kp A         &kp E         &kp I         &kp H
                    &kp G         &kp M         &kp D                                         &kp X         &kp COMMA     &kp DOT
 //               ╰─────────────┴─────────────┼─────────────┤                                ├─────────────┼─────────────┴─────────────╯
-                                               &lal NAV R    &kp SPACE         SK(LSHIFT)    &macro_sym
+                                       &lal &macro_nav R    &kp SPACE         SK(LSHIFT)    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -163,7 +152,7 @@ v c m d w  / , q j k
      &kp N3        &kp N2       &kp N1         &kp N0         &kp MINUS         &kp COLON     SK(LSHIFT)    SK(LGUI)     SK(LALT)      SK(LCTRL)
                    &kp N6       &kp N5         &kp N4                                         &kp QMARK     &kp EXCL     &kp DLLR
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &trans        &trans           &trans       &trans
+                                               &macro_nav     &trans           &trans       &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -211,11 +200,11 @@ v c m d w  / , q j k
             label = "HDTW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp V         &kp F         &kp L         &kp P         &kp B             &kp W         &kp COMMA     &kp X         &kp K         &kp SQT
-     &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
-                   &kp C         &kp M         &kp D                                         &kp U         &kp O         &kp Y
+     &kp V         &kp F         &kp L         &kp P         &kp W             &kp J         &kp U         &kp O         &kp Y         &kp SQT
+     &kp C         &kp S         &kp N         &kp T         &kp B             &kp K         &kp A         &kp E         &kp I         &kp H
+                   &kp G         &kp M         &kp D                                         &kp X         &kp COMMA     &kp DOT
 //               ╰─────────────┴─────────────┼─────────────┤                                ├─────────────┼─────────────┴─────────────╯
-                                               &macro_nav    &kp SPACE         SK(LSHIFT)    &macro_sym
+                                      &lal &macro_navW R    &kp SPACE         SK(LSHIFT)    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -241,7 +230,7 @@ v c m d w  / , q j k
      &kp N3        &kp N2       &kp N1         &kp N0         &kp MINUS         &kp COLON     SK(LSHIFT)    SK(LGUI)     SK(LALT)      SK(LCTRL)
                    &kp N6       &kp N5         &kp N4                                         &kp QMARK     &kp EXCL     &kp DLLR
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &trans          &trans           &trans       &trans
+                                               &macro_navW    &trans           &trans       &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
