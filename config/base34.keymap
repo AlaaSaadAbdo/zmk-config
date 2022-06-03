@@ -66,6 +66,17 @@ v c m d w  / , q j k
        bindings = <&kp>, <&sk>;
      };
 
+    gqt: global-quick-tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "GLOBAL_QUICK_TAP";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <200>;
+        quick-tap-ms = <125>;
+        global-quick-tap;
+        bindings = <&kp>, <&kp>;
+    };
+
      ltgt: smaller_bigger {
        compatible = "zmk,behavior-mod-morph";
        label = "SMALLER_BIGGER";

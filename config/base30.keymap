@@ -11,13 +11,15 @@
 
 #define COL 0
 #define CUS 1
-#define NAV 2
-#define SYM 3
-#define COLW 4
-#define ARAQ 5
-#define CUSW 6
-#define NAVW 7
-#define SYMW 8
+#define HDT 2
+#define NAV 3
+#define SYM 4
+#define COLW 5
+#define ARAQ 6
+#define CUSW 7
+#define HDTW 8
+#define NAVW 9
+#define SYMW 10
 
 #define SK(KEY) &nk KEY KEY
 // Keep sticky keys active for a long time so they effectively do not time out
@@ -50,22 +52,33 @@ v c m d w  / , q j k
 
     // Sticky key on tap, normal key on hold
     // Useful for modifier-clicking without the modifier remaining active
-     nk: not_so_sticky_key {
-       compatible = "zmk,behavior-hold-tap";
-       label = "NOT_SO_STICKY_KEY";
-       #binding-cells = <2>;
-       tapping_term_ms = <200>;
-       flavor = "tap-preferred";
-       bindings = <&kp>, <&sk>;
-     };
+    nk: not_so_sticky_key {
+        compatible = "zmk,behavior-hold-tap";
+        label = "NOT_SO_STICKY_KEY";
+        #binding-cells = <2>;
+        tapping_term_ms = <200>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&sk>;
+    };
 
-     ltgt: smaller_bigger {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SMALLER_BIGGER";
-            #binding-cells = <0>;
-            bindings = <&kp LT>, <&kp GT>;
-            mods = <(MOD_LSFT)>;
-        };
+    gqt: global-quick-tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "GLOBAL_QUICK_TAP";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <200>;
+        quick-tap-ms = <125>;
+        global-quick-tap;
+        bindings = <&kp>, <&kp>;
+    };
+     
+    ltgt: smaller_bigger {
+        compatible = "zmk,behavior-mod-morph";
+        label = "SMALLER_BIGGER";
+        #binding-cells = <0>;
+        bindings = <&kp LT>, <&kp GT>;
+        mods = <(MOD_LSFT)>;
+    };
 
      combos {
           #include "combosmini.dtsi"
@@ -94,6 +107,19 @@ v c m d w  / , q j k
 
         custom {
             label = "CUS";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp V         &kp F         &kp L         &kp P         &kp B             &kp W         &kp COMMA     &kp X         &kp K         &kp SQT
+     &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp C         &kp M         &kp D                                         &kp U         &kp O         &kp Y
+//               ╰─────────────┴─────────────┼─────────────┤                                ├─────────────┼─────────────┴─────────────╯
+                                               &macro_nav    &kp SPACE         SK(LSHIFT)    &macro_sym
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+        hands_down_titanium {
+            label = "HDT";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp V         &kp F         &kp L         &kp P         &kp B             &kp W         &kp COMMA     &kp X         &kp K         &kp SQT
@@ -166,6 +192,19 @@ v c m d w  / , q j k
                    &kp C         &kp M         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_navW   &kp SPACE         SK(LSHIFT)    &macro_symW
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+        hands_down_titanium_windows {
+            label = "HDTW";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp V         &kp F         &kp L         &kp P         &kp B             &kp W         &kp COMMA     &kp X         &kp K         &kp SQT
+     &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp C         &kp M         &kp D                                         &kp U         &kp O         &kp Y
+//               ╰─────────────┴─────────────┼─────────────┤                                ├─────────────┼─────────────┴─────────────╯
+                                               &macro_nav    &kp SPACE         SK(LSHIFT)    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
