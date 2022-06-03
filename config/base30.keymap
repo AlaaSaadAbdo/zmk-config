@@ -50,6 +50,13 @@ v c m d w  / , q j k
   
   behaviors {
 
+     combos {
+          #include "combosmini.dtsi"
+     };
+     macros {
+          #include "macros.dtsi"
+     };
+
     // Sticky key on tap, normal key on hold
     // Useful for modifier-clicking without the modifier remaining active
     nk: not_so_sticky_key {
@@ -90,13 +97,6 @@ v c m d w  / , q j k
         bindings = <&kp LT>, <&kp GT>;
         mods = <(MOD_LSFT)>;
     };
-
-     combos {
-          #include "combosmini.dtsi"
-     };
-     macros {
-          #include "macros.dtsi"
-     };
 
   };
  
