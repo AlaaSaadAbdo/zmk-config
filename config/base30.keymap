@@ -76,7 +76,7 @@ v c m d w  / , q j k
         tapping-term-ms = <150>;
         quick-tap-ms = <100>;
         global-quick-tap;
-        bindings = <&macro_nav>, <&kp R>;
+        bindings = <&mo NAV>, <&kp R>;
     };
 
     rnavW: r-nav-win {
@@ -87,7 +87,7 @@ v c m d w  / , q j k
         tapping-term-ms = <150>;
         quick-tap-ms = <100>;
         global-quick-tap;
-        bindings = <&macro_navW>, <&kp R>;
+        bindings = <&mo NAVW>, <&kp R>;
     };
      
     ltgt: smaller_bigger {
