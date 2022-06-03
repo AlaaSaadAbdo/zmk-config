@@ -72,7 +72,7 @@ v c m d w  / , q j k
         bindings = <&macro_nav>, <&kp R>;
     };
 
-    rnavw: r-nav-win {
+    rnavW: r-nav-win {
         compatible = "zmk,behavior-hold-tap";
         label = "R_NAV_WIN";
         #binding-cells = <2>;
