@@ -65,8 +65,8 @@ COMBO(delete_wordw_l, &kp LC(BACKSPACE), 2 12, NAVW)
 COMBO(delete_wordw_r, &kp LC(BACKSPACE), 17 24, NAVW)
 
 /* misc */
-COMBO(clipboard, &kp LG(LC(LA(LS(Z)))), 11 12 26, ALPHA_ALL)
-COMBO(launcher, &kp LG(SPACE), 12 13 26, ALPHA_ALL)
+COMBO(clipboard, &kp LG(LC(LA(LS(Z)))), 12 27, ALPHA_ALL)
+COMBO(launcher, &kp LG(SPACE), 13 27, ALPHA_ALL)
 COMBO(esc, &kp ESC, 22 26, ALPHA_ALL)
 COMBO(lock_screen, &kp LG(LC(Q)), 6 7 8, NAV)
 COMBO(lock_screenw, &kp LG(L), 6 7 8, NAVW)
