@@ -12,7 +12,7 @@ compatible = "zmk,combos";
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
   combo_##NAME { \
     bindings = <BINDINGS>; \
-    timeout-ms = <25>; \
+    timeout-ms = <30>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
   };
@@ -20,7 +20,7 @@ compatible = "zmk,combos";
 #define GCOMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
     bindings = <BINDINGS>; \
-    timeout-ms = <25>; \
+    timeout-ms = <30>; \
     key-positions = <KEYPOS>; \
   };
 
@@ -64,7 +64,8 @@ COMBO(delete_wordw_l, &kp LC(BACKSPACE), 2 12, NAVW)
 COMBO(delete_wordw_r, &kp LC(BACKSPACE), 17 24, NAVW)
 
 /* misc */
-COMBO(clipboard, &kp LG(LC(LA(LS(Z)))), 12 27, ALPHA_ALL)
+COMBO(clipboard_manager, &kp LG(LC(LA(LS(Z)))), 12 27, COL HDT COLW ARAQ HDTW)
+COMBO(clipboard, &kp LG(LC(LA(LS(Z)))), 12 21, COL HDT COLW ARAQ HDTW)
 COMBO(launcher, &kp LG(SPACE), 13 27, ALPHA_ALL)
 COMBO(esc, &kp ESC, 22 26, ALPHA_ALL)
 COMBO(lock_screen, &kp LG(LC(Q)), 6 7 8, NAV)
