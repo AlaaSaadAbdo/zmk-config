@@ -86,5 +86,5 @@ GCOMBO(switch_to_mac, &to COL, 0 10)
 GCOMBO(switch_to_win, &to COLW, 9 19)
 GCOMBO(switch_to_ara, &to ARAQ, 8 9 19)
 
-GCOMBO(switch_to_hdt_mac, &to HDT, 1 11 26)
-GCOMBO(switch_to_hdt_win, &to HDTW, 8 18 29)
+GCOMBO(switch_to_hdt_mac, &to HDT, 0 10 26)
+GCOMBO(switch_to_hdt_win, &to HDTW, 9 19 29)
