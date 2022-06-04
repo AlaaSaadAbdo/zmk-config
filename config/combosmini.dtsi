@@ -24,17 +24,16 @@ compatible = "zmk,combos";
     key-positions = <KEYPOS>; \
   };
 
-#define ALPHA_ALL COL CUS HDT COLW CUSW ARAQ HDTW
-#define ALPHA_MAC COL CUS HDT
-#define ALPHA_WIN COLW ARAQ CUSW HDTW
-#define ALPHA_NO_QWERTY COL COLW CUS CUSW HDT HDTW
-#define ALL COL COLW CUS CUSW HDT HDTW ARAQ NAV NAVW SYM SYMW
+#define ALPHA_ALL COL HDT COLW ARAQ HDTW
+#define ALPHA_MAC COL HDT
+#define ALPHA_WIN COLW ARAQ HDTW
+#define ALPHA_NO_QWERTY COL HDT COLW HDTW
 
 /* Missing Alphas */
 COMBO(Z, &kp Z, 21 22, ALPHA_NO_QWERTY) // Z 
 COMBO(Q, &kp Q, 20 21, ALPHA_NO_QWERTY) // Q
-COMBO(Q2, &kp Q, 2 3, COL COLW CUS CUSW) // Q for vim wq
-COMBO(J, &kp J, 1 2, COL COLW CUS CUSW) // J 
+COMBO(Q2, &kp Q, 2 3, COL COLW) // Q for vim wq
+COMBO(J, &kp J, 1 2, COL COLW) // J 
 COMBO(slash, &kp SLASH, 24 25, ALPHA_ALL) // slash and ظ
 COMBO(taaa, &kp SQT, 18 19, ARAQ) // ط
 COMBO(geem, &kp LBKT, 7 8, ARAQ) // ج
@@ -86,9 +85,6 @@ COMBO(bt_3, &bt BT_SEL 3, 0 1, NAV NAVW)
 GCOMBO(switch_to_mac, &to COL, 0 10)
 GCOMBO(switch_to_win, &to COLW, 9 19)
 GCOMBO(switch_to_ara, &to ARAQ, 8 9 19)
-
-GCOMBO(switch_to_cus_mac, &to CUS, 0 10 26)
-GCOMBO(switch_to_cus_win, &to CUSW, 9 19 29)
 
 GCOMBO(switch_to_hdt_mac, &to HDT, 1 11 26)
 GCOMBO(switch_to_hdt_win, &to HDTW, 8 18 29)

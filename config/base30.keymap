@@ -10,16 +10,14 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define COL 0
-#define CUS 1
-#define HDT 2
-#define NAV 3
-#define SYM 4
-#define COLW 5
-#define ARAQ 6
-#define CUSW 7
-#define HDTW 8
-#define NAVW 9
-#define SYMW 10
+#define HDT 1
+#define NAV 2
+#define SYM 3
+#define COLW 4
+#define ARAQ 5
+#define HDTW 6
+#define NAVW 7
+#define SYMW 8
 
 #define SK(KEY) &nk KEY KEY
 // Keep sticky keys active for a long time so they effectively do not time out
@@ -137,20 +135,6 @@ v c m d w  / , q j k
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
-
-        custom {
-            label = "CUS";
-            bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp V         &kp F         &kp L         &kp P         &kp B             &kp W         &kp COMMA     &kp X         &kp K         &kp SQT
-     &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
-                   &kp C         &kp M         &kp D                                         &kp U         &kp O         &kp Y
-//               ╰─────────────┴─────────────┼─────────────┤                                ├─────────────┼─────────────┴─────────────╯
-                                               &macro_nav    &kp SPACE         SK(LSHIFT)    &macro_sym
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
-        };
-
         hands_down_titanium {
             label = "HDT";
             bindings = <
@@ -210,19 +194,6 @@ v c m d w  / , q j k
      &kp X         &kp F         &kp L         &kp P         &kp B             &kp V         &kp U         &kp O         &kp Y         &kp K
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
                    &kp C         &kp M         &kp D                                         &kp COMMA     &kp SQT       &kp W
-//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_navW   &kp SPACE         SK(LSHIFT)    &macro_symW
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
-        };
-
-        custom_windows {
-            label = "CUSW";
-            bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp V         &kp F         &kp L         &kp P         &kp B             &kp W         &kp COMMA     &kp X         &kp K         &kp SQT
-     &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
-                   &kp C         &kp M         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_navW   &kp SPACE         SK(LSHIFT)    &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
