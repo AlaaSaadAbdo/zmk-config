@@ -66,7 +66,7 @@ v c m d w  / , q j k
         label = "R_NAV";
         #binding-cells = <2>;
         flavor = "tap-preferred";
-        tapping-term-ms = <160>;
+        tapping-term-ms = <150>;
         quick-tap-ms = <125>;
         global-quick-tap;
         bindings = <&macro_nav>, <&kp>;
@@ -77,7 +77,7 @@ v c m d w  / , q j k
         label = "R_NAV_WIN";
         #binding-cells = <2>;
         flavor = "tap-preferred";
-        tapping-term-ms = <160>;
+        tapping-term-ms = <150>;
         quick-tap-ms = <125>;
         global-quick-tap;
         bindings = <&macro_navW>, <&kp>;
