@@ -41,8 +41,7 @@ COMBO(daal, &kp RBKT, 8 9, ARAQ) // د
 COMBO(zthal, &kp GRAVE, 0 1, ARAQ) // ذ
 COMBO(zthal, &kp N, 23 24, ARAQ) // ى
 COMBO(YA2, &kp Z, 20 21, ARAQ) // ئ
-COMBO(dot, &kp DOT, 12 13, SYM SYMW) // .
-COMBO(comma, &kp COMMA, 11 12, SYM SYMW) // ,
+COMBO(zero, &kp N0, 12 13, SYM SYMW) // 0 for when I am using 1 hand sym
 
 /* Brackets */
 COMBO(left_bracket, &kp LBKT, 1 11, ALPHA_ALL)
