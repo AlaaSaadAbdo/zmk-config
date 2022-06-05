@@ -27,8 +27,7 @@ COMBO(Q, &kp Q, 21 22, COL CUS COLW CUSW) // Q
 COMBO(Q2, &kp Q, 2 3, COL CUS COLW CUSW) // Q for vim wq
 COMBO(J, &kp J, 1 2, COL CUS COLW CUSW) // J 
 COMBO(slash, &kp SLASH, 27 28, COL CUS COLW CUSW) // Slash
-COMBO(dot, &kp DOT, 12 13, SYM SYMW) // .
-COMBO(comma, &kp COMMA, 11 12, SYM SYMW) // ,
+COMBO(zero, &kp N0, 12 13, SYM SYMW) // 0 for when I am using 1 hand sym
 
 /* Brackets */
 COMBO(left_bracket, &kp LBKT, 1 11, COL CUS COLW ARAQ CUSW)
