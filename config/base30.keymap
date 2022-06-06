@@ -135,7 +135,7 @@ v c m d w  / , q j k
      &kp C         &kp S         &kp N         &kp T         &kp B             &kp K         &kp A         &kp E         &kp I         &kp H
                    &kp G         &kp M         &kp D                                         &kp U         &kp O         &kp Y 
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &gqtnav 0 R   &kp SPACE         SK(LSHIFT)    &gqtsym 0 BACKSPACE
+                                               &gqtnav 0 R   &kp SPACE         SK(LSHIFT)    &gqtsym 0 SPACE
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -200,7 +200,7 @@ v c m d w  / , q j k
      &kp C         &kp S         &kp N         &kp T         &kp B             &kp K         &kp A         &kp E         &kp I         &kp H
                    &kp G         &kp M         &kp D                                         &kp U         &kp O         &kp Y 
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &gqtnavw 0 R  &kp SPACE         SK(LSHIFT)    &gqtsymw 0 BACKSPACE
+                                               &gqtnavw 0 R  &kp SPACE         SK(LSHIFT)    &gqtsymw 0 SPACE
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
