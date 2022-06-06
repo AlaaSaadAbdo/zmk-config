@@ -131,9 +131,9 @@ v c m d w  / , q j k
             label = "HDT";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp V         &kp F         &kp L         &kp P         &kp W             &kp J         &kp U         &kp O         &kp Y         &kp SQT
+     &kp V         &kp F         &kp L         &kp P         &kp W             &kp J         &kp X         &kp COMMA     &kp DOT        &kp SQT
      &kp C         &kp S         &kp N         &kp T         &kp B             &kp K         &kp A         &kp E         &kp I         &kp H
-                   &kp G         &kp M         &kp D                                         &kp X         &kp COMMA     &kp DOT
+                   &kp G         &kp M         &kp D                                         &kp U         &kp O         &kp Y 
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &gqtnav 0 R   &kp SPACE         SK(LSHIFT)    &gqtsym 0 BACKSPACE
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -196,9 +196,9 @@ v c m d w  / , q j k
             label = "HDTW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp V         &kp F         &kp L         &kp P         &kp W             &kp J         &kp U         &kp O         &kp Y         &kp SQT
+     &kp V         &kp F         &kp L         &kp P         &kp W             &kp J         &kp X         &kp COMMA     &kp DOT        &kp SQT
      &kp C         &kp S         &kp N         &kp T         &kp B             &kp K         &kp A         &kp E         &kp I         &kp H
-                   &kp G         &kp M         &kp D                                         &kp X         &kp COMMA     &kp DOT
+                   &kp G         &kp M         &kp D                                         &kp U         &kp O         &kp Y 
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &gqtnavw 0 R  &kp SPACE         SK(LSHIFT)    &gqtsymw 0 BACKSPACE
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
