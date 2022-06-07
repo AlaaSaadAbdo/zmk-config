@@ -59,50 +59,6 @@ v c m d w  / , q j k
         bindings = <&kp>, <&sk>;
     };
 
-    gqtnav: gqt-nav {
-        compatible = "zmk,behavior-hold-tap";
-        label = "GQT_NAV";
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <150>;
-        quick-tap-ms = <125>;
-        global-quick-tap;
-        bindings = <&macro_nav>, <&kp>;
-    };
-
-    gqtnavw: gqt-nav-win {
-        compatible = "zmk,behavior-hold-tap";
-        label = "GQT_NAV_WIN";
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <150>;
-        quick-tap-ms = <125>;
-        global-quick-tap;
-        bindings = <&macro_navW>, <&kp>;
-    };
-
-    gqtsym: gqt-sym {
-        compatible = "zmk,behavior-hold-tap";
-        label = "GQT_SYM";
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <150>;
-        quick-tap-ms = <125>;
-        global-quick-tap;
-        bindings = <&macro_sym>, <&kp>;
-    };
-
-    gqtsymw: gqt-sym-win {
-        compatible = "zmk,behavior-hold-tap";
-        label = "gqt_SYM_WIN";
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <150>;
-        quick-tap-ms = <125>;
-        global-quick-tap;
-        bindings = <&macro_symW>, <&kp>;
-    };
-
      combos {
           #include "combosmini.dtsi"
      };
@@ -131,11 +87,11 @@ v c m d w  / , q j k
             label = "HDT";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp V         &kp F         &kp L         &kp P         &kp B             &kp J         &kp X         &kp COMMA     &kp DOT        &kp SQT
-     &kp C         &kp S         &kp N         &kp T         &kp W             &kp K         &kp A         &kp E         &kp I         &kp H
-                   &kp G         &kp M         &kp D                                         &kp U         &kp O         &kp Y 
+     &kp V         &kp F         &kp L         &kp P         &kp B             &kp W         &kp X         &kp COMMA     &kp DOT       &kp QUOT
+     &kp R         &kp S         &kp N         &kp T         &kp G             &kp K         &kp A         &kp E         &kp I         &kp H
+                   &kp C         &kp M         &kp D                                         &kp U         &kp O         &kp Y 
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &gqtnav 0 R   &kp SPACE         SK(LSHIFT)    &gqtsym 0 SPACE
+                                               &macro_nav   &kp SPACE         SK(LSHIFT)     &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -148,7 +104,7 @@ v c m d w  / , q j k
      SK(LCTRL)     SK(LALT)      SK(LGUI)       SK(LSHIFT)    &kp LG(A)         &kp LG(A)         &kp LEFT      &kp DOWN      &kp RIGHT     &kp LG(LC(LA(LS(P))))
                    &kp LG(X)     &kp LG(C)      &kp LG(V)                                         &kp ENTER     &kp BACKSPACE &kp TAB
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                                &trans        &trans            &trans       &macro_sym
+                                                &trans        &trans            &trans       &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -157,11 +113,11 @@ v c m d w  / , q j k
             label = "SYM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp COMMA      &kp N9       &kp N8        &kp N7         &kp EQUAL         &kp SEMI      &kp ASTRK     &kp BSLH     &kp SLASH     &kp GRAVE
-     &kp DOT        &kp N3       &kp N2        &kp N1         &kp MINUS         &kp COLON     SK(LSHIFT)    SK(LGUI)     SK(LALT)      SK(LCTRL)
-                    &kp N6       &kp N5        &kp N4                                         &kp QMARK     &kp EXCL     &kp DLLR
+     &none         &kp N9       &kp N8         &kp N7         &kp EQUAL         &kp SEMI      &kp ASTRK     &kp BSLH     &kp SLASH     &kp GRAVE
+     &kp N3        &kp N2       &kp N1         &kp N0         &kp MINUS         &kp COLON     SK(LSHIFT)    SK(LGUI)     SK(LALT)      SK(LCTRL)
+                   &kp N6       &kp N5         &kp N4                                         &kp QMARK     &kp EXCL     &kp DLLR
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &gqtnav 0 N0   &trans            &trans        &trans
+                                               &trans         &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -196,11 +152,11 @@ v c m d w  / , q j k
             label = "HDTW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp V         &kp F         &kp L         &kp P         &kp B             &kp J         &kp X         &kp COMMA     &kp DOT        &kp SQT
-     &kp C         &kp S         &kp N         &kp T         &kp W             &kp K         &kp A         &kp E         &kp I         &kp H
-                   &kp G         &kp M         &kp D                                         &kp U         &kp O         &kp Y 
+     &kp V         &kp F         &kp L         &kp P         &kp B             &kp W         &kp X         &kp COMMA     &kp DOT       &kp QUOT
+     &kp R         &kp S         &kp N         &kp T         &kp G             &kp K         &kp A         &kp E         &kp I         &kp H
+                   &kp C         &kp M         &kp D                                         &kp U         &kp O         &kp Y 
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &gqtnavw 0 R  &kp SPACE         SK(LSHIFT)    &gqtsymw 0 SPACE
+                                               &macro_navW  &kp SPACE         SK(LSHIFT)     &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -213,7 +169,7 @@ v c m d w  / , q j k
      SK(LGUI)      SK(LALT)      SK(LCTRL)      SK(LSHIFT)   &kp LC(A)         &kp LC(A)          &kp LEFT      &kp DOWN      &kp RIGHT     &kp LC(LA(LS(P)))
                    &kp LC(X)     &kp LC(C)      &kp LC(V)                                         &kp ENTER     &kp BACKSPACE &kp TAB
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                                &trans          &trans         &trans        &macro_symW
+                                                &trans          &trans         &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -222,11 +178,11 @@ v c m d w  / , q j k
             label = "SYMW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp COMMA     &kp N9       &kp N8        &kp N7          &kp EQUAL         &kp SEMI      &kp ASTRK     &kp BSLH     &kp SLASH     &kp GRAVE
-     &kp DOT       &kp N3       &kp N2        &kp N1          &kp MINUS         &kp COLON     SK(LSHIFT)    SK(LCTRL)     SK(LALT)      SK(LGUI)
-                   &kp N6       &kp N5        &kp N4                                          &kp QMARK     &kp EXCL     &kp DLLR
+     &none         &kp N9       &kp N8         &kp N7         &kp EQUAL         &kp SEMI      &kp ASTRK     &kp BSLH     &kp SLASH     &kp GRAVE
+     &kp N3        &kp N2       &kp N1         &kp N0         &kp MINUS         &kp COLON     SK(LSHIFT)    SK(LCTRL)    SK(LALT)      SK(LGUI)
+                   &kp N6       &kp N5         &kp N4                                         &kp QMARK     &kp EXCL     &kp DLLR
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &gqtnavw 0 N0  &trans            &trans        &trans
+                                               &trans        &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
