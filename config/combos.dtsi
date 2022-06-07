@@ -24,9 +24,6 @@ COMBO(daal, &kp RBKT, 8 9, ARAQ) // د
 COMBO(zthal, &kp GRAVE, 0 1, ARAQ) // ذ
 COMBO(Z, &kp Z, 22 23, COL CUS COLW CUSW) // Z 
 COMBO(Q, &kp Q, 21 22, COL CUS COLW CUSW) // Q
-COMBO(Q2, &kp Q, 2 3, COL CUS COLW CUSW) // Q for vim wq
-COMBO(J, &kp J, 1 2, COL CUS COLW CUSW) // J 
-COMBO(slash, &kp SLASH, 27 28, COL CUS COLW CUSW) // Slash
 COMBO(dot, &kp DOT, 12 13, SYM SYMW) // . for sym
 COMBO(comma, &kp COMMA, 11 12, SYM SYMW) // , for sym
 
@@ -46,9 +43,7 @@ COMBO(undow, &kp LC(Z), 13 14, COLW ARAQ CUSW)
 COMBO(select_all, &kp LG(A), 20 23, COL CUS)
 COMBO(caps_word, &caps_word, 31 32, COL CUS COLW ARAQ CUSW)
 COMBO(delete_word_l, &kp LA(BACKSPACE), 2 12, NAV)
-COMBO(delete_word_r, &kp LA(BACKSPACE), 17 27, NAV)
 COMBO(delete_wordw_l, &kp LC(BACKSPACE), 2 12, NAVW)
-COMBO(delete_wordw_r, &kp LC(BACKSPACE), 17 27, NAVW)
 
 /* misc */
 COMBO(alfred, &kp LG(SPACE), 23 26, COL CUS COLW ARAQ CUSW)
@@ -61,11 +56,11 @@ COMBO(sym1h, &macro_sym, 30 31, COL CUS)
 COMBO(sym1hw, &macro_symW, 30 31, COLW ARAQ CUSW)
 
 /* bluetooth */
-COMBO(bt_clear, &bt BT_CLR, 11 12 13, NAV NAVW)
-COMBO(bt_0, &bt BT_SEL 0, 1 2, NAV NAVW)
-COMBO(bt_1, &bt BT_SEL 1, 2 3, NAV NAVW)
-COMBO(bt_2, &bt BT_SEL 2, 3 4, NAV NAVW)
-COMBO(bt_3, &bt BT_SEL 3, 0 1, NAV NAVW)
+COMBO(bt_clear, &bt BT_CLR, 0 14, NAV NAVW)
+COMBO(bt_0, &bt BT_SEL 0, 0 1, NAV NAVW)
+COMBO(bt_1, &bt BT_SEL 1, 1 2, NAV NAVW)
+COMBO(bt_2, &bt BT_SEL 2, 1 3, NAV NAVW)
+COMBO(bt_3, &bt BT_SEL 3, 1 4, NAV NAVW)
 
 #define GCOMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \

@@ -59,9 +59,7 @@ COMBO(redow, &kp LC(Y), 3 4, ALPHA_WIN)
 COMBO(undow, &kp LC(Z), 13 14, ALPHA_WIN)
 COMBO(caps_word, &caps_word, 27 28, ALPHA_ALL)
 COMBO(delete_word_l, &kp LA(BACKSPACE), 2 12, NAV)
-COMBO(delete_word_r, &kp LA(BACKSPACE), 17 24, NAV)
 COMBO(delete_wordw_l, &kp LC(BACKSPACE), 2 12, NAVW)
-COMBO(delete_wordw_r, &kp LC(BACKSPACE), 17 24, NAVW)
 
 /* misc */
 COMBO(clipboard_manager, &kp LG(LC(LA(LS(Z)))), 20 21 22, ALPHA_ALL)
