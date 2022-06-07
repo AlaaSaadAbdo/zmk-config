@@ -10,12 +10,12 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define COL 0
-#define HDT 1
+#define HDN 1
 #define NAV 2
 #define SYM 3
 #define COLW 4
 #define ARAQ 5
-#define HDTW 6
+#define HDNW 6
 #define NAVW 7
 #define SYMW 8
 
@@ -83,13 +83,13 @@ v c m d w  / , q j k
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
-        hands_down_titanium {
-            label = "HDT";
+        hands_down {
+            label = "HDN";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp V         &kp F         &kp L         &kp P         &kp B             &kp W         &kp X         &kp COMMA     &kp DOT       &kp QUOT
-     &kp R         &kp S         &kp N         &kp T         &kp G             &kp K         &kp A         &kp E         &kp I         &kp H
-                   &kp C         &kp M         &kp D                                         &kp U         &kp O         &kp Y 
+     &kp W         &kp F         &kp L         &kp P         &kp B             &kp X         &kp COMMA     &kp SQT       &kp SLASH     &kp K
+     &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp C         &kp M         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_nav   &kp SPACE         SK(LSHIFT)     &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -148,13 +148,13 @@ v c m d w  / , q j k
             >;
         };
 
-        hands_down_titanium_windows {
-            label = "HDTW";
+        hands_down_windows {
+            label = "HDNW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp V         &kp F         &kp L         &kp P         &kp B             &kp W         &kp X         &kp COMMA     &kp DOT       &kp QUOT
-     &kp R         &kp S         &kp N         &kp T         &kp G             &kp K         &kp A         &kp E         &kp I         &kp H
-                   &kp C         &kp M         &kp D                                         &kp U         &kp O         &kp Y 
+     &kp W         &kp F         &kp L         &kp P         &kp B             &kp X         &kp COMMA     &kp SQT       &kp SLASH     &kp K
+     &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp C         &kp M         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_navW  &kp SPACE         SK(LSHIFT)     &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
