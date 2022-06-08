@@ -71,8 +71,8 @@ COMBO(sym1h, &macro_sym, 26 27, ALPHA_MAC)
 COMBO(sym1hw, &macro_symW, 26 27, ALPHA_WIN)
 COMBO(key_repeat_r, &key_repeat, 23 24, ALPHA_ALL)
 COMBO(key_repeat_l, &key_repeat, 22 14, ALPHA_ALL)
-COMBO(up, &kp Up, 21 22, NAV NAVW)
-COMBO(down, &kp Down, 20 21, NAV NAVW)
+COMBO(up, &kp UP, 21 22, NAV NAVW)
+COMBO(down, &kp DOWN, 20 21, NAV NAVW)
 
 /* bluetooth */
 COMBO(bt_clear, &bt BT_CLR, 0 14, NAV NAVW)
