@@ -66,6 +66,16 @@ v c m d w  / , q j k
        bindings = <&kp>, <&sk>;
      };
 
+    skq: sticky_key_quick_release {
+      compatible = "zmk,behavior-sticky-key";
+      label = "STICKY_KEY_QUICK_RELEASE";
+      #binding-cells = <1>;
+      bindings = <&kp>;
+      quick-release;
+      release-after-ms = <STICKY_KEY_TIMEOUT>;
+    };
+
+
   };
  
         keymap {
@@ -79,7 +89,7 @@ v c m d w  / , q j k
      &kp A         &kp R         &kp S         &kp T         &kp G             &kp M         &kp N         &kp E         &kp I         &kp O
      &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_nav   &kp SPACE         SK(LSHIFT)    &macro_sym
+                                               &macro_nav   &kp SPACE         &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -92,7 +102,7 @@ v c m d w  / , q j k
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp COMMA     &kp A         &kp E         &kp I         &kp H
      &kp X         &kp C         &kp M         &kp D         &kp W             &kp SLASH     &kp U         &kp O         &kp Y         &kp J
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_nav    &kp SPACE         SK(LSHIFT)    &macro_sym
+                                               &macro_nav    &kp SPACE         &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -130,7 +140,7 @@ v c m d w  / , q j k
      &kp A         &kp R         &kp S         &kp T         &kp G             &kp M         &kp N         &kp E         &kp I         &kp O
      &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_navW   &kp SPACE         SK(LSHIFT)    &macro_symW
+                                               &macro_navW   &kp SPACE         &skq LSHIFT    &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -144,7 +154,7 @@ v c m d w  / , q j k
      &kp A         &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L         &kp SEMICOLON
      &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_navW   &kp SPACE         SK(LSHIFT)    &macro_symW
+                                               &macro_navW   &kp SPACE         &skq LSHIFT    &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -157,7 +167,7 @@ v c m d w  / , q j k
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp COMMA     &kp A         &kp E         &kp I         &kp H
      &kp X         &kp C         &kp M         &kp D         &kp W             &kp SLASH     &kp U         &kp O         &kp Y         &kp J
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_navW   &kp SPACE         SK(LSHIFT)    &macro_symW
+                                               &macro_navW   &kp SPACE         &skq LSHIFT    &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };

@@ -55,6 +55,16 @@
         bindings = <&kp>, <&sk>;
     };
 
+    skq: sticky_key_quick_release {
+      compatible = "zmk,behavior-sticky-key";
+      label = "STICKY_KEY_QUICK_RELEASE";
+      #binding-cells = <1>;
+      bindings = <&kp>;
+      quick-release;
+      release-after-ms = <STICKY_KEY_TIMEOUT>;
+    };
+
+
      combos {
           #include "combosmini.dtsi"
      };
@@ -75,7 +85,7 @@
      &kp A         &kp R         &kp S         &kp T         &kp G             &kp K         &kp N         &kp E         &kp I         &kp O
                    &kp V         &kp C         &kp D                                         &kp H         &kp COMMA     &kp DOT
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_nav    &kp SPACE         SK(LSHIFT)    &macro_sym
+                                               &macro_nav    &kp SPACE         &skq LSHIFT   &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -87,7 +97,7 @@
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
                    &kp C         &kp M         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_nav   &kp SPACE         SK(LSHIFT)     &macro_sym
+                                               &macro_nav   &kp SPACE         &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -126,7 +136,7 @@
      &kp A         &kp R         &kp S         &kp T         &kp G             &kp K         &kp N         &kp E         &kp I         &kp O
                    &kp V         &kp C         &kp D                                         &kp H         &kp COMMA     &kp DOT
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_navW   &kp SPACE         SK(LSHIFT)    &macro_symW
+                                               &macro_navW   &kp SPACE         &skq LSHIFT   &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -139,7 +149,7 @@
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
                    &kp C         &kp M         &kp D                                         &kp COMMA     &kp SQT       &kp W
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_navW   &kp SPACE         SK(LSHIFT)    &macro_symW
+                                               &macro_navW   &kp SPACE         &skq LSHIFT   &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -152,7 +162,7 @@
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
                    &kp C         &kp M         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_navW  &kp SPACE         SK(LSHIFT)     &macro_symW
+                                               &macro_navW  &kp SPACE          &skq LSHIFT   &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
