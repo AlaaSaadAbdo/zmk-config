@@ -93,8 +93,8 @@
             label = "HDN";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp W         &kp F         &kp L         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp SLASH     &kp K
-     &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
+     &kp W         &kp F         &kp L         &kp P         &kp B             &kp DOT       &kp X         &kp SQT       &kp SLASH     &kp K
+     &kp R         &kp S         &kp N         &kp T         &kp G             &kp COMMA     &kp A         &kp E         &kp I         &kp H
                    &kp C         &kp M         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_nav   &kp SPACE         &skq LSHIFT    &macro_sym
@@ -158,8 +158,8 @@
             label = "HDNW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp W         &kp F         &kp L         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp SLASH     &kp K
-     &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
+     &kp W         &kp F         &kp L         &kp P         &kp B             &kp DOT       &kp X         &kp SQT       &kp SLASH     &kp K
+     &kp R         &kp S         &kp N         &kp T         &kp G             &kp COMMA     &kp A         &kp E         &kp I         &kp H
                    &kp C         &kp M         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_navW  &kp SPACE          &skq LSHIFT   &macro_symW
