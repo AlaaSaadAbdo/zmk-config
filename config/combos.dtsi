@@ -51,6 +51,8 @@ COMBO(clpbrd, &kp LG(LC(LA(LS(Z)))), 14 15, COL CUS COLW ARAQ CUSW)
 COMBO(esc, &kp ESC, 23 30, COL CUS COLW ARAQ CUSW) 
 COMBO(key_repeat_r, &key_repeat, 26 27, COL COLW ARAQ CUS CUSW)
 COMBO(key_repeat_l, &key_repeat, 23 24, COL COLW ARAQ CUS CUSW)
+COMBO(up, &kp Up, 22 23, NAV NAVW)
+COMBO(down, &kp Down, 21 22, NAV NAVW)
 
 COMBO(sym1h, &macro_sym, 30 31, COL CUS)
 COMBO(sym1hw, &macro_symW, 30 31, COLW ARAQ CUSW)
