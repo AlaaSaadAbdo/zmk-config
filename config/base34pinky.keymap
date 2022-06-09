@@ -38,9 +38,12 @@
     │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
     ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
                 ╰────────╯ ╰────────╯
-x f l p b  z u o y ' 
-r s n t g  . a e i h 
-v c m d w  / , q j k
+  ╭───────────────────────╮          ╭───────────────────────╮
+  │          0   1   2  3 │          │  4   5   6   7        │
+  │  8   9  10  11  12 13 │          │ 14  15  16  17  18  19│
+  │     20  21  22  23 24  ───╮ ╭────  25  26  27  28  29    │
+  ╰─────────────────╮  30  31 │ │ 32  33 ╭───────────────────╯
+                    ╰─────────╯ ╰────────╯           
 */
 
 / { 
@@ -111,9 +114,9 @@ v c m d w  / , q j k
             label = "NAV";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                      &kp ENTER     &kp BACKSPACE  &kp TAB       &kp DELETE    &kp LA(BACKSPACE) &none         &kp UP        &kp LG(Q)     
-&none   SK(LCTRL)     SK(LALT)      SK(LGUI)       SK(LSHIFT)    &none         &none             &kp LEFT      &kp DOWN      &kp RIGHT     &none &none
-        &none         &kp LG(X)     &kp LG(C)      &kp LG(V)     &kp LG(A)     &kp LG(A)         &kp ENTER     &kp BACKSPACE &kp TAB       &kp LG(LC(LA(LS(P))))
+                      &kp ENTER     &kp BACKSPACE  &kp TAB       &kp LA(BACKSPACE)  &kp LA(BACKSPACE) &none         &kp UP        &kp LG(Q)     
+&none   SK(LCTRL)     SK(LALT)      SK(LGUI)       SK(LSHIFT)    &kp DELETE         &none             &kp LEFT      &kp DOWN      &kp RIGHT     &none &none
+        &none         &kp LG(X)     &kp LG(C)      &kp LG(V)     &kp LG(A)          &kp LG(A)         &kp ENTER     &kp BACKSPACE &kp TAB       &kp LG(LC(LA(LS(P))))
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &trans         &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -123,9 +126,9 @@ v c m d w  / , q j k
             label = "SYM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                   &kp N9       &kp N8         &kp N7         &kp EQUAL         &kp SEMI      &kp ASTRK     &kp BSLH     &kp SLASH     
-&none   &none      &kp N2       &kp N1         &kp N0         &kp MINUS         &kp COLON     SK(LSHIFT)    SK(LGUI)     SK(LALT)      &kp GRAVE &none
-        &kp N3     &kp N6       &kp N5         &kp N4         &none             &none         &kp QMARK     &kp EXCL     &kp DLLR      SK(LCTRL) 
+                   &kp N9       &kp N8         &kp N7         &none             &none        &kp ASTRK     &kp BSLH     &kp SLASH     
+&none   &none      &kp N2       &kp N1         &kp N0         &kp EQUAL         &kp SEMI     SK(LSHIFT)    SK(LGUI)     SK(LALT)      &kp GRAVE &none
+        &kp N3     &kp N6       &kp N5         &kp N4         &kp MINUS         &kp COLON    &kp QMARK     &kp EXCL     &kp DLLR      SK(LCTRL) 
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &trans         &trans            &trans       &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -164,7 +167,7 @@ v c m d w  / , q j k
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                       &kp F         &kp L         &kp P         &kp B             &kp SEMI      &kp DOT       &kp SQT       &kp MINUS
-&kp X   &kp V         &kp S         &kp N         &kp T         &kp G             &kp COMMA     &kp A         &kp E         &kp I         &kp K  &kp X
+&kp X   &kp V         &kp S         &kp N         &kp T         &kp G             &kp COMMA     &kp A         &kp E         &kp I         &kp K  &kp J
         &kp R         &kp C         &kp M         &kp D         &kp W             &kp SLASH     &kp U         &kp O         &kp Y         &kp H
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &macro_navW   &kp SPACE         &skq LSHIFT    &macro_symW
@@ -177,9 +180,9 @@ v c m d w  / , q j k
             label = "NAVW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                     &kp ENTER     &kp BACKSPACE  &kp TAB      &kp DELETE        &kp LC(BACKSPACE)  &none         &kp UP        &kp LA(F4)    
- &none  &none        SK(LALT)      SK(LCTRL)      SK(LSHIFT)   &kp LC(A)         &kp LC(A)          &kp LEFT      &kp DOWN      &kp RIGHT     &none  &none
-     SK(LGUI)        &kp LC(X)     &kp LC(C)      &kp LC(V)    &none             &none              &kp ENTER     &kp BACKSPACE &kp TAB       &kp LC(LA(LS(P)))
+                     &kp ENTER     &kp BACKSPACE  &kp TAB      &kp LC(BACKSPACE)   &kp LC(BACKSPACE)  &none         &kp UP        &kp LA(F4)    
+ &none  &none        SK(LALT)      SK(LCTRL)      SK(LSHIFT)   &kp DELETE          &none              &kp LEFT      &kp DOWN      &kp RIGHT     &none  &none
+     SK(LGUI)        &kp LC(X)     &kp LC(C)      &kp LC(V)    &kp LC(A)           &kp LC(A)          &kp ENTER     &kp BACKSPACE &kp TAB       &kp LC(LA(LS(P)))
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &trans          &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -190,9 +193,9 @@ v c m d w  / , q j k
             label = "SYMW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                     &kp N9       &kp N8         &kp N7         &kp EQUAL         &kp SEMI      &kp ASTRK     &kp BSLH     &kp SLASH     
-&none   &none        &kp N2       &kp N1         &kp N0         &kp MINUS         &kp COLON     SK(LSHIFT)    SK(LGUI)     SK(LALT)      &kp GRAVE &none 
-        &kp N3       &kp N6       &kp N5         &kp N4         &none             &none         &kp QMARK     &kp EXCL     &kp DLLR      SK(LCTRL) 
+                        &kp N9     &kp N8       &kp N7       &none             &none         &kp ASTRK     &kp BSLH     &kp SLASH     
+&kp COMMA   &kp DOT     &kp N2     &kp N1       &kp N0       &kp EQUAL         &kp SEMI      SK(LSHIFT)    SK(LGUI)     SK(LALT)      &kp GRAVE &none 
+            &kp N3      &kp N6     &kp N5       &kp N4       &kp MINUS         &kp COLON     &kp QMARK     &kp EXCL     &kp DLLR      SK(LCTRL) 
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &trans        &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯

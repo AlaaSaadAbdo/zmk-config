@@ -1,4 +1,11 @@
-/*                KEY POSITIONS
+/* 
+  ╭───────────────────────╮          ╭───────────────────────╮
+  │          0   1   2  3 │          │  4   5   6   7        │
+  │  8   9  10  11  12 13 │          │ 14  15  16  17  18  19│
+  │     20  21  22  23 24  ───╮ ╭────  25  26  27  28  29    │
+  ╰─────────────────╮  30  31 │ │ 32  33 ╭───────────────────╯
+                    ╰─────────╯ ╰────────╯           
+*/
 
   ╭────────────────────╮ ╭────────────────────╮
   │  0   1   2   3   4 │ │  5   6   7   8   9 │
@@ -18,51 +25,49 @@ compatible = "zmk,combos";
   };
 
 /* Missing alpha */
-COMBO(taaa, &kp SQT, 18 19, ARAQ) // ط
-COMBO(geem, &kp LBKT, 7 8, ARAQ) // ج
-COMBO(daal, &kp RBKT, 8 9, ARAQ) // د
+COMBO(taaa, &kp SQT, 17 18, ARAQ) // ط
+COMBO(geem, &kp LBKT, 5 6, ARAQ) // ج
+COMBO(daal, &kp RBKT, 6 7, ARAQ) // د
 COMBO(zthal, &kp GRAVE, 0 1, ARAQ) // ذ
 COMBO(Z, &kp Z, 22 23, COL CUS COLW CUSW) // Z 
 COMBO(Q, &kp Q, 21 22, COL CUS COLW CUSW) // Q
-COMBO(dot, &kp DOT, 12 13, SYM SYMW) // . for sym
-COMBO(comma, &kp COMMA, 11 12, SYM SYMW) // , for sym
+COMBO(dot, &kp DOT, 11 12, SYM SYMW) // . for sym
+COMBO(comma, &kp COMMA, 10 11, SYM SYMW) // , for sym
 
 /* Brackets */
-COMBO(left_bracket, &kp LBKT, 1 11, COL CUS COLW ARAQ CUSW)
-COMBO(right_bracket, &kp RBKT, 8 18, COL CUS COLW ARAQ CUSW)
-COMBO(left_parenthesis, &kp LPAR, 2 12, COL CUS COLW ARAQ CUSW)
-COMBO(right_parenthesis, &kp RPAR, 7 17, COL CUS COLW ARAQ CUSW)
-COMBO(left_brace, &kp LBRC, 3 13, COL CUS COLW ARAQ CUSW)
-COMBO(right_brace, &kp RBRC, 6 16, COL CUS COLW ARAQ CUSW)
+COMBO(left_bracket, &kp LBKT, 0 10, COL CUS COLW ARAQ CUSW)
+COMBO(right_bracket, &kp RBKT, 7 17, COL CUS COLW ARAQ CUSW)
+COMBO(left_parenthesis, &kp LPAR, 1 11, COL CUS COLW ARAQ CUSW)
+COMBO(right_parenthesis, &kp RPAR, 6 16, COL CUS COLW ARAQ CUSW)
+COMBO(left_brace, &kp LBRC, 2 12, COL CUS COLW ARAQ CUSW)
+COMBO(right_brace, &kp RBRC, 5 15, COL CUS COLW ARAQ CUSW)
 
 /* Text */
-COMBO(redo, &kp LG(LS(Z)), 3 4, COL CUS)
-COMBO(undo, &kp LG(Z), 13 14, COL CUS)
-COMBO(redow, &kp LC(Y), 3 4, COLW ARAQ CUSW)
-COMBO(undow, &kp LC(Z), 13 14, COLW ARAQ CUSW)
-COMBO(select_all, &kp LG(A), 20 23, COL CUS)
+COMBO(redo, &kp LG(LS(Z)), 2 3, COL CUS)
+COMBO(undo, &kp LG(Z), 12 13, COL CUS)
+COMBO(redow, &kp LC(Y), 2 3, COLW ARAQ CUSW)
+COMBO(undow, &kp LC(Z), 12 13, COLW ARAQ CUSW)
 COMBO(caps_word, &caps_word, 31 32, COL CUS COLW ARAQ CUSW)
-COMBO(delete_word_l, &kp LA(BACKSPACE), 2 12, NAV)
-COMBO(delete_wordw_l, &kp LC(BACKSPACE), 2 12, NAVW)
+COMBO(delete_word_l, &kp LA(BACKSPACE), 1 11, NAV)
+COMBO(delete_wordw_l, &kp LC(BACKSPACE), 1 12, NAVW)
 
-/* misc */
-COMBO(alfred, &kp LG(SPACE), 23 26, COL CUS COLW ARAQ CUSW)
-COMBO(clpbrd, &kp LG(LC(LA(LS(Z)))), 14 15, COL CUS COLW ARAQ CUSW)
+COMBO(alfred, &kp LG(SPACE), 21 23, COL CUS COLW ARAQ CUSW)
+COMBO(clpbrd, &kp LG(LC(LA(LS(Z)))), 21 22 23, COL CUS COLW ARAQ CUSW)
 COMBO(esc, &kp ESC, 23 30, COL CUS COLW ARAQ CUSW) 
-COMBO(key_repeat_r, &key_repeat, 26 27, COL COLW ARAQ CUS CUSW)
+COMBO(key_repeat_r, &key_repeat, 25 26, COL COLW ARAQ CUS CUSW)
 COMBO(key_repeat_l, &key_repeat, 23 24, COL COLW ARAQ CUS CUSW)
-COMBO(up, &kp UP, 21 22, NAV NAVW)
-COMBO(down, &kp DOWN, 20 21, NAV NAVW)
+COMBO(up, &kp UP, 22 23, NAV NAVW)
+COMBO(down, &kp DOWN, 21 22, NAV NAVW)
 
 COMBO(sym1h, &macro_sym, 30 31, COL CUS)
 COMBO(sym1hw, &macro_symW, 30 31, COLW ARAQ CUSW)
 
 /* bluetooth */
-COMBO(bt_clear, &bt BT_CLR, 0 14, NAV NAVW)
-COMBO(bt_0, &bt BT_SEL 0, 0 1, NAV NAVW)
-COMBO(bt_1, &bt BT_SEL 1, 1 2, NAV NAVW)
-COMBO(bt_2, &bt BT_SEL 2, 1 3, NAV NAVW)
-COMBO(bt_3, &bt BT_SEL 3, 1 4, NAV NAVW)
+COMBO(bt_clear, &bt BT_CLR, 8 13, NAV NAVW)
+COMBO(bt_0, &bt BT_SEL 0, 9 0, NAV NAVW)
+COMBO(bt_1, &bt BT_SEL 1, 9 1, NAV NAVW)
+COMBO(bt_2, &bt BT_SEL 2, 9 2, NAV NAVW)
+COMBO(bt_3, &bt BT_SEL 3, 9 3, NAV NAVW)
 
 #define GCOMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
@@ -71,9 +76,9 @@ COMBO(bt_3, &bt BT_SEL 3, 1 4, NAV NAVW)
   };
 
 /* mac | win */
-GCOMBO(switch_to_mac, &to COL, 0 10)
-GCOMBO(switch_to_win, &to COLW, 9 19)
-GCOMBO(switch_to_ara, &to ARAQ, 8 9 19)
+GCOMBO(switch_to_mac, &to COL, 9 20)
+GCOMBO(switch_to_win, &to COLW, 18 29)
+GCOMBO(switch_to_ara, &to ARAQ, 7 18 29 )
 
-GCOMBO(switch_to_cus_mac, &to CUS, 0 10 30)
-GCOMBO(switch_to_cus_win, &to CUSW, 9 19 33)
+GCOMBO(switch_to_cus_mac, &to CUS, 8 9 20)
+GCOMBO(switch_to_cus_win, &to CUSW, 18 19 29)
