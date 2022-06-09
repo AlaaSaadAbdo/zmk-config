@@ -22,32 +22,32 @@ COMBO(taaa, &kp SQT, 17 18, ARAQ) // ط
 COMBO(geem, &kp LBKT, 5 6, ARAQ) // ج
 COMBO(daal, &kp RBKT, 6 7, ARAQ) // د
 COMBO(zthal, &kp GRAVE, 0 1, ARAQ) // ذ
-COMBO(Z, &kp Z, 22 23, COL CUS COLW CUSW) // Z 
-COMBO(Q, &kp Q, 21 22, COL CUS COLW CUSW) // Q
+COMBO(Z, &kp Z, 22 23, COL HDN COLW HDNW) // Z 
+COMBO(Q, &kp Q, 21 22, COL HDN COLW HDNW) // Q
 
 /* Brackets */
-COMBO(left_bracket, &kp LBKT, 0 10, COL CUS COLW ARAQ CUSW)
-COMBO(right_bracket, &kp RBKT, 7 17, COL CUS COLW ARAQ CUSW)
-COMBO(left_parenthesis, &kp LPAR, 1 11, COL CUS COLW ARAQ CUSW)
-COMBO(right_parenthesis, &kp RPAR, 6 16, COL CUS COLW ARAQ CUSW)
-COMBO(left_brace, &kp LBRC, 2 12, COL CUS COLW ARAQ CUSW)
-COMBO(right_brace, &kp RBRC, 5 15, COL CUS COLW ARAQ CUSW)
+COMBO(left_bracket, &kp LBKT, 0 10, COL HDN COLW ARAQ HDNW)
+COMBO(right_bracket, &kp RBKT, 7 17, COL HDN COLW ARAQ HDNW)
+COMBO(left_parenthesis, &kp LPAR, 1 11, COL HDN COLW ARAQ HDNW)
+COMBO(right_parenthesis, &kp RPAR, 6 16, COL HDN COLW ARAQ HDNW)
+COMBO(left_brace, &kp LBRC, 2 12, COL HDN COLW ARAQ HDNW)
+COMBO(right_brace, &kp RBRC, 5 15, COL HDN COLW ARAQ HDNW)
 
 /* Text */
-COMBO(redo, &kp LG(LS(Z)), 2 3, COL CUS)
-COMBO(undo, &kp LG(Z), 12 13, COL CUS)
-COMBO(redow, &kp LC(Y), 2 3, COLW ARAQ CUSW)
-COMBO(undow, &kp LC(Z), 12 13, COLW ARAQ CUSW)
-COMBO(caps_word, &caps_word, 31 32, COL CUS COLW ARAQ CUSW)
+COMBO(redo, &kp LG(LS(Z)), 2 3, COL HDN)
+COMBO(undo, &kp LG(Z), 12 13, COL HDN)
+COMBO(redow, &kp LC(Y), 2 3, COLW ARAQ HDNW)
+COMBO(undow, &kp LC(Z), 12 13, COLW ARAQ HDNW)
+COMBO(caps_word, &caps_word, 31 32, COL HDN COLW ARAQ HDNW)
 
-COMBO(alfred, &kp LG(SPACE), 21 23, COL CUS COLW ARAQ CUSW)
-COMBO(clpbrd, &kp LG(LC(LA(LS(Z)))), 21 22 23, COL CUS COLW ARAQ CUSW)
-COMBO(esc, &kp ESC, 23 30, COL CUS COLW ARAQ CUSW) 
+COMBO(alfred, &kp LG(SPACE), 21 23, COL HDN COLW ARAQ HDNW)
+COMBO(clpbrd, &kp LG(LC(LA(LS(Z)))), 21 22 23, COL HDN COLW ARAQ HDNW)
+COMBO(esc, &kp ESC, 23 30, COL HDN COLW ARAQ HDNW) 
 COMBO(up, &kp UP, 22 23, NAV NAVW)
 COMBO(down, &kp DOWN, 21 22, NAV NAVW)
 
-COMBO(sym1h, &macro_sym, 30 31, COL CUS)
-COMBO(sym1hw, &macro_symW, 30 31, COLW ARAQ CUSW)
+COMBO(sym1h, &macro_sym, 30 31, COL HDN)
+COMBO(sym1hw, &macro_symW, 30 31, COLW ARAQ HDNW)
 
 /* bluetooth */
 COMBO(bt_clear, &bt BT_CLR, 8 13, NAV NAVW)
@@ -67,5 +67,5 @@ GCOMBO(switch_to_mac, &to COL, 9 20)
 GCOMBO(switch_to_win, &to COLW, 18 29)
 GCOMBO(switch_to_ara, &to ARAQ, 7 18 29 )
 
-GCOMBO(switch_to_cus_mac, &to CUS, 8 9 20)
-GCOMBO(switch_to_cus_win, &to CUSW, 18 19 29)
+GCOMBO(switch_to_cus_mac, &to HDN, 8 9 20)
+GCOMBO(switch_to_cus_win, &to HDNW, 18 19 29)

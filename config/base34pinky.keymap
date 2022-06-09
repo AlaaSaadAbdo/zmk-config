@@ -10,12 +10,12 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define COL 0
-#define CUS 1
+#define HDN 1
 #define NAV 2
 #define SYM 3
 #define COLW 4
 #define ARAQ 5
-#define CUSW 6
+#define HDNW 6
 #define NAVW 7
 #define SYMW 8
 
@@ -91,12 +91,12 @@
             >;
         };
 
-        custom {
-            label = "CUS";
+        handsdown {
+            label = "HDN";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                       &kp F         &kp L         &kp P         &kp B             &kp SEMI      &kp DOT       &kp SQT       &kp MINUS
-&kp X   &kp V         &kp S         &kp N         &kp T         &kp G             &kp COMMA     &kp A         &kp E         &kp I         &kp K  &kp X
+&kp X   &kp V         &kp S         &kp N         &kp T         &kp G             &kp COMMA     &kp A         &kp E         &kp I         &kp K  &kp J
         &kp R         &kp C         &kp M         &kp D         &kp W             &kp SLASH     &kp U         &kp O         &kp Y         &kp H
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &macro_nav    &kp SPACE         &skq LSHIFT    &macro_sym
@@ -156,8 +156,8 @@
             >;
         };
 
-          custom_windows {
-            label = "CUSW";
+          handsdown_windows {
+            label = "HDNW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                       &kp F         &kp L         &kp P         &kp B             &kp SEMI      &kp DOT       &kp SQT       &kp MINUS
