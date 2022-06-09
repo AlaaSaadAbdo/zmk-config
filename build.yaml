@@ -27,11 +27,15 @@ include:
   #   shield: battamini_left
   # - board: nice_nano_v2
   #   shield: battamini_right
-  # - board: nice_nano_v2
-  #   shield: battoota_left
-  # - board: nice_nano_v2
-  #   shield: battoota_right
+  - board: nice_nano_v2
+    shield: battoota_left
+  - board: nice_nano_v2
+    shield: battoota_right
   - board: nice_nano_v2
     shield: battootaone_left
   - board: nice_nano_v2
     shield: battootaone_right
+  - board: nice_nano_v2
+    shield: basbousa_left
+  - board: nice_nano_v2
+    shield: basbousa_right
