@@ -51,10 +51,10 @@ COMBO(sym1hw, &macro_symW, 30 31, COLW ARAQ CUSW)
 
 /* bluetooth */
 COMBO(bt_clear, &bt BT_CLR, 8 13, NAV NAVW)
-COMBO(bt_0, &bt BT_SEL 0, 9 0, NAV NAVW)
-COMBO(bt_1, &bt BT_SEL 1, 9 1, NAV NAVW)
-COMBO(bt_2, &bt BT_SEL 2, 9 2, NAV NAVW)
-COMBO(bt_3, &bt BT_SEL 3, 9 3, NAV NAVW)
+COMBO(bt_0, &bt BT_SEL 0, 0 1, NAV NAVW)
+COMBO(bt_1, &bt BT_SEL 1, 1 2, NAV NAVW)
+COMBO(bt_2, &bt BT_SEL 2, 2 3, NAV NAVW)
+COMBO(bt_3, &bt BT_SEL 3, 0 9, NAV NAVW)
 
 #define GCOMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
