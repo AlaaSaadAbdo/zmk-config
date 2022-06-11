@@ -108,9 +108,9 @@
             label = "NAV";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                      &kp ENTER     &kp BACKSPACE  &kp TAB       &kp LA(BACKSPACE)  &kp LA(BACKSPACE) &none         &kp UP        &kp LG(Q)     
+                    &kp ENTER     &kp BACKSPACE  &kp TAB       &kp LA(BACKSPACE)  &kp LA(BACKSPACE) &none         &kp UP        &kp LG(Q)     
 &none   &none       SK(LALT)      SK(LGUI)       SK(LSHIFT)    &kp DELETE         &none             &kp LEFT      &kp DOWN      &kp RIGHT     &none &none
-        SK(LCTL)         &kp LG(X)     &kp LG(C)      &kp LG(V)     &kp LG(A)          &kp LG(A)         &kp ENTER     &kp BACKSPACE &kp TAB       &kp LG(LC(LA(LS(P))))
+        SK(LCTL)    &kp LG(X)     &kp LG(C)      &kp LG(V)     &kp LG(A)          &kp LG(A)         &kp ENTER     &kp BACKSPACE &kp TAB       &kp LG(LC(LA(LS(P))))
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &trans         &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -121,8 +121,8 @@
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                       &kp N9       &kp N8         &kp N7         &none             &none        &kp ASTRK     &kp BSLH     &kp SLASH     
-&kp COMMA  &kp DOT    &kp N2       &kp N1         &kp N0         &kp EQUAL         &kp SEMI     SK(LSHIFT)    SK(LGUI)     SK(LALT)      &kp GRAVE &none
-           &kp N3     &kp N6       &kp N5         &kp N4         &kp MINUS         &kp COLON    &kp QMARK     &kp EXCL     &kp DLLR      SK(LCTRL) 
+&kp COMMA  &kp DOT    &kp N2       &kp N1         &kp N0         &kp MINUS         &kp SEMI     SK(LSHIFT)    SK(LGUI)     SK(LALT)      &kp GRAVE &none
+           &kp N3     &kp N6       &kp N5         &kp N4         &kp EQUAL         &kp COLON    &kp QMARK     &kp EXCL     &kp DLLR      SK(LCTRL) 
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &trans         &trans            &trans       &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -188,8 +188,8 @@
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                         &kp N9     &kp N8       &kp N7       &none             &none         &kp ASTRK     &kp BSLH     &kp SLASH     
-&kp COMMA   &kp DOT     &kp N2     &kp N1       &kp N0       &kp EQUAL         &kp SEMI      SK(LSHIFT)    SK(LCTRL)     SK(LALT)     &kp GRAVE &none 
-            &kp N3      &kp N6     &kp N5       &kp N4       &kp MINUS         &kp COLON     &kp QMARK     &kp EXCL     &kp DLLR      SK(LGUI) 
+&kp COMMA   &kp DOT     &kp N2     &kp N1       &kp N0       &kp MINUS         &kp SEMI      SK(LSHIFT)    SK(LCTRL)     SK(LALT)     &kp GRAVE &none 
+            &kp N3      &kp N6     &kp N5       &kp N4       &kp EQUAL         &kp COLON     &kp QMARK     &kp EXCL     &kp DLLR      SK(LGUI) 
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &trans        &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
