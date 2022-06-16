@@ -22,10 +22,8 @@ COMBO(taaa, &kp SQT, 17 18, ARAQ) // ط
 COMBO(geem, &kp LBKT, 5 6, ARAQ) // ج
 COMBO(daal, &kp RBKT, 6 7, ARAQ) // د
 COMBO(zthal, &kp GRAVE, 0 1, ARAQ) // ذ
-COMBO(Z, &kp Z, 22 23, COL HDN COLW HDNW) // Z 
-COMBO(Q, &kp Q, 1 2, COL HDN COLW HDNW) // Q
-COMBO(V, &kp V, 21 22, COL HDN COLW HDNW) // V
-COMBO(J, &kp J, 0 1, COL HDN COLW HDNW) // J
+// COMBO(Z, &kp Z, 22 23, COL HDN COLW HDNW) // Z 
+// COMBO(Q, &kp Q, 21 22, COL HDN COLW HDNW) // Q
 
 /* Brackets */
 COMBO(left_bracket, &kp LBKT, 0 10, COL HDN COLW ARAQ HDNW)
