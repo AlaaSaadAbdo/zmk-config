@@ -9,15 +9,13 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define COL 0
-#define HDN 1
-#define NAV 2
-#define SYM 3
-#define COLW 4
-#define ARAQ 5
-#define HDNW 6
-#define NAVW 7
-#define SYMW 8
+#define HDN 0
+#define NAV 1
+#define SYM 2
+#define HDNW 3
+#define ARAQ 4
+#define NAVW 5
+#define SYMW 6
 
 #define SK(KEY) &nk KEY KEY
 // Keep sticky keys active for a long time so they effectively do not time out
@@ -78,19 +76,6 @@
         keymap {
                 compatible = "zmk,keymap";
                       
-        colemak {
-            label = "COL";
-            bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                     &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y
-&kp Q  &kp Z         &kp R         &kp S         &kp T         &kp G             &kp M         &kp N         &kp E         &kp I         &kp SQT &kp SLASH
-       &kp A         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp O
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_nav   &kp SPACE         &skq LSHIFT    &macro_sym
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
-        };
-
         handsdown {
             label = "HDN";
             bindings = <
@@ -129,19 +114,18 @@
             >;
         };
 
-        colemak_windows {
-            label = "COLW";
+        handsdown_windows {
+            label = "HDNW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                     &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y
-&kp Q  &kp Z         &kp R         &kp S         &kp T         &kp G             &kp M         &kp N         &kp E         &kp I         &kp SQT &kp SLASH
-       &kp A         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp O
+                      &kp F         &kp L         &kp P         &kp B             &kp SLASH     &kp X         &kp SQT       &kp J
+&kp Z   &kp W         &kp S         &kp N         &kp T         &kp G             &kp COMMA     &kp A         &kp E         &kp I         &kp K  &kp Q
+        &kp R         &kp C         &kp M         &kp D         &kp V             &kp DOT       &kp U         &kp O         &kp Y         &kp H
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &macro_navW   &kp SPACE         &skq LSHIFT    &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
-
 
         arabic_qwerty {
             label = "ARAQ";
@@ -155,20 +139,6 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
-
-          handsdown_windows {
-            label = "HDNW";
-            bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                      &kp F         &kp L         &kp P         &kp B             &kp SLASH     &kp X         &kp SQT       &kp J
-&kp Z   &kp W         &kp S         &kp N         &kp T         &kp G             &kp COMMA     &kp A         &kp E         &kp I         &kp K  &kp Q
-        &kp R         &kp C         &kp M         &kp D         &kp V             &kp DOT       &kp U         &kp O         &kp Y         &kp H
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_navW   &kp SPACE         &skq LSHIFT    &macro_symW
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
-        };
-
 
         navigation_windows {
             label = "NAVW";
