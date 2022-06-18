@@ -30,8 +30,8 @@ compatible = "zmk,combos";
 #define ALPHA_NO_QWERTY HDN HDNW
 
 /* Missing Alphas */
-COMBO(Z, &kp Z, 21 22, ALPHA_NO_QWERTY) // Z 
-COMBO(Q, &kp Q, 1 2, ALPHA_NO_QWERTY) // Q
+COMBO(Q, &kp Q, 21 22, ALPHA_NO_QWERTY) // Q 
+COMBO(Z, &kp Z, 1 2, ALPHA_NO_QWERTY) // Z
 COMBO(V, &kp V, 20 21, ALPHA_NO_QWERTY) // V
 COMBO(slash, &kp SLASH, 24 25, ALPHA_ALL) // slash and ظ
 COMBO(taaa, &kp SQT, 18 19, ARAQ) // ط
