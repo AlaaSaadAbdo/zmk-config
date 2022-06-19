@@ -27,8 +27,8 @@ COMBO(taaa, &kp SQT, 17 18, ARAQ) // ط
 COMBO(geem, &kp LBKT, 5 6, ARAQ) // ج
 COMBO(daal, &kp RBKT, 6 7, ARAQ) // د
 COMBO(zthal, &kp GRAVE, 0 1, ARAQ) // ذ
-// COMBO(Z, &kp Z, 22 23, ALPHA_NO_QWERTY) // Z 
-// COMBO(Q, &kp Q, 21 22, ALPHA_NO_QWERTY) // Q
+COMBO(dot, &kp DOT, 11 12, SYM SYMW) // . for sym
+COMBO(comma, &kp COMMA, 12 13, SYM SYMW) // , for sym
 
 /* Brackets */
 COMBO(left_bracket, &kp LBKT, 0 10, ALPHA_ALL)
