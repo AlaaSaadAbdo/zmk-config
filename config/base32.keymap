@@ -104,9 +104,9 @@
             label = "SYM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &kp DOT    &kp N9       &kp N8         &kp N7         &kp COMMA         &none        &kp ASTRK     &kp BSLH     &kp SLASH     
-          &kp N3     &kp N2       &kp N1         &kp N0         &kp MINUS         &kp SEMI     SK(LSHIFT)    SK(LGUI)     SK(LALT)      &kp GRAVE
-                     &kp N6       &kp N5         &kp N4         &kp EQUAL         &kp COLON    &kp QMARK     &kp EXCL     &kp DLLR      SK(LCTRL) 
+          &kp DOT    &kp N9       &kp N8         &kp N7         &kp COMMA         &none        &kp ASTRK     &kp BSLH     &kp SLASH     &kp GRAVE
+          &kp N3     &kp N2       &kp N1         &kp N0         &kp MINUS         &kp SEMI     SK(LSHIFT)    SK(LGUI)     SK(LALT)      SK(LCTRL)
+                     &kp N6       &kp N5         &kp N4         &kp EQUAL         &kp COLON    &kp QMARK     &kp EXCL     &kp DLLR       
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &trans         &trans            &trans       &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
