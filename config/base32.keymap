@@ -104,7 +104,7 @@
             label = "SYM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-          &kp DOT    &kp N9       &kp N8         &kp N7         &none             &none        &kp ASTRK     &kp BSLH     &kp SLASH     
+          &kp DOT    &kp N9       &kp N8         &kp N7         &kp COMMA         &none        &kp ASTRK     &kp BSLH     &kp SLASH     
           &kp N3     &kp N2       &kp N1         &kp N0         &kp MINUS         &kp SEMI     SK(LSHIFT)    SK(LGUI)     SK(LALT)      &kp GRAVE
                      &kp N6       &kp N5         &kp N4         &kp EQUAL         &kp COLON    &kp QMARK     &kp EXCL     &kp DLLR      SK(LCTRL) 
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
@@ -143,7 +143,7 @@
             label = "SYMW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-            &kp DOT     &kp N9     &kp N8       &kp N7       &none             &none         &kp ASTRK     &kp BSLH     &kp SLASH      &kp GRAVE      
+            &kp DOT     &kp N9     &kp N8       &kp N7       &kp COMMA         &none         &kp ASTRK     &kp BSLH     &kp SLASH      &kp GRAVE      
             &kp N3      &kp N2     &kp N1       &kp N0       &kp MINUS         &kp SEMI      SK(LSHIFT)    SK(LCTRL)     SK(LALT)      SK(LGUI) 
                         &kp N6     &kp N5       &kp N4       &kp EQUAL         &kp COLON     &kp QMARK     &kp EXCL     &kp DLLR
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
