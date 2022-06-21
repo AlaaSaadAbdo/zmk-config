@@ -1,0 +1,19 @@
+# Copyright (c) 2022 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_KONAFA_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "Konafa"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_KONAFA_LEFT || SHIELD_KONAFA_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif
