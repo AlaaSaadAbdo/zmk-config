@@ -32,7 +32,6 @@ compatible = "zmk,combos";
 /* Missing Alphas */
 COMBO(Q, &kp Q, 21 22, ALPHA_NO_QWERTY) // Q 
 COMBO(Z, &kp Z, 20 21, ALPHA_NO_QWERTY) // Z
-COMBO(slash, &kp SLASH, 26 27, ALPHA_ALL) // slash
 COMBO(dot, &kp DOT, 12 13, SYM SYMW) // . for sym
 COMBO(comma, &kp COMMA, 11 12, SYM SYMW) // , for sym
 
