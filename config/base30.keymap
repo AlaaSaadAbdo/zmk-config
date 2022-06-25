@@ -10,12 +10,14 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define HDN 0
-#define NAV 1
-#define SYM 2
-#define HDNW 3
-#define ARAQ 4
-#define NAVW 5
-#define SYMW 6
+#define HDNR 1
+#define NAV 2
+#define SYM 3
+#define HDNW 4
+#define HDNWR 5
+#define ARAQ 6
+#define NAVW 7
+#define SYMW 8
 
 #define SK(KEY) &nk KEY KEY
 // Keep sticky keys active for a long time so they effectively do not time out
@@ -88,6 +90,19 @@
             >;
         };
 
+        handsdown_reversed {
+            label = "HDNR";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp K         &kp J         &kp SQT       &kp X          &kp DOT          &kp B          &kp P         &kp L        &kp F         &kp W                           
+     &kp H         &kp I         &kp E         &kp A          &kp COMMA        &kp G          &kp T         &kp N        &kp S         &kp R                                   
+                   &kp Y         &kp O         &kp U                                          &kp D         &kp M        &kp C                                   
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                               &macro_nav    &kp SPACE         &skq LSHIFT    &macro_sym
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
         navitation {
             label = "NAV";
             bindings = <
@@ -126,6 +141,20 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
+
+        handsdown_reversed_windows {
+            label = "HDNWR";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp K         &kp J         &kp SQT       &kp X          &kp DOT          &kp B          &kp P         &kp L        &kp F         &kp W                           
+     &kp H         &kp I         &kp E         &kp A          &kp COMMA        &kp G          &kp T         &kp N        &kp S         &kp R                                   
+                   &kp Y         &kp O         &kp U                                          &kp D         &kp M        &kp C                                   
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                               &macro_navW    &kp SPACE         &skq LSHIFT    &macro_symW
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
 
         arabic_qwerty {
             label = "ARAQ";
