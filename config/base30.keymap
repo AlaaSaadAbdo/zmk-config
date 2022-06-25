@@ -94,9 +94,9 @@
             label = "HDNR";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp K         &kp J         &kp SQT       &kp X          &kp DOT          &kp B          &kp P         &kp L        &kp F         &kp W                           
+     &kp K         &kp J         &kp SQT       &kp X          &kp DOT          &kp B          &kp P         &kp M        &kp F         &kp W                           
      &kp H         &kp I         &kp E         &kp A          &kp COMMA        &kp G          &kp T         &kp N        &kp S         &kp R                                   
-                   &kp Y         &kp O         &kp U                                          &kp D         &kp M        &kp C                                   
+                   &kp Y         &kp O         &kp U                                          &kp D         &kp L        &kp C                                   
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &macro_nav    &kp SPACE         &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -146,9 +146,9 @@
             label = "HDNWR";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp K         &kp J         &kp SQT       &kp X          &kp DOT          &kp B          &kp P         &kp L        &kp F         &kp W                           
+     &kp K         &kp J         &kp SQT       &kp X          &kp DOT          &kp B          &kp P         &kp M        &kp F         &kp W                           
      &kp H         &kp I         &kp E         &kp A          &kp COMMA        &kp G          &kp T         &kp N        &kp S         &kp R                                   
-                   &kp Y         &kp O         &kp U                                          &kp D         &kp M        &kp C                                   
+                   &kp Y         &kp O         &kp U                                          &kp D         &kp L        &kp C                                   
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &macro_navW    &kp SPACE         &skq LSHIFT    &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
