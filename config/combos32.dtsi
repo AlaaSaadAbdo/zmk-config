@@ -24,9 +24,9 @@ compatible = "zmk,combos";
     key-positions = <KEYPOS>; \
   };
 
-#define ALPHA_ALL HDN HDNW
-#define ALPHA_MAC HDN
-#define ALPHA_WIN HDNW
+#define ALPHA_ALL HDN HDNW HDNR HDNWR
+#define ALPHA_MAC HDN HDNR
+#define ALPHA_WIN HDNW HDNWR
 #define ALPHA_NO_QWERTY HDN HDNW
 
 /* Missing Alphas */
