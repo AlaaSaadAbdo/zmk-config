@@ -33,9 +33,9 @@ compatible = "zmk,combos";
 COMBO(Q, &kp Q, 21 22, ALPHA_NO_QWERTY) // Q 
 COMBO(Z, &kp Z, 1 2, ALPHA_NO_QWERTY) // Z
 COMBO(V, &kp V, 20 21, ALPHA_NO_QWERTY) // V
-COMBO(Q, &kp Q, 23 24, HDNR HDNWR) // Q 
-COMBO(Z, &kp Z, 7 8, HDNR HDNWR) // Z
-COMBO(V, &kp V, 24 25, HDNR HDNWR) // V
+COMBO(QR, &kp Q, 23 24, HDNR HDNWR) // Q 
+COMBO(ZR, &kp Z, 7 8, HDNR HDNWR) // Z
+COMBO(VR, &kp V, 24 25, HDNR HDNWR) // V
 COMBO(slash, &kp SLASH, 20 21, HDNR HDNWR) // slash on mirrord Hands Down
 COMBO(slash, &kp SLASH, 24 25, ALPHA_NO_QWERTY) // slash and ظ
 COMBO(taaa, &kp SQT, 18 19, ARAQ) // ط
