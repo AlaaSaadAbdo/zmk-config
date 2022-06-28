@@ -37,13 +37,7 @@ COMBO(QR, &kp Q, 23 24, HDNR HDNWR) // Q
 COMBO(ZR, &kp Z, 7 8, HDNR HDNWR) // Z
 COMBO(VR, &kp V, 24 25, HDNR HDNWR) // V
 COMBO(slashR, &kp SLASH, 20 21, HDNR HDNWR) // slash on mirrord Hands Down
-COMBO(slash, &kp SLASH, 24 25, ALPHA_NO_QWERTY) // slash and ظ
-COMBO(taaa, &kp SQT, 18 19, ARAQ) // ط
-COMBO(geem, &kp LBKT, 7 8, ARAQ) // ج
-COMBO(daal, &kp RBKT, 8 9, ARAQ) // د
-COMBO(zthal, &kp GRAVE, 0 1, ARAQ) // ذ
-COMBO(zthal, &kp N, 23 24, ARAQ) // ى
-COMBO(YA2, &kp Z, 20 21, ARAQ) // ئ
+COMBO(slash, &kp SLASH, 24 25, ALPHA_NO_QWERTY) // slash
 COMBO(dot, &kp DOT, 12 13, SYM SYMW) // . for sym
 COMBO(comma, &kp COMMA, 11 12, SYM SYMW) // , for sym
 
@@ -89,4 +83,3 @@ GCOMBO(switch_to_HDN_mac, &to HDN, 0 10 26)
 GCOMBO(switch_to_HDN_win, &to HDNW, 9 19 29)
 GCOMBO(switch_to_HDNR, &to HDNR, 1 11 26)
 GCOMBO(switch_to_HDNWR, &to HDNWR, 8 18 29)
-GCOMBO(switch_to_ara, &to ARAQ, 8 9 19)
