@@ -65,6 +65,10 @@ COMBO(key_repeat_r, &key_repeat, 15 23, ALPHA_ALL)
 COMBO(key_repeat_l, &key_repeat, 14 22, ALPHA_ALL)
 COMBO(up, &kp UP, 20 21, NAV NAVW)
 COMBO(down, &kp DOWN, 21 22, NAV NAVW)
+COMBO(new_tab, &kp LG(T), 1 11, NAV)
+COMBO(close_tab, &kp LG(W), 3 13, NAV)
+COMBO(new_tab_w, &kp LC(T), 1 11, NAVW)
+COMBO(close_tab_w, &kp LC(W), 3 13, NAVW)
 
 /* bluetooth */
 COMBO(bt_clear, &bt BT_CLR, 0 14, NAV NAVW)
