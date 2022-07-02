@@ -24,15 +24,20 @@ compatible = "zmk,combos";
     key-positions = <KEYPOS>; \
   };
 
-#define ALPHA_ALL HDN HDNW
-#define ALPHA_MAC HDN
-#define ALPHA_WIN HDNW
+#define ALPHA_ALL HDN HDNW HDNR HDNWR
+#define ALPHA_MAC HDN HDNR
+#define ALPHA_WIN HDNW HDNWR
+#define ALPHA_NO_QWERTY HDN HDNW
 
 /* Missing Alphas */
-COMBO(QR, &kp Q, 23 24, ALPHA_ALL) // Q 
-COMBO(ZR, &kp Z, 7 8, ALPHA_ALL) // Z
-COMBO(VR, &kp V, 24 25, ALPHA_ALL) // V
-COMBO(slashR, &kp SLASH, 20 21, ALPHA_ALL) // slash on mirrord Hands Down
+COMBO(Q, &kp Q, 21 22, ALPHA_NO_QWERTY) // Q 
+COMBO(Z, &kp Z, 1 2, ALPHA_NO_QWERTY) // Z
+COMBO(V, &kp V, 20 21, ALPHA_NO_QWERTY) // V
+COMBO(QR, &kp Q, 23 24, HDNR HDNWR) // Q 
+COMBO(ZR, &kp Z, 7 8, HDNR HDNWR) // Z
+COMBO(VR, &kp V, 24 25, HDNR HDNWR) // V
+COMBO(slashR, &kp SLASH, 20 21, HDNR HDNWR) // slash on mirrord Hands Down
+COMBO(slash, &kp SLASH, 24 25, ALPHA_NO_QWERTY) // slash
 COMBO(dot, &kp DOT, 12 13, SYM SYMW) // . for sym
 COMBO(comma, &kp COMMA, 11 12, SYM SYMW) // , for sym
 
@@ -80,3 +85,5 @@ COMBO(bt_3, &bt BT_SEL 3, 3 4, NAV NAVW)
 /* mac | win */
 GCOMBO(switch_to_HDN_mac, &to HDN, 0 10 26)
 GCOMBO(switch_to_HDN_win, &to HDNW, 9 19 29)
+GCOMBO(switch_to_HDNR, &to HDNR, 1 11 26)
+GCOMBO(switch_to_HDNWR, &to HDNWR, 8 18 29)

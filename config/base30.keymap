@@ -10,11 +10,13 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define HDN 0
-#define NAV 1
-#define SYM 2
-#define HDNW 3
-#define NAVW 4
-#define SYMW 5
+#define HDNR 1
+#define NAV 2
+#define SYM 3
+#define HDNW 4
+#define HDNWR 5
+#define NAVW 6
+#define SYMW 7
 
 #define SK(KEY) &nk KEY KEY
 // Keep sticky keys active for a long time so they effectively do not time out
@@ -78,6 +80,19 @@
             label = "HDN";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp W         &kp F         &kp M         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp J         &kp K
+     &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
+//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+                                               &macro_nav   &kp SPACE         &skq LSHIFT    &macro_sym
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+        handsdown_reversed {
+            label = "HDNR";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp K         &kp J         &kp SQT       &kp X          &kp COMMA        &kp B          &kp P         &kp M        &kp F         &kp W                           
      &kp H         &kp I         &kp E         &kp A          &kp DOT          &kp G          &kp T         &kp N        &kp S         &kp R                                   
                    &kp Y         &kp O         &kp U                                          &kp D         &kp L        &kp C                                   
@@ -117,9 +132,22 @@
             label = "HDNW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp W         &kp F         &kp M         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp J         &kp K
+     &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
+//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+                                               &macro_navW  &kp SPACE          &skq LSHIFT   &macro_symW
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+        handsdown_reversed_windows {
+            label = "HDNWR";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp K         &kp J         &kp SQT       &kp X          &kp COMMA         &kp B          &kp P         &kp M        &kp F         &kp W                           
      &kp H         &kp I         &kp E         &kp A          &kp DOT           &kp G          &kp T         &kp N        &kp S         &kp R                                   
-                   &kp Y         &kp O         &kp U                                           &kp D         &kp L        &kp C                                   
+                   &kp Y         &kp O         &kp U                                          &kp D         &kp L        &kp C                                   
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &macro_navW    &kp SPACE         &skq LSHIFT    &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
