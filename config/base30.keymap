@@ -10,11 +10,9 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define HDN 0
-#define HDNR 1
 #define NAV 2
 #define SYM 3
 #define HDNW 4
-#define HDNWR 5
 #define NAVW 6
 #define SYMW 7
 
@@ -27,7 +25,7 @@
 };
 
 &caps_word {
-  continue-list = <UNDERSCORE MINUS BACKSPACE>;
+  continue-list = <UNDERSCORE MINUS BACKSPACE K_CANCEL>;
 };
 
 /*                KEY POSITIONS
