@@ -27,7 +27,7 @@
 };
 
 &caps_word {
-  continue-list = <UNDERSCORE MINUS BACKSPACE K_CANCEL>;
+  continue-list = <UNDERSCORE MINUS BACKSPACE>;
 };
 
 /*                KEY POSITIONS
