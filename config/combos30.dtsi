@@ -24,20 +24,15 @@ compatible = "zmk,combos";
     key-positions = <KEYPOS>; \
   };
 
-#define ALPHA_ALL HDN HDNW HDNR HDNWR
-#define ALPHA_MAC HDN HDNR
-#define ALPHA_WIN HDNW HDNWR
-#define ALPHA_NO_QWERTY HDN HDNW
+#define ALPHA_ALL HDN HDNW
+#define ALPHA_MAC HDN
+#define ALPHA_WIN HDNW
 
 /* Missing Alphas */
-COMBO(Q, &kp Q, 21 22, ALPHA_NO_QWERTY) // Q 
-COMBO(Z, &kp Z, 1 2, ALPHA_NO_QWERTY) // Z
-COMBO(V, &kp V, 20 21, ALPHA_NO_QWERTY) // V
-COMBO(QR, &kp Q, 23 24, HDNR HDNWR) // Q 
-COMBO(ZR, &kp Z, 7 8, HDNR HDNWR) // Z
-COMBO(VR, &kp V, 24 25, HDNR HDNWR) // V
-COMBO(slashR, &kp SLASH, 20 21, HDNR HDNWR) // slash on mirrord Hands Down
-COMBO(slash, &kp SLASH, 24 25, ALPHA_NO_QWERTY) // slash
+COMBO(Q, &kp Q, 21 22, ALPHA_ALL) // Q 
+COMBO(Z, &kp Z, 1 2, ALPHA_ALL) // Z
+COMBO(V, &kp V, 20 21, ALPHA_ALL) // V
+COMBO(slash, &kp SLASH, 24 25, ALPHA_ALL) // slash
 COMBO(dot, &kp DOT, 12 13, SYM SYMW) // . for sym
 COMBO(comma, &kp COMMA, 11 12, SYM SYMW) // , for sym
 
@@ -70,10 +65,6 @@ COMBO(key_repeat_r, &key_repeat, 15 23, ALPHA_ALL)
 COMBO(key_repeat_l, &key_repeat, 14 22, ALPHA_ALL)
 COMBO(up, &kp UP, 20 21, NAV NAVW)
 COMBO(down, &kp DOWN, 21 22, NAV NAVW)
-COMBO(new_tab, &kp LG(T), 1 11, NAV)
-COMBO(close_tab, &kp LG(W), 3 13, NAV)
-COMBO(new_tab_w, &kp LC(T), 1 11, NAVW)
-COMBO(close_tab_w, &kp LC(W), 3 13, NAVW)
 
 /* bluetooth */
 COMBO(bt_clear, &bt BT_CLR, 0 14, NAV NAVW)
@@ -85,5 +76,3 @@ COMBO(bt_3, &bt BT_SEL 3, 3 4, NAV NAVW)
 /* mac | win */
 GCOMBO(switch_to_HDN_mac, &to HDN, 0 10 26)
 GCOMBO(switch_to_HDN_win, &to HDNW, 9 19 29)
-GCOMBO(switch_to_HDNR, &to HDNR, 1 11 26)
-GCOMBO(switch_to_HDNWR, &to HDNWR, 8 18 29)

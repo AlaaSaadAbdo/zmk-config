@@ -27,7 +27,7 @@
 };
 
 &caps_word {
-  continue-list = <UNDERSCORE MINUS BACKSPACE>;
+  continue-list = <UNDERSCORE MINUS BACKSPACE K_CANCEL>;
 };
 
 /*                KEY POSITIONS
@@ -89,19 +89,6 @@
             >;
         };
 
-        handsdown_reversed {
-            label = "HDNR";
-            bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp K         &kp J         &kp SQT       &kp X          &kp COMMA        &kp B          &kp P         &kp M        &kp F         &kp W                           
-     &kp H         &kp I         &kp E         &kp A          &kp DOT          &kp G          &kp T         &kp N        &kp S         &kp R                                   
-                   &kp Y         &kp O         &kp U                                          &kp D         &kp L        &kp C                                   
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_nav    &kp SPACE         &skq LSHIFT    &macro_sym
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
-        };
-
         navitation {
             label = "NAV";
             bindings = <
@@ -137,19 +124,6 @@
                    &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_navW  &kp SPACE          &skq LSHIFT   &macro_symW
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
-        };
-
-        handsdown_reversed_windows {
-            label = "HDNWR";
-            bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp K         &kp J         &kp SQT       &kp X          &kp COMMA         &kp B          &kp P         &kp M        &kp F         &kp W                           
-     &kp H         &kp I         &kp E         &kp A          &kp DOT           &kp G          &kp T         &kp N        &kp S         &kp R                                   
-                   &kp Y         &kp O         &kp U                                          &kp D         &kp L        &kp C                                   
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_navW    &kp SPACE         &skq LSHIFT    &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
