@@ -23,7 +23,11 @@ include:
   #   shield: basbousa_left
   # - board: nice_nano_v2
   #   shield: basbousa_right
+  # - board: nice_nano_v2
+  #   shield: konafa_left
+  # - board: nice_nano_v2
+  #   shield: konafa_right
   - board: nice_nano_v2
-    shield: konafa_left
+    shield: berylline_left
   - board: nice_nano_v2
-    shield: konafa_right
+    shield: berylline_right
