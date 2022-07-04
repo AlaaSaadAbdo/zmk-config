@@ -1,0 +1,8 @@
+# Copyright (c) 2022 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config SHIELD_BATTOOTAMIN_LEFT
+	def_bool $(shields_list_contains,battootamin_left)
+
+config SHIELD_BATTOOTAMIN_RIGHT
+	def_bool $(shields_list_contains,battootamin_right)
