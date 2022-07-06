@@ -10,8 +10,8 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define HDN 0
-#define NAV 1
-#define APT 2
+#define APT 1
+#define NAV 2
 #define SYM 3
 #define HDNW 4
 #define APTW 5
