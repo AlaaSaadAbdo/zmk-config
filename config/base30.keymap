@@ -60,7 +60,7 @@
       #binding-cells = <1>;
       bindings = <&kp>;
       quick-release;
-      release-after-ms = <STICKY_KEY_TIMEOUT>;
+      release-after-ms = <200>;
     };
 
 
