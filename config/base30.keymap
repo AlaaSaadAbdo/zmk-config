@@ -94,9 +94,9 @@
             label = "APT";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp J         &kp L         &kp G         &kp M         &kp B             &kp F         &kp Y         &kp O         &kp U         &kp SQT
-     &kp C         &kp R         &kp S         &kp T         &kp K             &kp P         &kp N         &kp E         &kp I         &kp A
-                   &kp X         &kp W         &kp D                                         &kp H         &kp COMMA     &kp DOT
+     &kp J         &kp X         &kp W         &kp M         &kp B             &kp P         &kp F         &kp COMMA     &kp DOT       &kp SQT
+     &kp C         &kp R         &kp S         &kp T         &kp K             &kp Y         &kp N         &kp E         &kp I         &kp A
+                   &kp L         &kp G         &kp D                                         &kp H         &kp O         &kp U
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_nav   &kp SPACE         &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -146,9 +146,9 @@
             label = "APTW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp J         &kp L         &kp G         &kp M         &kp B             &kp F         &kp Y         &kp O         &kp U         &kp SQT
-     &kp C         &kp R         &kp S         &kp T         &kp K             &kp P         &kp N         &kp E         &kp I         &kp A
-                   &kp X         &kp W         &kp D                                         &kp H         &kp COMMA     &kp DOT
+     &kp J         &kp X         &kp W         &kp M         &kp B             &kp P         &kp F         &kp COMMA     &kp DOT       &kp SQT
+     &kp C         &kp R         &kp S         &kp T         &kp K             &kp Y         &kp N         &kp E         &kp I         &kp A
+                   &kp L         &kp G         &kp D                                         &kp H         &kp O         &kp U
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_navW  &kp SPACE         &skq LSHIFT    &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
