@@ -94,7 +94,7 @@
             label = "APT";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp J         &kp X         &kp W         &kp K         &kp B             &kp P         &kp F         &kp COMMA     &kp DOT       &kp SQT
+     &kp J         &kp V         &kp W         &kp K         &kp B             &kp P         &kp F         &kp COMMA     &kp DOT       &kp SQT
      &kp C         &kp R         &kp S         &kp T         &kp M             &kp Y         &kp N         &kp E         &kp I         &kp A
                    &kp L         &kp G         &kp D                                         &kp H         &kp O         &kp U
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
@@ -146,7 +146,7 @@
             label = "APTW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp J         &kp X         &kp W         &kp K         &kp B             &kp P         &kp F         &kp COMMA     &kp DOT       &kp SQT
+     &kp J         &kp V         &kp W         &kp K         &kp B             &kp P         &kp F         &kp COMMA     &kp DOT       &kp SQT
      &kp C         &kp R         &kp S         &kp T         &kp M             &kp Y         &kp N         &kp E         &kp I         &kp A
                    &kp L         &kp G         &kp D                                         &kp H         &kp O         &kp U
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
