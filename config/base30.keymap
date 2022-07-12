@@ -94,8 +94,8 @@
             label = "APT";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp J         &kp V         &kp W         &kp K         &kp B             &kp P         &kp F         &kp COMMA     &kp DOT       &kp SQT
-     &kp C         &kp R         &kp S         &kp T         &kp M             &kp Y         &kp N         &kp E         &kp I         &kp A
+     &kp J         &kp V         &kp W         &kp M         &kp B             &kp P         &kp Y         &kp COMMA     &kp DOT       &kp SQT
+     &kp C         &kp R         &kp S         &kp T         &kp K             &kp F         &kp N         &kp E         &kp I         &kp A
                    &kp L         &kp G         &kp D                                         &kp H         &kp O         &kp U
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_nav   &kp SPACE         &skq LSHIFT    &macro_sym
@@ -109,7 +109,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 &kp LG(LC(LA(LS(P))))  &kp ENTER     &kp BACKSPACE  &kp TAB     &kp DELETE      &kp LA(BACKSPACE) &none         &kp UP        &kp LG(Q)     &none
      SK(LCTRL)         SK(LALT)      SK(LGUI)       SK(LSHIFT)  &kp LG(A)       &kp LG(A)         &kp LEFT      &kp DOWN      &kp RIGHT     &none 
-                       &kp LG(X)     &kp LG(C)      &kp LG(V)                                         &kp ENTER     &kp BACKSPACE &kp TAB
+                       &kp LG(X)     &kp LG(C)      &kp LG(V)                                     &kp ENTER     &kp BACKSPACE &kp TAB
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                 &trans        &trans            &trans       &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -146,8 +146,8 @@
             label = "APTW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp J         &kp V         &kp W         &kp K         &kp B             &kp P         &kp F         &kp COMMA     &kp DOT       &kp SQT
-     &kp C         &kp R         &kp S         &kp T         &kp M             &kp Y         &kp N         &kp E         &kp I         &kp A
+     &kp J         &kp V         &kp W         &kp M         &kp B             &kp P         &kp Y         &kp COMMA     &kp DOT       &kp SQT
+     &kp C         &kp R         &kp S         &kp T         &kp K             &kp F         &kp N         &kp E         &kp I         &kp A
                    &kp L         &kp G         &kp D                                         &kp H         &kp O         &kp U
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_navW  &kp SPACE         &skq LSHIFT    &macro_symW
