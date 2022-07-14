@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "battootasmall.dtsi"
+#include "battootas.dtsi"
 
 &default_transform {
 	col-offset = <15>;
