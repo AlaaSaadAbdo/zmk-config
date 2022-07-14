@@ -19,18 +19,10 @@ include:
     shield: battoota_left
   - board: nice_nano_v2
     shield: battoota_right
-  # - board: nice_nano_v2
-  #   shield: basbousa_left
-  # - board: nice_nano_v2
-  #   shield: basbousa_right
-  # - board: nice_nano_v2
-  #   shield: konafa_left
-  # - board: nice_nano_v2
-  #   shield: konafa_right
   - board: nice_nano_v2
-    shield: berylline_left
+    shield: battootasmall_left
   - board: nice_nano_v2
-    shield: berylline_right
+    shield: battottasmall_right
   - board: nice_nano_v2
     shield: battootamin_left
   - board: nice_nano_v2
