@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "battootas.dtsi"
+#include "wizza.dtsi"
 
 &kscan_facedown {
     input-gpios =

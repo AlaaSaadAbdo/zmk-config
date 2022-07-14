@@ -9,7 +9,7 @@
 / {
 
 	chosen {
-		zmk,kscan = &kscan_faceup;
+		zmk,kscan = &kscan_facedown;
 		zmk,matrix_transform = &default_transform;
 	};
 

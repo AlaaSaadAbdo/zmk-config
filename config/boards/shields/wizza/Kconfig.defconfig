@@ -1,17 +1,17 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_BATTOOTAS_LEFT
+if SHIELD_WIZZA_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "Battootas"
+	default "Wizza"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
 
 endif
 
-if SHIELD_BATTOOTAS_LEFT || SHIELD_BATTOOTAS_RIGHT
+if SHIELD_WIZZA_LEFT || SHIELD_WIZZA_RIGHT
 
 config ZMK_SPLIT
 	default y

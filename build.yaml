@@ -20,9 +20,9 @@ include:
   - board: nice_nano_v2
     shield: battoota_right
   - board: nice_nano_v2
-    shield: battootas_left
+    shield: wizza_left
   - board: nice_nano_v2
-    shield: battottas_right
+    shield: wizza_right
   - board: nice_nano_v2
     shield: battootamin_left
   - board: nice_nano_v2
