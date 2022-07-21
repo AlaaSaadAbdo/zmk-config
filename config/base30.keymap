@@ -63,6 +63,17 @@
       release-after-ms = <200>;
     };
 
+        // Swapper for smart alt+tab depends on experimental branch: check west.yml
+        swapper: swapper {
+            compatible = "zmk,behavior-smart-interrupt";
+            label = "SWAPPER";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            shared-key-positions = <21>;
+        };
+
+
+
 
      combos {
           #include "combos30.dtsi"
@@ -112,7 +123,7 @@
             label = "NAV";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-&kp LG(LC(LA(LS(P))))  &kp ENTER     &kp BACKSPACE  &kp TAB     &kp DELETE      &kp LA(BACKSPACE) &none         &kp UP        &kp LG(Q)     &none
+&kp LG(LC(LA(LS(P))))  &kp ENTER     &kp BACKSPACE  &kp TAB     &kp DELETE      &kp LA(BACKSPACE) &swapper      &kp UP        &kp LG(Q)     &none
      SK(LCTRL)         SK(LALT)      SK(LGUI)       SK(LSHIFT)  &kp LG(A)       &kp LG(A)         &kp LEFT      &kp DOWN      &kp RIGHT     &none 
                        &kp LG(X)     &kp LG(C)      &kp LG(V)                                     &kp ENTER     &kp BACKSPACE &kp TAB
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
