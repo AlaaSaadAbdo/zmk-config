@@ -15,7 +15,6 @@ compatible = "zmk,combos";
     timeout-ms = <20>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
-    global-quick-tap-ms = <100>; \
   };
 
 #define ALPHA_ALL HDN ARAQ HDNW
