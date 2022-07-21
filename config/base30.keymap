@@ -68,10 +68,18 @@
             compatible = "zmk,behavior-smart-interrupt";
             label = "SWAPPER";
             #binding-cells = <0>;
-            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
             shared-key-positions = <21>;
         };
 
+        // Swapper for smart alt+tab depends on experimental branch: check west.yml
+        swapperw: swapperw {
+            compatible = "zmk,behavior-smart-interrupt";
+            label = "SWAPPERW";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            shared-key-positions = <21>;
+        };
 
 
 
@@ -123,8 +131,8 @@
             label = "NAV";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-&kp LG(LC(LA(LS(P))))  &kp ENTER     &kp BACKSPACE  &kp TAB     &kp DELETE      &kp LA(BACKSPACE) &swapper      &kp UP        &kp LG(Q)     &none
-     SK(LCTRL)         SK(LALT)      SK(LGUI)       SK(LSHIFT)  &kp LG(A)       &kp LG(A)         &kp LEFT      &kp DOWN      &kp RIGHT     &none 
+&kp LG(LC(LA(LS(P))))  &kp ENTER     &kp BACKSPACE  &kp TAB     &kp DELETE      &kp LA(BACKSPACE) &none      &kp UP        &kp LG(Q)     &none
+     SK(LCTRL)         SK(LALT)      SK(LGUI)       SK(LSHIFT)  &kp LG(A)       &kp LG(A)         &kp LEFT      &kp DOWN      &kp RIGHT     &swapper 
                        &kp LG(X)     &kp LG(C)      &kp LG(V)                                     &kp ENTER     &kp BACKSPACE &kp TAB
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                 &trans        &trans            &trans       &trans
@@ -177,7 +185,7 @@
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 &kp LC(LA(LS(P)))  &kp ENTER     &kp BACKSPACE  &kp TAB      &kp DELETE        &kp LC(BACKSPACE)  &kp F2         &kp UP        &kp LA(F4)    &none
-     SK(LGUI)      SK(LALT)      SK(LCTRL)      SK(LSHIFT)   &kp LC(A)         &kp LC(A)          &kp LEFT      &kp DOWN      &kp RIGHT     &none
+     SK(LGUI)      SK(LALT)      SK(LCTRL)      SK(LSHIFT)   &kp LC(A)         &kp LC(A)          &kp LEFT      &kp DOWN      &kp RIGHT     &swapperw
                    &kp LC(X)     &kp LC(C)      &kp LC(V)                                         &kp ENTER     &kp BACKSPACE &kp TAB
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                 &trans          &trans         &trans        &trans
