@@ -69,7 +69,6 @@
             label = "SWAPPER";
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
-            shared-key-positions = <21>;
         };
 
         // Swapper for smart alt+tab depends on experimental branch: check west.yml
@@ -78,7 +77,6 @@
             label = "SWAPPERW";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-            shared-key-positions = <21>;
         };
 
 
