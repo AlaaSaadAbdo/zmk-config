@@ -117,7 +117,7 @@
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp W         &kp F         &kp M         &kp P         &kp B             &kp X         &kp SQT       &kp COMMA     &kp DOT       &kp Y
-     &kp R         &kp S         &kp T         &kp H         &kp K             &kp J         &kp N         &kp E         &kp I         &kp A
+     &kp R         &kp S         &kp T         &kp H         &kp K             &kp J         &kp N         &kp E         &kp A         &kp I
                    &kp C         &kp G         &kp D                                         &kp L         &kp U         &kp O
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_nav   &kp SPACE         &skq LSHIFT    &macro_sym
@@ -169,7 +169,7 @@
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp W         &kp F         &kp M         &kp P         &kp B             &kp X         &kp SQT       &kp COMMA     &kp DOT       &kp Y
-     &kp R         &kp S         &kp T         &kp H         &kp K             &kp J         &kp N         &kp E         &kp I         &kp A
+     &kp R         &kp S         &kp T         &kp H         &kp K             &kp J         &kp N         &kp E         &kp A         &kp I
                    &kp C         &kp G         &kp D                                         &kp L         &kp U         &kp O
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_navW  &kp SPACE         &skq LSHIFT    &macro_symW
