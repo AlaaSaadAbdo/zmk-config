@@ -17,7 +17,7 @@ manifest:
       url-base: https://github.com/caksoylar
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: caksoylar
       revision: caksoylar/experimental
       import: app/west.yml
   self:
