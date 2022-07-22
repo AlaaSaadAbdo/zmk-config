@@ -18,12 +18,11 @@
 #define NAVW 6
 #define SYMW 7
 
-#define SK(KEY) &nk KEY KEY
-// Keep sticky keys active for a long time so they effectively do not time out
-#define STICKY_KEY_TIMEOUT 60000
+#define &sm KEY) &nk KEY KEY
 
 &sk {
-  release-after-ms = <STICKY_KEY_TIMEOUT>;
+  release-after-ms = <250>;
+  quick-release;
 };
 
 &caps_word {
@@ -113,7 +112,7 @@
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
                    &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_nav   &kp SPACE         &skq LSHIFT    &macro_sym
+                                               &macro_nav   &kp SPACE          &sk LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -132,7 +131,7 @@
      &kp R         &kp S         &kp T         &kp H         &kp K             &kp J         &kp N         &kp E         &kp A         &kp I
                    &kp C         &kp G         &kp D                                         &kp L         &kp U         &kp O
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_nav   &kp SPACE         &skq LSHIFT    &macro_sym
+                                               &macro_nav   &kp SPACE          &sk LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -142,7 +141,7 @@
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 &kp LG(LC(LA(LS(P))))  &kp ENTER     &kp BACKSPACE  &kp TAB     &kp DELETE      &kp LA(BACKSPACE) &none      &kp UP        &kp LG(Q)     &none
-     SK(LCTRL)         SK(LALT)      SK(LGUI)       SK(LSHIFT)  &kp LG(A)       &kp LG(A)         &kp LEFT      &kp DOWN      &kp RIGHT  &swapper
+     &sm LCTRL         &sm LALT      &sm LGUI       &sm LSHIFT  &kp LG(A)       &kp LG(A)         &kp LEFT      &kp DOWN      &kp RIGHT  &swapper
                        &kp LG(X)     &kp LG(C)      &kp LG(V)                                     &kp ENTER     &kp BACKSPACE &kp TAB
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                 &trans        &trans            &trans       &trans
@@ -171,7 +170,7 @@
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
                    &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_navW  &kp SPACE          &skq LSHIFT   &macro_symW
+                                               &macro_navW  &kp SPACE          &sk LSHIFT   &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -184,7 +183,7 @@
      &kp R         &kp S         &kp T         &kp H         &kp K             &kp J         &kp N         &kp E         &kp A         &kp I
                    &kp C         &kp G         &kp D                                         &kp L         &kp U         &kp O
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_navW  &kp SPACE         &skq LSHIFT    &macro_symW
+                                               &macro_navW  &kp SPACE          &sk LSHIFT    &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -195,7 +194,7 @@
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 &kp LC(LA(LS(P)))  &kp ENTER     &kp BACKSPACE  &kp TAB      &kp DELETE        &kp LC(BACKSPACE)  &kp F2         &kp UP        &kp LA(F4)    &none
-     SK(LGUI)      SK(LALT)      SK(LCTRL)      SK(LSHIFT)   &kp LC(A)         &kp LC(A)          &kp LEFT      &kp DOWN      &kp RIGHT      &swapperw
+     &sm LGUI      &sm LALT      &sm LCTRL      &sm LSHIFT   &kp LC(A)         &kp LC(A)          &kp LEFT      &kp DOWN      &kp RIGHT      &swapperw
                    &kp LC(X)     &kp LC(C)      &kp LC(V)                                         &kp ENTER     &kp BACKSPACE &kp TAB
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                 &trans          &trans         &trans        &trans
@@ -208,7 +207,7 @@
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &none         &kp N9       &kp N8         &kp N7         &kp EQUAL         &kp SEMI      &kp ASTRK     &kp BSLH     &kp SLASH     &kp GRAVE
-     &kp N3        &kp N2       &kp N1         &kp N0         &kp MINUS         &kp COLON     SK(LSHIFT)    SK(LCTRL)    SK(LALT)      SK(LGUI)
+     &kp N3        &kp N2       &kp N1         &kp N0         &kp MINUS         &kp COLON     &sm LSHIFT    &sm LCTRL    &sm LALT      &sm LGUI
                    &kp N6       &kp N5         &kp N4                                         &kp QMARK     &kp EXCL     &kp DLLR
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &trans        &trans            &trans        &trans
