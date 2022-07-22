@@ -63,6 +63,16 @@
       release-after-ms = <200>;
     };
 
+        sm: sticky_mod {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICK_MOD";
+            #binding-cells = <1>;
+            release-after-ms = <60000>;
+            bindings = <&kp>;
+            ignore-modifiers;
+            quick-release;
+        };
+
         // Swapper for smart alt+tab depends on experimental branch: check west.yml
         swapper: swapper {
             compatible = "zmk,behavior-smart-interrupt";
@@ -144,9 +154,9 @@
             label = "SYM";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &none         &kp N9       &kp N8         &kp N7         &kp EQUAL         &kp SEMI      &kp ASTRK     &kp BSLH     &kp SLASH     &kp GRAVE
-     &kp N3        &kp N2       &kp N1         &kp N0         &kp MINUS         &kp COLON     SK(LSHIFT)    SK(LGUI)     SK(LALT)      SK(LCTRL)
-                   &kp N6       &kp N5         &kp N4                                         &kp QMARK     &kp EXCL     &kp DLLR
+     &kp TILDE     &kp N9       &kp N8         &kp N7         &kp EQUAL         &kp SEMI      &kp COMMA     &kp DOT      &kp BSLH      &kp GRAVE
+     &kp N3        &kp N2       &kp N1         &kp N0         &kp MINUS         &kp COLON     &sm LSHIFT    &sm LGUI     &sm LALT      &sm LCTRL
+                   &kp N6       &kp N5         &kp N4                                         &kp QMARK     &kp EXCL     &kp SLASH
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &trans         &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
