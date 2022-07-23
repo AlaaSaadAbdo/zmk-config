@@ -25,14 +25,15 @@ compatible = "zmk,combos";
     key-positions = <KEYPOS>; \
   };
 
-#define ALPHA_ALL HDN HDNW APT APTW
-#define ALPHA_MAC HDN APT
-#define ALPHA_WIN HDNW APTW
+#define ALPHA_ALL HDN HDNW APT APTW APTEX APTEXW
+#define ALPHA_MAC HDN APT APTEX
+#define ALPHA_WIN HDNW APTW APTEXW
 
 /* Missing Alphas */
 COMBO(Q, &kp Q, 21 22, ALPHA_ALL) // Q 
-COMBO(Z, &kp Z, 1 2, ALPHA_ALL) // Z
-COMBO(V, &kp V, 20 21, ALPHA_ALL) // V
+COMBO(Z, &kp Z, 1 2, HDN HDNW APT APTW) // Z
+COMBO(Z, &kp Z, 20 21, APTEX APTEX) // Z
+COMBO(V, &kp V, 20 21, HDN HDNW APT APTW) // V
 // COMBO(slash, &kp SLASH, 24 25, ALPHA_ALL) // slash
 COMBO(dot, &kp DOT, 12 13, SYM SYMW) // . for sym
 COMBO(comma, &kp COMMA, 11 12, SYM SYMW) // , for sym

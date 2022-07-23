@@ -10,13 +10,15 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define HDN 0
-#define APT 1
-#define NAV 2
-#define SYM 3
-#define HDNW 4
-#define APTW 5
-#define NAVW 6
-#define SYMW 7
+#define APTEX 1
+#define APT 2
+#define NAV 3
+#define SYM 4
+#define HDNW 5
+#define APTEX 6
+#define APTW 7
+#define NAVW 8
+#define SYMW 9
 
 #define SK(KEY) &nk KEY KEY
 
@@ -62,6 +64,17 @@
       release-after-ms = <200>;
     };
 
+    lal: layer-alpha {
+        compatible = "zmk,behavior-hold-tap";
+        label = "LAYER_ALPHA";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <180>;
+        quick-tap-ms = <100>;
+        global-quick-tap;
+        bindings = <&mo>, <&kp>;
+    };
+
         sm: sticky_mod {
             compatible = "zmk,behavior-sticky-key";
             label = "STICK_MOD";
@@ -101,7 +114,6 @@
             masked_mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-
      combos {
           #include "combos30.dtsi"
      };
@@ -127,11 +139,24 @@
             >;
         };
 
-// potential aptex
+// aptex
 // x w m v b  j f ' , .
 // r s t h k  p n a i l
 //   c g d      y o u
 //              e
+
+        aptex {
+            label = "APTEX";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp X         &kp W         &kp M         &kp V         &kp B             &kp J         &kp F         &kp SQT       &kp COMMA     &kp DOT
+     &kp R         &kp S         &kp T         &kp H         &kp K             &kp P         &kp N         &kp A         &kp I         &kp L
+                   &kp C         &kp G         &kp D                                         &kp Y         &kp O         &kp U
+//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+                                               &macro_nav   &kp SPACE          &sk LSHFT    &lal SYM E
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
 
 //   [z]
 // w f m p b  x ' , . y
@@ -187,6 +212,19 @@
                    &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_navW  &kp SPACE          &sk LSHIFT   &macro_symW
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+        aptexw {
+            label = "APTEXW";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp X         &kp W         &kp M         &kp V         &kp B             &kp J         &kp F         &kp SQT       &kp COMMA     &kp DOT
+     &kp R         &kp S         &kp T         &kp H         &kp K             &kp P         &kp N         &kp A         &kp I         &kp L
+                   &kp C         &kp G         &kp D                                         &kp Y         &kp O         &kp U
+//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+                                               &macro_navW   &kp SPACE          &sk LSHFT    &lal SYMW E
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
