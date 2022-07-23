@@ -98,6 +98,7 @@
             #binding-cells = <0>;
             bindings = <&kp N0>, <&kp DOT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+            masked_mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
 
@@ -149,8 +150,8 @@
             label = "NAV";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-  &kp LC(LA(LS(P)))    &kp ENTER     &kp BACKSPACE  &kp TAB     &kp DELETE      &kp LA(BACKSPACE) &none         &kp UP        &kp LG(Q)  &none
-     &sm LCTRL         &sm LALT      &sm LGUI       &sm LSHIFT  &kp LG(A)       &kp LG(A)         &kp LEFT      &kp DOWN      &kp RIGHT  &gresc
+  &kp LC(LA(LS(P)))    &kp ENTER     &kp BACKSPACE  &kp TAB     &kp DELETE      &kp LA(BACKSPACE) &none         &kp UP        &kp LG(Q)  &gresc
+     &sm LCTRL         &sm LALT      &sm LGUI       &sm LSHIFT  &kp LG(A)       &kp LG(A)         &kp LEFT      &kp DOWN      &kp RIGHT  &none
                        &kp LG(X)     &kp LG(C)      &kp LG(V)                                     &kp ENTER     &kp BACKSPACE &kp TAB
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                 &trans        &trans            &trans       &trans
@@ -202,8 +203,8 @@
             label = "NAVW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-&kp LC(LA(LS(P)))  &kp ENTER     &kp BACKSPACE  &kp TAB      &kp DELETE        &kp LC(BACKSPACE)  &kp F2        &kp UP        &kp LA(F4)    &none
-     &sm LGUI      &sm LALT      &sm LCTRL      &sm LSHIFT   &kp LC(A)         &kp LC(A)          &kp LEFT      &kp DOWN      &kp RIGHT      &none
+&kp LC(LA(LS(P)))  &kp ENTER     &kp BACKSPACE  &kp TAB      &kp DELETE        &kp LC(BACKSPACE)  &kp F2        &kp UP        &kp LA(F4)    &gresc
+     &sm LGUI      &sm LALT      &sm LCTRL      &sm LSHIFT   &kp LC(A)         &kp LC(A)          &kp LEFT      &kp DOWN      &kp RIGHT     &none
                    &kp LC(X)     &kp LC(C)      &kp LC(V)                                         &kp ENTER     &kp BACKSPACE &kp TAB
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                 &trans          &trans         &trans        &trans
