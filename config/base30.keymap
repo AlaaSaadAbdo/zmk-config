@@ -79,6 +79,7 @@
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
             shared-key-positions = <2 3 28>;
+            timeout-ms = <500>;
         };
 
         // Swapper for smart alt+tab depends on experimental branch: check west.yml
@@ -88,8 +89,16 @@
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             shared-key-positions = <2 3 28>;
+            timeout-ms = <500>;
         };
 
+        gresc: grave_escape {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GRAVE_ESCAPE";
+            #binding-cells = <0>;
+            bindings = <&kp N0>, <&kp DOT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
 
      combos {
@@ -141,7 +150,7 @@
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
   &kp LC(LA(LS(P)))    &kp ENTER     &kp BACKSPACE  &kp TAB     &kp DELETE      &kp LA(BACKSPACE) &none         &kp UP        &kp LG(Q)  &none
-     &sm LCTRL         &sm LALT      &sm LGUI       &sm LSHIFT  &kp LG(A)       &kp LG(A)         &kp LEFT      &kp DOWN      &kp RIGHT  &none
+     &sm LCTRL         &sm LALT      &sm LGUI       &sm LSHIFT  &kp LG(A)       &kp LG(A)         &kp LEFT      &kp DOWN      &kp RIGHT  &gresc
                        &kp LG(X)     &kp LG(C)      &kp LG(V)                                     &kp ENTER     &kp BACKSPACE &kp TAB
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                 &trans        &trans            &trans       &trans
