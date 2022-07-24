@@ -153,7 +153,7 @@
      &kp R         &kp S         &kp T         &kp H         &kp K             &kp P         &kp N         &kp A         &kp I         &kp L
                    &kp C         &kp G         &kp D                                         &kp Y         &kp O         &kp U
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_nav   &kp SPACE          &sk LSHFT    &lal SYM E
+                                               &macro_nav   &kp SPACE          &lal SYM E    &sk LSHFT 
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -181,8 +181,8 @@
             label = "NAV";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-  &kp LC(LA(LS(P)))    &kp ENTER     &kp BACKSPACE  &kp TAB     &kp DELETE      &kp LA(BACKSPACE) &none         &kp UP        &kp LG(Q)  &gresc
-     &sm LCTRL         &sm LALT      &sm LGUI       &sm LSHIFT  &kp LG(A)       &kp LG(A)         &kp LEFT      &kp DOWN      &kp RIGHT  &none
+  &kp LC(LA(LS(P)))    &kp ENTER     &kp BACKSPACE  &kp TAB     &kp DELETE      &kp LA(BACKSPACE) &none         &kp UP        &kp LG(Q)  &none
+     &sm LCTRL         &sm LALT      &sm LGUI       &sm LSHIFT  &kp LG(A)       &kp LG(A)         &kp LEFT      &kp DOWN      &kp RIGHT  &kp ESC
                        &kp LG(X)     &kp LG(C)      &kp LG(V)                                     &kp ENTER     &kp BACKSPACE &kp TAB
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                 &trans        &trans            &trans       &trans
@@ -224,7 +224,7 @@
      &kp R         &kp S         &kp T         &kp H         &kp K             &kp P         &kp N         &kp A         &kp I         &kp L
                    &kp C         &kp G         &kp D                                         &kp Y         &kp O         &kp U
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_navW   &kp SPACE          &sk LSHFT    &lal SYMW E
+                                               &macro_navW   &kp SPACE         &lal SYMW E   &sk LSHFT
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -247,8 +247,8 @@
             label = "NAVW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-&kp LC(LA(LS(P)))  &kp ENTER     &kp BACKSPACE  &kp TAB      &kp DELETE        &kp LC(BACKSPACE)  &kp F2        &kp UP        &kp LA(F4)    &gresc
-     &sm LGUI      &sm LALT      &sm LCTRL      &sm LSHIFT   &kp LC(A)         &kp LC(A)          &kp LEFT      &kp DOWN      &kp RIGHT     &none
+&kp LC(LA(LS(P)))  &kp ENTER     &kp BACKSPACE  &kp TAB      &kp DELETE        &kp LC(BACKSPACE)  &kp F2        &kp UP        &kp LA(F4)    &none
+     &sm LGUI      &sm LALT      &sm LCTRL      &sm LSHIFT   &kp LC(A)         &kp LC(A)          &kp LEFT      &kp DOWN      &kp RIGHT     &kp ESC
                    &kp LC(X)     &kp LC(C)      &kp LC(V)                                         &kp ENTER     &kp BACKSPACE &kp TAB
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                 &trans          &trans         &trans        &trans
