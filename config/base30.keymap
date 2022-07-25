@@ -92,7 +92,7 @@
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
             shared-key-positions = <2 3 28>;
-            timeout-ms = <500>;
+            timeout-ms = <1000>;
         };
 
         // Swapper for smart alt+tab depends on experimental branch: check west.yml
@@ -102,7 +102,7 @@
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             shared-key-positions = <2 3 28>;
-            timeout-ms = <500>;
+            timeout-ms = <1000>;
         };
 
         gresc: grave_escape {
@@ -153,7 +153,7 @@
      &kp R         &kp S         &kp T         &kp H         &kp K             &kp P         &kp N         &kp A         &kp I         &kp L
                    &kp C         &kp G         &kp D                                         &kp Y         &kp O         &kp U
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_nav   &kp SPACE          &lal SYM E    &sk LSHFT 
+                                               &macro_nav   &kp SPACE          &sk LSHFT     &lal SYM E     
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -224,7 +224,7 @@
      &kp R         &kp S         &kp T         &kp H         &kp K             &kp P         &kp N         &kp A         &kp I         &kp L
                    &kp C         &kp G         &kp D                                         &kp Y         &kp O         &kp U
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_navW   &kp SPACE         &lal SYMW E   &sk LSHFT
+                                               &macro_navW   &kp SPACE         &sk LSHFT     &lal SYMW E  
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
