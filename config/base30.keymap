@@ -212,7 +212,7 @@
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp V         &kp F         &kp M         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp J         &kp K
-     &kp C         &kp S         &kp N         &kp H         &kp W             &kp DOT       &kp A         &kp E         &kp I         &kp H
+     &kp C         &kp S         &kp N         &kp T         &kp W             &kp DOT       &kp A         &kp E         &kp I         &kp H
                    &kp G         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_navW   &kp SPACE         &skq LSHFT     &lal SYMW R  
