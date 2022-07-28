@@ -25,9 +25,9 @@ compatible = "zmk,combos";
     key-positions = <KEYPOS>; \
   };
 
-#define ALPHA_ALL HDN HDNW APT APTW APTEX APTEXW
-#define ALPHA_MAC HDN APT APTEX
-#define ALPHA_WIN HDNW APTW APTEXW
+#define ALPHA_ALL HDN HDNW APT APTW ATHUMB ATHUMBW
+#define ALPHA_MAC HDN APT ATHUMB
+#define ALPHA_WIN HDNW APTW ATHUMBW
 
 /* Missing Alphas */
 COMBO(Q, &kp Q, 21 22, ALPHA_ALL) // Q 
@@ -79,5 +79,5 @@ GCOMBO(switch_to_HDN_mac, &to HDN, 0 10 26)
 GCOMBO(switch_to_HDN_win, &to HDNW, 9 19 29)
 GCOMBO(switch_to_APT_mac, &to APT, 1 11 26)
 GCOMBO(switch_to_APT_win, &to APTW, 8 18 29)
-GCOMBO(switch_to_APTEX_mac, &to ATHUMB, 11 20 26)
-GCOMBO(switch_to_APTEX_win, &to ATHUMBW, 18 25 29)
+GCOMBO(switch_to_ATHUMB_mac, &to ATHUMB, 11 20 26)
+GCOMBO(switch_to_ATHUMB_win, &to ATHUMBW, 18 25 29)
