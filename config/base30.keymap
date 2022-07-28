@@ -10,12 +10,12 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define HDN 0
-#define APTEX 1
+#define ATHUMB 1
 #define APT 2
 #define NAV 3
 #define SYM 4
 #define HDNW 5
-#define APTEXW 6
+#define ATHUMBW 6
 #define APTW 7
 #define NAVW 8
 #define SYMW 9
@@ -130,21 +130,21 @@
             >;
         };
 
-// aptex
-// x w m v b  j f ' , .
-// r s t h k  p n a i l
-//   c g d      y o u
-//            e
+// HD TITANIUM
+// v f m p b  , x ' j k
+// c s n t w  . a e i h
+//   g l d      u o y
+//              r
 
-        aptex {
-            label = "APTEX";
+        athumb {
+            label = "ATHUMB";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp X         &kp W         &kp M         &kp V         &kp B             &kp J         &kp F         &kp SQT       &kp COMMA     &kp DOT
-     &kp R         &kp S         &kp T         &kp H         &kp K             &kp P         &kp N         &kp A         &kp I         &kp L
-                   &kp C         &kp G         &kp D                                         &kp Y         &kp O         &kp U
+     &kp V         &kp F         &kp M         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp J         &kp K
+     &kp C         &kp S         &kp N         &kp T         &kp W             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp G         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_nav   &kp SPACE          &skq LSHFT     &lal SYM E     
+                                               &macro_nav   &kp SPACE          &skq LSHFT     &lal SYM R     
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -207,15 +207,15 @@
             >;
         };
 
-        aptexw {
-            label = "APTEXW";
+        athumb_windows {
+            label = "ATHUMBW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp X         &kp W         &kp M         &kp V         &kp B             &kp J         &kp F         &kp SQT       &kp COMMA     &kp DOT
-     &kp R         &kp S         &kp T         &kp H         &kp K             &kp P         &kp N         &kp A         &kp I         &kp L
-                   &kp C         &kp G         &kp D                                         &kp Y         &kp O         &kp U
+     &kp V         &kp F         &kp M         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp J         &kp K
+     &kp C         &kp S         &kp N         &kp H         &kp W             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp G         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_navW   &kp SPACE         &skq LSHFT     &lal SYMW E  
+                                               &macro_navW   &kp SPACE         &skq LSHFT     &lal SYMW R  
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
