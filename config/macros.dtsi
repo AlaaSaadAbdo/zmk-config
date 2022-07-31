@@ -16,3 +16,5 @@ MACRO(sym, &macro_tap &kp K_CANCEL &macro_press &mo SYM &macro_pause_for_release
 
 MACRO(navW, &macro_tap &kp K_CANCEL &macro_press &mo NAVW &macro_pause_for_release &macro_release &mo NAVW, 0, 0)
 MACRO(symW, &macro_tap &kp K_CANCEL &macro_press &mo SYMW &macro_pause_for_release &macro_release &mo SYMW, 0, 0)
+
+MACRO(grave3, &macro_tap &kp GRAVE &macro_tap &kp GRAVE &macro_tap &kp GRAVE, 0, 0)

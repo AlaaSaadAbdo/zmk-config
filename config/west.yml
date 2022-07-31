@@ -15,10 +15,16 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: alaasaadabdo
+      url-base: https://github.com/alaasaadabdo
   projects:
     - name: zmk
-      remote: caksoylar
-      revision: caksoylar/experimental
+      # remote: zmkfirmware
+      # revision: main
+      # remote: caksoylar
+      # revision: caksoylar/experimental
+      remote: alaasaadabdo
+      revision: alaasaadabdo/alaa
       import: app/west.yml
   self:
     path: config
