@@ -24,7 +24,7 @@ manifest:
       # remote: caksoylar
       # revision: caksoylar/experimental
       remote: alaasaadabdo
-      revision: alaasaadabdo/alaa
+      revision: alaa
       import: app/west.yml
   self:
     path: config
