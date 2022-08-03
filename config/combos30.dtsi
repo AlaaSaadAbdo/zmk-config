@@ -32,7 +32,7 @@ compatible = "zmk,combos";
 /* Missing Alphas */
 COMBO(Q, &kp Q, 21 22, ALPHA_ALL) // Q 
 COMBO(Z, &kp Z, 1 2, HDN HDNW APT APTW) // Z
-COMBO(J_ATHUMB, &kp J, 20 21, ATHUMB ATHUMBW) // Z
+COMBO(J_ATHUMB, &kp J, 20 21, ATHUMB ATHUMBW) // J
 COMBO(V, &kp V, 20 21, HDN HDNW APT APTW) // V
 
 /* Brackets */

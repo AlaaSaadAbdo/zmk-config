@@ -142,19 +142,20 @@
             >;
         };
 
-// HD TITANIUM
-// v f m p b  , x ' j k
-// c s n t w  . a e i h
-//   g l d      u o y
-//              r
+// wreath mod
+//   [Z]
+// b g m p v  , w ' x y
+// n s t h k  . r e a i
+//   c d f     l u o 
+//   [J][Q]
 
         athumb {
             label = "ATHUMB";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp X         &kp W         &kp F         &kp P         &kp B             &kp M         &kp L         &kp U         &kp Y         &kp SQT
-     &kp A         &kp R         &kp S         &kp T         &kp G             &kp K         &kp N         &kp E         &kp I         &kp O
-                   &kp V         &kp C         &kp D                                         &kp H         &kp COMMA     &kp DOT
+     &kp B         &kp G         &kp M         &kp P         &kp V             &kp COMMA     &kp W         &kp SQT       &kp X         &kp Y
+     &kp N         &kp S         &kp T         &kp H         &kp K             &kp DOT       &kp R         &kp E         &kp A         &kp I
+                   &kp C         &kp D         &kp F                                         &kp L         &kp U         &kp O
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_nav   &kp SPACE          &skq LSHFT     &macro_sym    
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -223,9 +224,9 @@
             label = "ATHUMBW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp X         &kp W         &kp F         &kp P         &kp B             &kp M         &kp L         &kp U         &kp Y         &kp SQT
-     &kp A         &kp R         &kp S         &kp T         &kp G             &kp K         &kp N         &kp E         &kp I         &kp O
-                   &kp V         &kp C         &kp D                                         &kp H         &kp COMMA     &kp DOT
+     &kp B         &kp G         &kp M         &kp P         &kp V             &kp COMMA     &kp W         &kp SQT       &kp X         &kp Y
+     &kp N         &kp S         &kp T         &kp H         &kp K             &kp DOT       &kp R         &kp E         &kp A         &kp I
+                   &kp C         &kp D         &kp F                                         &kp L         &kp U         &kp O
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_navW   &kp SPACE         &skq LSHFT     &macro_symW 
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
