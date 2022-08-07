@@ -12,13 +12,15 @@
 #define HDN 0
 #define ATHUMB 1
 #define APT 2
-#define NAV 3
-#define SYM 4
-#define HDNW 5
-#define ATHUMBW 6
-#define APTW 7
-#define NAVW 8
-#define SYMW 9
+#define ARACNA 3
+#define NAV 4
+#define SYM 5
+#define HDNW 6
+#define ATHUMBW 7
+#define APTW 8
+#define ARACNAW 9
+#define NAVW 10
+#define SYMW 11
 
 #define SK(KEY) &nk KEY KEY
 
@@ -82,7 +84,7 @@
         label = "LAYER_ALPHA";
         #binding-cells = <2>;
         flavor = "tap-preferred";
-        tapping-term-ms = <180>;
+        tapping-term-ms = <170>;
         quick-tap-ms = <100>;
         global-quick-tap;
         bindings = <&mo>, <&kp>;
@@ -142,22 +144,21 @@
             >;
         };
 
-// wreath mod
-//   [Z]
-// b g m p v  , w ' x y
-// n s t h k  . r e a i
-//   c d f     l u o 
-//   [J][Q]
+// w f m p b  , x ' j h
+// c s n t v  . a e i k
+//   g l d      u o y
+//   [z][q]
+//              r
 
         athumb {
             label = "ATHUMB";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp B         &kp G         &kp M         &kp P         &kp V             &kp COMMA     &kp W         &kp SQT       &kp X         &kp Y
-     &kp N         &kp S         &kp T         &kp H         &kp K             &kp DOT       &kp R         &kp E         &kp A         &kp I
-                   &kp C         &kp D         &kp F                                         &kp L         &kp U         &kp O
+     &kp W         &kp F         &kp M         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp J         &kp K
+     &kp C         &kp S         &kp N         &kp T         &kp V             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp G         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_nav   &kp SPACE          &skq LSHFT     &macro_sym    
+                                               &macro_nav   &kp SPACE          &skq LSHFT     &lal SYM R
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -177,6 +178,25 @@
                    &kp C         &kp G         &kp D                                         &kp L         &kp U         &kp O
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_nav   &kp SPACE          &skq LSHIFT    &macro_sym
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+//   [z]          [x]
+//   f m          ' j 
+// c s n t b  , a e i h
+// w g l d p  . u o y k
+//   [v][q]     r
+
+        aracna {
+            label = "ARACNA";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp W         &kp F         &kp M         &none         &kp B             &kp COMMA     &none         &kp SQT       &kp J         &kp K
+     &kp C         &kp S         &kp N         &kp T         &kp P             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp G         &kp L         &kp D                                         &kp U         &kp O         &kp Y
+//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+                                               &macro_nav   &kp SPACE          &skq LSHFT     &lal SYM R
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -224,11 +244,11 @@
             label = "ATHUMBW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp B         &kp G         &kp M         &kp P         &kp V             &kp COMMA     &kp W         &kp SQT       &kp X         &kp Y
-     &kp N         &kp S         &kp T         &kp H         &kp K             &kp DOT       &kp R         &kp E         &kp A         &kp I
-                   &kp C         &kp D         &kp F                                         &kp L         &kp U         &kp O
+     &kp W         &kp F         &kp M         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp J         &kp K
+     &kp C         &kp S         &kp N         &kp T         &kp V             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp G         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_navW   &kp SPACE         &skq LSHFT     &macro_symW 
+                                               &macro_navW   &kp SPACE         &skq LSHFT     &lal SYMW R
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -246,6 +266,18 @@
             >;
         };
 
+        aracnaw {
+            label = "ARACNAW";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp W         &kp F         &kp M         &none         &kp B             &kp COMMA     &none         &kp SQT       &kp J         &kp K
+     &kp C         &kp S         &kp N         &kp T         &kp P             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp G         &kp L         &kp D                                         &kp U         &kp O         &kp Y
+//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+                                               &macro_navW   &kp SPACE         &skq LSHFT     &lal SYMW R
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
 
         navigation_windows {
             label = "NAVW";
