@@ -13,14 +13,16 @@
 #define ATHUMB 1
 #define APT 2
 #define ARACNA 3
-#define NAV 4
-#define SYM 5
-#define HDNW 6
-#define ATHUMBW 7
-#define APTW 8
-#define ARACNAW 9
-#define NAVW 10
-#define SYMW 11
+#define ARACNAPT 4
+#define NAV 5
+#define SYM 6
+#define HDNW 7
+#define ATHUMBW 8
+#define APTW 9
+#define ARACNAW 10
+#define ARACNAPTW 11
+#define NAVW 12
+#define SYMW 13
 
 #define SK(KEY) &nk KEY KEY
 
@@ -186,7 +188,8 @@
 //   f m          ' j 
 // c s n t b  , a e i h
 // w g l d p  . u o y k
-//   [v][q]     r
+//   [v][q]
+//              r
 
         aracna {
             label = "ARACNA";
@@ -197,6 +200,26 @@
                    &kp G         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_nav   &kp SPACE          &skq LSHFT     &lal SYM R
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+  
+//   [z]          [x]
+//   f m          , .
+// r s t h b  p n e a i
+// w c g d k  j l u o y
+//   [v][q]
+//         '
+
+        aracnapt {
+            label = "ARACNAPT";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp W         &kp F         &kp M         &none         &kp B             &kp P         &none         &kp COMMA     &kp DOT       &kp Y
+     &kp C         &kp S         &kp T         &kp H         &kp K             &kp J         &kp N         &kp E         &kp A         &kp I
+                   &kp C         &kp G         &kp D                                         &kp L         &kp U         &kp O
+//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+                                               &lal NAV SQT    &kp SPACE         &skq LSHFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -275,6 +298,19 @@
                    &kp G         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_navW   &kp SPACE         &skq LSHFT     &lal SYMW R
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+        aracnaptw {
+            label = "ARACNAPTW";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp W         &kp F         &kp M         &none         &kp B             &kp P         &none         &kp COMMA     &kp DOT       &kp Y
+     &kp C         &kp S         &kp T         &kp H         &kp K             &kp J         &kp N         &kp E         &kp A         &kp I
+                   &kp C         &kp G         &kp D                                         &kp L         &kp U         &kp O
+//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+                                               &lal NAVW SQT    &kp SPACE      &skq LSHFT    &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
