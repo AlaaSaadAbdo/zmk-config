@@ -132,7 +132,7 @@
  
         keymap {
                 compatible = "zmk,keymap";
-
+ 
         hands_down {
             label = "HDN";
             bindings = <
@@ -184,22 +184,22 @@
             >;
         };
 
+// HD Neu
 //   [z]          [x]
-//   f m          ' j 
-// c s n t b  , a e i h
-// w g l d p  . u o y k
+//   f m          k j
+// r s n t g  , a e i h 
+// w c l d p  . u o y b
 //   [v][q]
-//              r
-
+//     '
         aracna {
             label = "ARACNA";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp W         &kp F         &kp M         &none         &kp B             &kp COMMA     &none         &kp SQT       &kp J         &kp K
-     &kp C         &kp S         &kp N         &kp T         &kp P             &kp DOT       &kp A         &kp E         &kp I         &kp H
-                   &kp G         &kp L         &kp D                                         &kp U         &kp O         &kp Y
+     &kp W         &kp F         &kp M         &none         &kp P             &kp COMMA     &none         &kp K         &kp J         &kp B
+     &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_nav   &kp SPACE          &skq LSHFT     &lal SYM R
+                                               &lal NAV SQT   &kp SPACE          &skq LSHFT     &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -293,11 +293,11 @@
             label = "ARACNAW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp W         &kp F         &kp M         &none         &kp B             &kp COMMA     &none         &kp SQT       &kp J         &kp K
-     &kp C         &kp S         &kp N         &kp T         &kp P             &kp DOT       &kp A         &kp E         &kp I         &kp H
-                   &kp G         &kp L         &kp D                                         &kp U         &kp O         &kp Y
+     &kp W         &kp F         &kp M         &none         &kp P             &kp COMMA     &none         &kp K         &kp J         &kp B
+     &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_navW   &kp SPACE         &skq LSHFT     &lal SYMW R
+                                               &lal NAV SQT   &kp SPACE          &skq LSHFT     &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
