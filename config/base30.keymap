@@ -203,7 +203,7 @@
             label = "ARACNA";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp W         &kp F         &kp M         &none         &kp P             &kp COMMA     &none         &kp K         &kp J         &kp B
+     &kp W         &kp F         &kp M         &none         &kp P             &kp COMMA     &none         &kp J         &kp K         &kp B
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
                    &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
@@ -301,7 +301,7 @@
             label = "ARACNAW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp W         &kp F         &kp M         &none         &kp P             &kp COMMA     &none         &kp K         &kp J         &kp B
+     &kp W         &kp F         &kp M         &none         &kp P             &kp COMMA     &none         &kp J         &kp K         &kp B
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
                    &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
