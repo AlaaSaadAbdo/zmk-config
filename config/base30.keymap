@@ -184,13 +184,17 @@
             >;
         };
 
-
+// APT V4
 //   [z]          [x]
 //   f g          , .
 // r s t h m  p n e i a
 // w c d l k  b y o u j
 //   [v][q]
 //     '
+// APTV4
+// w c d m k j y o u '
+// r s t l v p n e i a
+// q g b h x z f / , .
 
 // HD Neu
 //   [z]          [x]
@@ -224,7 +228,7 @@
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp W         &kp F         &kp M         &none         &kp B             &kp P         &none         &kp COMMA     &kp DOT       &kp Y
-     &kp C         &kp S         &kp T         &kp H         &kp K             &kp J         &kp N         &kp E         &kp A         &kp I
+     &kp R         &kp S         &kp T         &kp H         &kp K             &kp J         &kp N         &kp E         &kp A         &kp I
                    &kp C         &kp G         &kp D                                         &kp L         &kp U         &kp O
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &lal NAV SQT    &kp SPACE         &skq LSHFT    &macro_sym
@@ -315,7 +319,7 @@
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp W         &kp F         &kp M         &none         &kp B             &kp P         &none         &kp COMMA     &kp DOT       &kp Y
-     &kp C         &kp S         &kp T         &kp H         &kp K             &kp J         &kp N         &kp E         &kp A         &kp I
+     &kp R         &kp S         &kp T         &kp H         &kp K             &kp J         &kp N         &kp E         &kp A         &kp I
                    &kp C         &kp G         &kp D                                         &kp L         &kp U         &kp O
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &lal NAVW SQT    &kp SPACE      &skq LSHFT    &macro_symW
