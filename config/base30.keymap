@@ -10,21 +10,27 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define HDN 0
-#define ATHUMB 1
-#define APT 2
-#define ARACNA 3
-#define ARACNAPT 4
-#define NAV 5
-#define SYM 6
-#define HDNW 7
-#define ATHUMBW 8
-#define APTW 9
-#define ARACNAW 10
-#define ARACNAPTW 11
-#define NAVW 12
-#define SYMW 13
+#define HDNR 1
+#define ATHUMB 2
+#define APT 3
+#define ARACNA 4
+#define ARACNAPT 5
+#define NAV 6
+#define SYM 7
+#define HDNW 8
+#define ATHUMBW 9
+#define APTW 10
+#define ARACNAW 11
+#define ARACNAPTW 12
+#define NAVW 13
+#define SYMW 14
 
 #define SK(KEY) &nk KEY KEY
+
+#define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22  // left-hand keys
+#define KEYS_R 5 6 7 8 9 15 16 17 18 19 23 24 25  // right-hand keys
+#define THUMBS 26 27 28 29                        // thumb keys
+
 
 &sk {
   release-after-ms = <60000>;
@@ -121,6 +127,30 @@
             masked_mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
+        /* left-hand HRMs */
+        hrml: hrml {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;                // double tapping same key allows for repeating
+            global-quick-tap-ms = <150>;         // without PR #1387 use global-quick-tap instead
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;             // requires PR #1423
+        }
+
+        /* right-hand HRMs */
+        hrmr: hrmr {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;                // double tapping same key allows for repeating
+            global-quick-tap-ms = <150>;         // without PR #1387 use global-quick-tap instead
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-on-release;             // requires PR #1423
+        }
+
      combos {
           #include "combos30.dtsi"
      };
@@ -139,6 +169,20 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp W         &kp F         &kp M         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp J         &kp K
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
+//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+                                               &macro_nav   &kp SPACE          &skq LSHIFT    &macro_sym
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+
+        hands_down_hrm {
+            label = "HDNR";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp W         &kp F         &kp M         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp J         &kp K
+     &hrml LCTRL R &hrml LALT S  &hrml LGUI N  &kp LSHIFT T  &kp G             &kp DOT       &hrmr LSHIFT  &hrmr LGUI E  &hrmr LALT I  &hrmr LCTRL H
                    &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_nav   &kp SPACE          &skq LSHIFT    &macro_sym
