@@ -131,6 +131,7 @@
         hrml: hrml {
             compatible = "zmk,behavior-hold-tap";
             label = "hrml";
+            #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;                // double tapping same key allows for repeating
@@ -144,6 +145,7 @@
         hrmr: hrmr {
             compatible = "zmk,behavior-hold-tap";
             label = "hrmr";
+            #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;                // double tapping same key allows for repeating
