@@ -16,14 +16,14 @@ include:
   - board: nice_nano_v2
     shield: settings_reset
   - board: nice_nano_v2
-    shield: battoota_left
+    shield: battoota3_left
   - board: nice_nano_v2
-    shield: battoota_right
+    shield: battoota3_right
   - board: nice_nano_v2
     shield: wizza_left
   - board: nice_nano_v2
     shield: wizza_right
   - board: nice_nano_v2
-    shield: battootamin_left
+    shield: wizzav2_left
   - board: nice_nano_v2
-    shield: battootamin_right
+    shield: wizzav2_right
