@@ -137,7 +137,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;             // requires PR #1423
-        }
+        };
 
         /* right-hand HRMs */
         hrmr: hrmr {
@@ -149,7 +149,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;             // requires PR #1423
-        }
+        };
 
      combos {
           #include "combos30.dtsi"
