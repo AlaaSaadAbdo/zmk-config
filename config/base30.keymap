@@ -185,9 +185,9 @@
             label = "HDNR";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp W         &kp F         &kp M         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp J         &kp K
-     &hrml LCTRL R &hrml LALT S  &hrml LGUI N  &kp LSHIFT T  &kp G             &kp DOT       &hrmr LSHIFT  &hrmr LGUI E  &hrmr LALT I  &hrmr LCTRL H
-                   &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
+     &kp W         &kp F         &kp M         &kp P          &kp B             &kp COMMA    &kp X          &kp SQT       &kp J         &kp K
+     &hrml LCTRL R &hrml LALT S  &hrml LGUI N  &hrml LSHIFT T &kp G             &kp DOT      &hrmr LSHIFT A &hrmr LGUI E  &hrmr LALT I  &hrmr LCTRL H
+                   &kp C         &kp L         &kp D                                         &kp U          &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_nav   &kp SPACE          &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
