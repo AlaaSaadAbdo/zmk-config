@@ -55,14 +55,6 @@
     };
   };
 
-  combos {
-    #include "combos32-3thumb.dtsi"
-  };
-  
-  macros {
-    #include "macros.dtsi"
-  };
-
   behaviors {
     // Sticky key on tap, normal key on hold
     // Useful for modifier-clicking without the modifier remaining active
@@ -84,6 +76,81 @@
       release-after-ms = <STICKY_KEY_TIMEOUT>;
     };
 
+    lal: layer-alpha {
+        compatible = "zmk,behavior-hold-tap";
+        label = "LAYER_ALPHA";
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <170>;
+        quick-tap-ms = <100>;
+        global-quick-tap;
+        bindings = <&mo>, <&kp>;
+    };
+
+        // Swapper for smart alt+tab depends on experimental branch: check west.yml
+        swapper: swapper {
+            compatible = "zmk,behavior-smart-interrupt";
+            label = "SWAPPER";
+            #binding-cells = <0>;
+            bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
+            shared-key-positions = <1 3 28>;
+            timeout-ms = <1000>;
+        };
+
+        // Swapper for smart alt+tab depends on experimental branch: check west.yml
+        swapperw: swapperw {
+            compatible = "zmk,behavior-smart-interrupt";
+            label = "SWAPPERW";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            shared-key-positions = <1 3 28>;
+            timeout-ms = <1000>;
+        };
+
+        gresc: grave_escape {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GRAVE_ESCAPE";
+            #binding-cells = <0>;
+            bindings = <&kp N0>, <&kp DOT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            masked_mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        /* left-hand HRMs */
+        hrml: hrml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "hrml";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;                // double tapping same key allows for repeating
+            global-quick-tap-ms = <150>;         // without PR #1387 use global-quick-tap instead
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;             // requires PR #1423
+        };
+
+        /* right-hand HRMs */
+        hrmr: hrmr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "hrmr";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;                // double tapping same key allows for repeating
+            global-quick-tap-ms = <150>;         // without PR #1387 use global-quick-tap instead
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-on-release;             // requires PR #1423
+        };
+
+    combos {
+      #include "combos32-3thumb.dtsi"
+    };
+    
+    macros {
+      #include "macros.dtsi"
+    };
 
   };
  
@@ -124,7 +191,7 @@
      &kp N3        &kp N2       &kp N1         &kp N0         &kp MINUS         &kp DOT      SK(LSHIFT)    SK(LGUI)     SK(LALT)      SK(LCTRL)
                    &kp N6       &kp N5         &kp N4                                        &kp QMARK     &kp EXCL     &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &trans         &trans            &trans       &trans
+                                               &trans         &trans   &none &none         &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -133,11 +200,11 @@
             label = "HDNW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp K         &kp J         &kp SQT       &kp X         &kp SLASH         &kp B          &kp P         &kp M        &kp F         &kp W                           
-     &kp H         &kp I         &kp E         &kp A         &kp COMMA         &kp G          &kp T         &kp N        &kp S         &kp R                                   
-                   &kp Y         &kp O         &kp U                                          &kp D         &kp L        &kp C 
+     &kp W         &kp F         &kp M         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp J         &kp K
+     &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_navW   &kp SPACE  &kp V &kp Z       &skq LSHIFT    &macro_symW
+                                               &macro_navW   &kp SPACE  &none  &none  &skq LSHIFT    &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
