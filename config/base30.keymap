@@ -17,8 +17,9 @@
 #define SYM 5
 #define HDNW 6
 #define APTW 7
-#define NAVW 8
-#define SYMW 9
+#define ATHUMB 8
+#define NAVW 9
+#define SYMW 10
 
 #define SK(KEY) &nk KEY KEY
 
@@ -292,6 +293,18 @@
             >;
         };
 
+        athumbw {
+            label = "ATHUMBW";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp X         &kp W         &kp F         &kp P         &kp B             &kp COMMA     &kp K         &kp SLASH     &kp J         &kp SQT
+     &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp H         &kp A         &kp I         &kp O
+                   &kp C         &kp M         &kp D                                         &kp L         &kp U         &kp Y 
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                               &macro_nav   &kp SPACE          &skq LSHFT     &lal SYM E
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
         navigation_windows {
             label = "NAVW";
             bindings = <
