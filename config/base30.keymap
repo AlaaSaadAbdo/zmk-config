@@ -312,7 +312,7 @@
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp K         &kp H         &kp A         &kp I         &kp O
                    &kp C         &kp M         &kp D                                         &kp L         &kp U         &kp Y 
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_navW   &kp SPACE        &sheft SHIFT E  &macro_symW
+                                               &macro_navW   &kp SPACE        &sheft LSHIFT E  &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
