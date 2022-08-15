@@ -151,6 +151,17 @@
             hold-trigger-on-release;             // requires PR #1423
         };
 
+        sheft: sheft {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHEFT";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <170>;
+            quick-tap-ms = <150>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+        };
+
     combos {
           #include "combos30.dtsi"
      };
@@ -297,11 +308,11 @@
             label = "ATHUMBW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp X         &kp W         &kp F         &kp P         &kp B             &kp J         &kp V         &kp COMMA     &kp DOT       &kp SQT
+     &kp X         &kp W         &kp F         &kp P         &kp B             &kp J         &kp SQT       &kp COMMA     &kp DOT       &kp SQT
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp K         &kp H         &kp A         &kp I         &kp O
                    &kp C         &kp M         &kp D                                         &kp L         &kp U         &kp Y 
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_navW   &kp SPACE          &skq LSHFT     &lal SYMW E
+                                               &macro_navW   &kp SPACE        &sheft SHIFT E  &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
