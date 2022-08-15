@@ -25,17 +25,16 @@ compatible = "zmk,combos";
     key-positions = <KEYPOS>; \
   };
 
-#define ALPHA_ALL HDN HDNR HDNW APT APTW ATHUMB ATHUMBW ARACNA ARACNAW
-#define ALPHA_NO_THUMB HDN HDNR HDNW APT APTW ARACNA ARACNAW
-#define ALPHA_MAC HDN HDNR APT ATHUMB ARACNA
-#define ALPHA_WIN HDNW APTW ATHUMBW ARACNAW
+#define ALPHA_ALL HDN HDNR HDNW APT APTW ATHUMB 
+#define ALPHA_NO_THUMB HDN HDNR HDNW APT APTW 
+#define ALPHA_MAC HDN HDNR APT ATHUMB 
+#define ALPHA_WIN HDNW APTW 
 
 /* Missing Alphas */
 COMBO(Q, &kp Q, 21 22, ALPHA_ALL) // Q 
 COMBO(Z, &kp Z, 1 2, ALPHA_NO_THUMB) // Z
 COMBO(V, &kp V, 20 21, ALPHA_NO_THUMB) // V
 COMBO(Zt, &kp Z, 20 21, ATHUMB ATHUMBW) // Z
-COMBO(X, &kp X, 7 8, ARACNA ARACNAW) // x
 
 /* Brackets */
 COMBO(left_bracket, &kp LBKT, 1 11, ALPHA_ALL)
@@ -82,9 +81,4 @@ GCOMBO(switch_to_HDN_win, &to HDNW, 9 19 29)
 GCOMBO(switch_to_APT_mac, &to APT, 1 11 26)
 GCOMBO(switch_to_APT_win, &to APTW, 8 18 29)
 GCOMBO(switch_to_ATHUMB_mac, &to ATHUMB, 11 20 26)
-GCOMBO(switch_to_ATHUMB_win, &to ATHUMBW, 18 25 29)
-GCOMBO(switch_to_ARACNA_mac, &to ARACNA, 0 1 2)
-GCOMBO(switch_to_ARACNAW_win, &to ARACNAW, 7 8 9)
-GCOMBO(switch_to_ARACNAPT_mac, &to ARACNAPT, 2 3 4)
-GCOMBO(switch_to_ARACNAPTW_win, &to ARACNAPTW, 5 6 7)
 GCOMBO(switch_to_HDNR_mac, &to HDNR, 1 2 3 4)
