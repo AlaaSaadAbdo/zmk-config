@@ -199,9 +199,9 @@
             label = "ATHUMB";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp W         &kp F         &kp E         &kp M          &kp X             &kp COMMA     &kp X         &kp SQT       &kp J         &kp K
+     &kp W         &kp F         &kp E         &kp M          &kp B             &kp COMMA     &kp X         &kp SQT       &kp J         &kp K
      &hrml LCTRL R &hrml LALT S  &hrml LGUI N  &hrml LSHIFT U &kp G             &kp DOT      &hrmr LSHIFT A &hrmr LGUI E  &hrmr LALT I  &hrmr LCTRL H
-                   &kp G         &kp L         &kp D                                         &kp U         &kp O         &kp Y
+                   &kp X         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_nav   &kp SPACE          &skq LSHFT     &lal SYM R
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
