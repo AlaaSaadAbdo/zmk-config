@@ -17,7 +17,7 @@
 #define SYM 5
 #define HDNW 6
 #define APTW 7
-#define ATHUMB 8
+#define ATHUMBW 8
 #define NAVW 9
 #define SYMW 10
 
