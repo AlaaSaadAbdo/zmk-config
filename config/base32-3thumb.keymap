@@ -10,18 +10,22 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define HDN 0
-#define NAV 1
-#define SYM 2
-#define HDNW 3
-#define NAVW 4
-#define SYMW 5
+#define HDT 1
+#define ATHUMB 2
+#define NAV 3
+#define SYM 4
+#define HDNW 5
+#define HDT 6
+#define ATHUMBW 7
+#define NAVW 8
+#define SYMW 9
 
 
 #define SK(KEY) &nk KEY KEY
 
 #define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22  // left-hand keys
 #define KEYS_R 5 6 7 8 9 15 16 17 18 19 23 24 25  // right-hand keys
-#define THUMBS 26 27 28 29                        // thumb keys
+#define THUMBS 26 27 28 29 30 31                        // thumb keys
 
 &sk {
   release-after-ms = <60000>;
@@ -165,7 +169,33 @@
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
                    &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                          &macro_nav    &kp SPACE  &none       &none    &skq LSHIFT    &macro_sym
+                                    &macro_nav    &kp SPACE  &key_repeat       &none    &skq LSHIFT    &macro_sym
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+        hdt {
+            label = "HDT";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp J         &kp F         &kp M         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp DQT       &kp K
+     &kp C         &kp S         &kp N         &kp T         &kp W             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp G         &kp L         &kp D                                         &kp U         &kp O         &kp Y
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                    &macro_nav    &kp SPACE  &key_repeat       &kp R    &skq LSHIFT    &macro_sym
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+        athumb {
+            label = "ATHUMB";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp X         &kp W         &kp F         &kp P         &kp B             &kp J         &kp SQT       &kp COMMA     &kp DOT       &kp SQT
+     &kp R         &kp S         &kp N         &kp T         &kp G             &kp K         &kp H         &kp A         &kp I         &kp O
+                   &kp C         &kp M         &kp D                                         &kp L         &kp U         &kp Y 
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                     &macro_nav    &kp SPACE  &key_repeat      &kp E     &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -179,7 +209,7 @@
      SK(LCTRL)         SK(LALT)      SK(LGUI)       SK(LSHIFT)  &kp LG(A)       &kp LG(A)         &kp LEFT      &kp DOWN      &kp RIGHT  &none
                        &kp LG(X)     &kp LG(C)      &kp LG(V)                                     &kp ENTER     &kp BACKSPACE &kp TAB
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &trans         &trans   &none &none         &trans        &trans
+                                               &trans     &trans   &trans     &trans   &trans   &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -204,7 +234,33 @@
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
                    &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &macro_navW   &kp SPACE  &none  &none  &skq LSHIFT    &macro_symW
+                                       &macro_navW   &kp SPACE  &key_repeat  &none  &skq LSHIFT    &macro_symW
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+        hdtw {
+            label = "HDTW";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp J         &kp F         &kp M         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp DQT       &kp K
+     &kp C         &kp S         &kp N         &kp T         &kp W             &kp DOT       &kp A         &kp E         &kp I         &kp H
+                   &kp G         &kp L         &kp D                                         &kp U         &kp O         &kp Y
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                    &macro_navW   &kp SPACE  &key_repeat       &kp R    &skq LSHIFT    &macro_symW
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+        athumbw {
+            label = "ATHUMBW";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp X         &kp W         &kp F         &kp P         &kp B             &kp J         &kp SQT       &kp COMMA     &kp DOT       &kp SQT
+     &kp R         &kp S         &kp N         &kp T         &kp G             &kp K         &kp H         &kp A         &kp I         &kp O
+                   &kp C         &kp M         &kp D                                         &kp L         &kp U         &kp Y 
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                     &macro_navW    &kp SPACE  &key_repeat     &kp E    &skq LSHIFT    &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -217,7 +273,7 @@
      SK(LGUI)      SK(LALT)      SK(LCTRL)      SK(LSHIFT)   &kp LC(A)         &kp LC(A)          &kp LEFT      &kp DOWN      &kp RIGHT     &none
                    &kp LC(X)     &kp LC(C)      &kp LC(V)                                         &kp ENTER     &kp BACKSPACE &kp TAB
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &trans         &trans   &none &none         &trans        &trans
+                                               &trans         &trans   &trans &none         &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -230,7 +286,7 @@
      &kp N3        &kp N2       &kp N1         &kp N0         &kp MINUS         &kp DOT      SK(LSHIFT)    SK(LCTRL)    SK(LALT)      SK(LGUI)
                    &kp N6       &kp N5         &kp N4                                        &kp QMARK     &kp EXCL     &kp SLASH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &trans         &trans   &none &none         &trans        &trans
+                                               &trans         &trans   &trans &none         &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
