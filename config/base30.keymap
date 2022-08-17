@@ -257,7 +257,7 @@
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
   &kp LC(LA(LS(P)))    &kp ENTER     &kp BACKSPACE  &kp TAB     &kp DELETE      &kp LA(BACKSPACE) &none         &kp UP        &kp LG(Q)  &kp LA(LC(LS(LG(K))))
-     SK(LCTRL)         SK(LALT)      SK(LGUI)       SK(LSHIFT)  &kp LG(A)       &kp LG(A)         &kp LEFT      &kp DOWN      &kp RIGHT  &none
+     SK(LCTRL)         SK(LALT)      SK(LGUI)       SK(LSHIFT)  &kp LG(A)       &kp LG(A)         &kp LEFT      &kp DOWN      &kp RIGHT  &kp LA(LC(LS(LG(Y))))
                        &kp LG(X)     &kp LG(C)      &kp LG(V)                                     &kp ENTER     &kp BACKSPACE &kp TAB
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                 &trans        &trans            &trans       &trans
