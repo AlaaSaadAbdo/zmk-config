@@ -15,7 +15,6 @@ compatible = "zmk,combos";
     timeout-ms = <30>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
-    global-quick-tap-ms = <100>; \
   };
 
 #define GCOMBO(NAME, BINDINGS, KEYPOS) \
