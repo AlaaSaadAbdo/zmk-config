@@ -27,10 +27,6 @@
   continue-list = <UNDERSCORE MINUS BACKSPACE K_CANCEL>;
 };
 
-&leader {
-  timeout-ms = <500>;
-};
-
 /*                KEY POSITIONS
 
   ╭────────────────────╮ ╭────────────────────╮
@@ -41,14 +37,6 @@
               ╰────────╯ ╰────────╯            */
 
 / {
-
-  leader_sequences {
-    compatible = "zmk,leader-sequences";
-    seq_esc {
-      key-positions = <9>;
-      bindings = <&macro_grave3>;
-    };
-  };
 
   behaviors {
 
