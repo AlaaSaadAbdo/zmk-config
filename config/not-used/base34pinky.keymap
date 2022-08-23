@@ -42,7 +42,7 @@
   
                 
   combos {
-    #include "combos.dtsi"
+    #include "combos34.dtsi"
   };
   
   macros {
