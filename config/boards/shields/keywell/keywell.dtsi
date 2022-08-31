@@ -14,7 +14,7 @@
 	};
 
 	default_transform: keymap_transform_0 {
-		compatible = "zmk,matrix-transform";
+		compatible = "zmk,matrix_transform";
 		columns = <10>;
 		rows = <3>;
 		map = <
@@ -30,8 +30,8 @@
         label = "KSCAN";
         diode-direction = "row2col";
 
-        row-gpios
-            , <&xiao_d 9  GPIO_ACTIVE_HIGH>
+        row-gpios = 
+              <&xiao_d 9  GPIO_ACTIVE_HIGH>
             , <&xiao_d 8  GPIO_ACTIVE_HIGH>
             , <&xiao_d 7  GPIO_ACTIVE_HIGH>
             ;
