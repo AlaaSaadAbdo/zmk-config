@@ -20,6 +20,10 @@ include:
   - board: nice_nano_v2
     shield: wizza_right
   - board: nice_nano_v2
+    shield: wizzav2_left
+  - board: nice_nano_v2
+    shield: wizzav2_right
+  - board: nice_nano_v2
     shield: wizzades_left
   - board: nice_nano_v2
     shield: wizzades_right
