@@ -27,6 +27,8 @@ include:
     shield: wizzades_left
   - board: nice_nano_v2
     shield: wizzades_right
+  - board: nice_nano_v2
+    shield: asfoora
   # - board: seeeduino_xiao_ble
   #   shield: keywell_left
   # - board: seeeduino_xiao_ble
