@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "keywell.dtsi"
+#include "rommana.dtsi"
 
 &default_transform {
 	col-offset = <5>;

@@ -30,6 +30,6 @@ include:
   - board: nice_nano_v2
     shield: asfoora
   - board: seeeduino_xiao_ble
-    shield: keywell_left
+    shield: rommana_left
   - board: seeeduino_xiao_ble
-    shield: keywell_right
+    shield: rommana_right
