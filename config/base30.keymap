@@ -10,11 +10,13 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define HDN 0
-#define NAV 1
-#define SYM 2
-#define HDNW 3
-#define NAVW 4
-#define SYMW 5
+#define APT 1
+#define NAV 2
+#define SYM 3
+#define HDNW 4
+#define APTW 5
+#define NAVW 6
+#define SYMW 7
 
 #define SK(KEY) &nk KEY KEY
 
@@ -83,7 +85,23 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
-        
+
+        apt {
+            label = "APT";
+            bindings = <
+// w g d f b  x l u o y
+// r s t h k  j n e a i
+//   c m p      , . '
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp W         &kp G         &kp D         &kp F         &kp B             &kp X         &kp L         &kp U         &kp O         &kp Y
+     &kp R         &kp S         &kp T         &kp H         &kp K             &kp J         &kp N         &kp E         &kp A         &kp I
+                   &kp C         &kp M         &kp P                                         &kp COMMA     &kp DOT       &kp SQT
+//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+                                               &macro_nav   &kp SPACE          &skq LSHIFT    &macro_sym
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
         navigation {
             label = "NAV";
             bindings = <
@@ -123,6 +141,22 @@
             >;
         };
         
+        aptw {
+            label = "APTW";
+            bindings = <
+// w g d f b  x l u o y
+// r s t h k  j n e a i
+//   c m p      , . '
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp W         &kp G         &kp D         &kp F         &kp B             &kp X         &kp L         &kp U         &kp O         &kp Y
+     &kp R         &kp S         &kp T         &kp H         &kp K             &kp J         &kp N         &kp E         &kp A         &kp I
+                   &kp C         &kp M         &kp P                                         &kp COMMA     &kp DOT       &kp SQT
+//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+                                               &macro_navW  &kp SPACE          &skq LSHIFT   &macro_symW
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
         navigation_windows {
             label = "NAVW";
             bindings = <
