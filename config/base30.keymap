@@ -62,6 +62,17 @@
       release-after-ms = <750>;
     };
 
+    lal: layer-alpha {
+        compatible = "zmk,behavior-hold-tap";
+        label = "LAYER_ALPHA";
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <170>;
+        quick-tap-ms = <100>;
+        global-quick-tap;
+        bindings = <&mo>, <&kp>;
+    };
+
     combos {
           #include "combos30.dtsi"
      };
@@ -89,15 +100,14 @@
         apt {
             label = "APT";
             bindings = <
-// w g d f b  x l u o y
-// r s t h k  j n e a i
-//   c m p      , . '
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp W         &kp G         &kp D         &kp F         &kp B             &kp X         &kp L         &kp U         &kp O         &kp Y
-     &kp R         &kp S         &kp T         &kp H         &kp K             &kp J         &kp N         &kp E         &kp A         &kp I
-                   &kp C         &kp M         &kp P                                         &kp COMMA     &kp DOT       &kp SQT
+     &kp X         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp COMMA     &kp DOT         &kp SQT
+// ├──── ─────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &kp R         &kp S         &kp T         &kp H         &kp K             &kp V         &kp N         &kp A         &kp I         &kp O     
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                   &kp C         &kp G         &kp D                                         &kp M         &kp U         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_nav   &kp SPACE          &skq LSHIFT    &macro_sym
+                                               &macro_nav   &kp SPACE          &skq LSHIFT    &lal E SYM
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -144,15 +154,14 @@
         aptw {
             label = "APTW";
             bindings = <
-// w g d f b  x l u o y
-// r s t h k  j n e a i
-//   c m p      , . '
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp W         &kp G         &kp D         &kp F         &kp B             &kp X         &kp L         &kp U         &kp O         &kp Y
-     &kp R         &kp S         &kp T         &kp H         &kp K             &kp J         &kp N         &kp E         &kp A         &kp I
-                   &kp C         &kp M         &kp P                                         &kp COMMA     &kp DOT       &kp SQT
+     &kp X         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp COMMA     &kp DOT         &kp SQT
+// ├──── ─────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &kp R         &kp S         &kp T         &kp H         &kp K             &kp V         &kp N         &kp A         &kp I         &kp O     
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                   &kp C         &kp G         &kp D                                         &kp M         &kp U         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_navW  &kp SPACE          &skq LSHIFT   &macro_symW
+                                               &macro_navW  &kp SPACE          &skq LSHIFT   &lal E SYMW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
