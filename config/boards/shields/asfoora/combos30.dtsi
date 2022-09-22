@@ -79,3 +79,6 @@ COMBO(bt_3, &bt BT_SEL 3, 3 4, NAV NAVW)
 /* mac | win */
 GCOMBO(switch_to_HDN_mac, &to HDN, 0 10 28)
 GCOMBO(switch_to_HDN_win, &to HDNW, 9 19 31)
+
+GCOMBO(switch_to_APT_mac, &to APT, 1 11 26)
+GCOMBO(switch_to_APT_win, &to APTW, 8 18 29)
