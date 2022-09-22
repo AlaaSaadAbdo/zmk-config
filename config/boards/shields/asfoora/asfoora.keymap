@@ -90,12 +90,13 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp W         &kp F         &kp M         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp J         &kp K
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
-                   &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
+                   &kp C         &kp L         &kp D         &kp SLASH         &kp SLASH     &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_nav   &kp SPACE          &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 
         apt {
             label = "APT";
@@ -105,7 +106,7 @@
 // ├──── ─────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp R         &kp S         &kp T         &kp H         &kp K             &kp V         &kp N         &kp A         &kp I         &kp O     
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                   &kp C         &kp G         &kp D                                         &kp M         &kp U         &kp Y
+                   &kp C         &kp G         &kp D         &kp SLASH         &kp SLASH     &kp M         &kp U         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_nav   &kp SPACE          &skq LSHIFT    &lal E SYM
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -118,7 +119,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
   &kp LC(LA(LS(P)))    &kp ENTER     &kp BACKSPACE  &kp TAB     &kp DELETE      &kp LA(BACKSPACE) &none         &kp UP        &kp LG(Q)  &kp LA(LC(LS(LG(K))))
      SK(LCTRL)         SK(LALT)      SK(LGUI)       SK(LSHIFT)  &kp LG(A)       &kp LG(A)         &kp LEFT      &kp DOWN      &kp RIGHT  &kp LA(LC(LS(LG(Y))))
-                       &kp LG(X)     &kp LG(C)      &kp LG(V)                                     &kp ENTER     &kp BACKSPACE &kp TAB
+                       &kp LG(X)     &kp LG(C)      &kp LG(V)   &kp SLASH       &kp SLASH         &kp ENTER     &kp BACKSPACE &kp TAB
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                 &trans        &trans            &trans       &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -131,7 +132,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp TILDE     &kp N9       &kp N8         &kp N7         &kp EQUAL         &kp COMMA    &kp SEMI      &kp COLON    &kp BSLH      &kp GRAVE
      &kp N3        &kp N2       &kp N1         &kp N0         &kp MINUS         &kp DOT      SK(LSHIFT)    SK(LGUI)     SK(LALT)      SK(LCTRL)
-                   &kp N6       &kp N5         &kp N4                                        &kp QMARK     &kp EXCL     &kp SLASH
+                   &kp N6       &kp N5         &kp N4         &kp SLASH         &kp SLASH    &kp QMARK     &kp EXCL     &kp SLASH
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &trans         &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -144,7 +145,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp W         &kp F         &kp M         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp J         &kp K
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
-                   &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
+                   &kp C         &kp L         &kp D         &kp SLASH         &kp SLASH     &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_navW  &kp SPACE          &skq LSHIFT   &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -159,7 +160,7 @@
 // ├──── ─────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp R         &kp S         &kp T         &kp H         &kp K             &kp V         &kp N         &kp A         &kp I         &kp O     
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                   &kp C         &kp G         &kp D                                         &kp M         &kp U         &kp Y
+                   &kp C         &kp G         &kp D         &kp SLASH         &kp SLASH     &kp M         &kp U         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_navW  &kp SPACE          &skq LSHIFT   &lal E SYMW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -172,7 +173,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 &kp LC(LA(LS(P)))  &kp ENTER     &kp BACKSPACE  &kp TAB      &kp DELETE        &kp LC(BACKSPACE)  &kp F2        &kp UP        &kp LA(F4)    &none
      SK(LGUI)      SK(LALT)      SK(LCTRL)      SK(LSHIFT)   &kp LC(A)         &kp LC(A)          &kp LEFT      &kp DOWN      &kp RIGHT     &none
-                   &kp LC(X)     &kp LC(C)      &kp LC(V)                                         &kp ENTER     &kp BACKSPACE &kp TAB
+                   &kp LC(X)     &kp LC(C)      &kp LC(V)    &kp SLASH         &kp SLASH         &kp ENTER     &kp BACKSPACE &kp TAB
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                 &trans          &trans         &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -185,7 +186,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp TILDE     &kp N9       &kp N8         &kp N7         &kp EQUAL         &kp COMMA    &kp SEMI      &kp COLON    &kp BSLH      &kp GRAVE
      &kp N3        &kp N2       &kp N1         &kp N0         &kp MINUS         &kp DOT      SK(LSHIFT)    SK(LCTRL)    SK(LALT)      SK(LGUI)
-                   &kp N6       &kp N5         &kp N4                                        &kp QMARK     &kp EXCL     &kp SLASH
+                   &kp N6       &kp N5         &kp N4         &kp SLASH         &kp SLASH    &kp QMARK     &kp EXCL     &kp SLASH
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &trans        &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
