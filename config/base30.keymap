@@ -22,7 +22,6 @@
 
 &sk {
   release-after-ms = <60000>;
-  quick-release;
 };
 
 &caps_word {
