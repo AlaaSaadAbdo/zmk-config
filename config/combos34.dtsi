@@ -62,4 +62,3 @@ COMBO(bt_3, &bt BT_SEL 3, 2 3, NAV NAVW)
 /* mac | win */
 GCOMBO(switch_to_mac, &to HDN, 8 9 20)
 GCOMBO(switch_to_win, &to HDNW, 18 19 29)
-GCOMBO(switch_to_ara, &to ARAQ, 7 18 29)
