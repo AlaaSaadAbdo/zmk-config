@@ -16,6 +16,6 @@ I use this keyboard for both windows and mac, to type in Arabic and English
 
 ## Links
 
-[Low Profile Keyboards discod](https://discord.gg/69UM9sQF8q). I got a lot of help there.
+[Low Profile Keyboards discord](https://discord.gg/69UM9sQF8q). I got a lot of help there.
 
 [1]: https://github.com/zmkfirmware/zmk
