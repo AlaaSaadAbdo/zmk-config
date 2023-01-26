@@ -50,6 +50,7 @@ COMBO(redo, &kp LG(LS(Z)), 3 4, ALPHA_MAC)
 COMBO(undo, &kp LG(Z), 13 14, ALPHA_MAC)
 COMBO(delete_word, &kp LA(BACKSPACE), 2 12, NAV)
 COMBO(raycast, &kp LC(LA(SPACE)), 20 26, ALPHA_ALL)
+COMBO(rayclip, &kp LC(LA(LG(LS(J)))), 21 26, ALPHA_ALL)
 
   /* Win */
 COMBO(redow, &kp LC(Y), 3 4, ALPHA_WIN)
