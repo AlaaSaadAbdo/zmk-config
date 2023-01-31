@@ -39,6 +39,13 @@
 
 / {
 
+  combos {
+        #include "combos30.dtsi"
+    };
+  macros {
+        #include "macros.dtsi"
+    };
+
   behaviors {
 
     // Sticky key on tap, normal key on hold
@@ -72,12 +79,6 @@
         bindings = <&mo>, <&kp>;
     };
 
-    combos {
-          #include "combos30.dtsi"
-     };
-    macros {
-          #include "macros.dtsi"
-     };
   };
  
         keymap {
