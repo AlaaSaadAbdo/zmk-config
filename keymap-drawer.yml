@@ -1,0 +1,147 @@
+layout:
+    ortho_layout:
+        split: true
+        rows: 3
+        columns: 5
+        thumbs: 2
+        drop_pinky: true
+        drop_inner: true
+layers:
+    HDN: [W, F, M, P, B, ',', X, '"', J, K, R, S, N, T, G, ., A, E, I, H, C, L, D, U, O, Y, 'Nav', SPACE, {t: 'SHIFT', h: 'Sticky'}, 'Sym']
+    APT: [W, F, G, P, B, X, J, ',', ., '"', R, S, T, H, K, M, N, E, I, A, C, Y, D, L, O, U, 'Nav', SPACE, {t: 'SHIFT', h: 'Sticky'}, 'Sym']
+    NAV:
+    - Scrn Sht
+    - ENTER
+    - BCK SPCE
+    - TAB
+    - DELETE
+    - DWord
+    - Rename
+    - UP
+    - Quit
+    - WRK1
+    - {t: LCTRL, h: Sticky}
+    - {t: LALT, h: Sticky}
+    - {t: LGUI, h: Sticky}
+    - {t: LSHIFT, h: Sticky}
+    - SALL
+    - SALL
+    - LEFT
+    - DOWN
+    - RIGHT
+    - WRK2
+    - CUT
+    - COPY
+    - PASTE
+    - ENTER
+    - BCK SPCE
+    - TAB
+    - 'Nav'
+    - 'SPACE'
+    - 'SHIFT'
+    - 'Sym'
+    SYM:
+    - '~'
+    - '9'
+    - '8'
+    - '7'
+    - '='
+    - ','
+    - ;
+    - ''''
+    - \
+    - '`'
+    - '3'
+    - '2'
+    - '1'
+    - '0'
+    - '-'
+    - .
+    - {t: LSHIFT, h: Sticky}
+    - {t: LGUI, h: Sticky}
+    - {t: RALT, h: Sticky}
+    - {t: LCTRL, h: Stikcy}
+    - '6'
+    - '5'
+    - '4'
+    - '?'
+    - '!'
+    - /
+    - 'Nav'
+    - 'SPACE'
+    - 'SHIFT'
+    - 'Sym'
+combos:
+-   p: [21, 22]
+    k: Q
+    l: [HDN, APT]
+-   p: [1, 2]
+    k: Z
+    l: [HDN, APT]
+-   p: [20, 21]
+    k: V
+    l: [HDN, APT]
+-   p: [1, 11]
+    k: '['
+    l: [HDN, APT]
+-   p: [8, 18]
+    k: ']'
+    l: [HDN, APT]
+-   p: [2, 12]
+    k: (
+    l: [HDN, APT]
+-   p: [7, 17]
+    k: )
+    l: [HDN, APT]
+-   p: [3, 13]
+    k: '{'
+    l: [HDN, APT]
+-   p: [6, 16]
+    k: '}'
+    l: [HDN, APT]
+-   p: [27, 28]
+    k: Caps
+    l: [HDN, APT]
+-   p: [3, 4]
+    k: Redo
+    l: [HDN, APT]
+-   p: [13, 14]
+    k: Undo
+    l: [HDN, APT]
+-   p: [2, 12]
+    k: Dwrd
+    l: [NAV]
+-   p: [22, 26]
+    k: ESC
+    l: [HDN, APT]
+-   p: [15, 23]
+    k: RPT
+    l: [HDN, APT]
+-   p: [14, 22]
+    k: RPT
+    l: [HDN, APT]
+-   p: [6, 7, 8]
+    k: Lck
+    l: [NAV]
+    align: top
+    o: .25
+-   p: [26, 27]
+    k: Sym
+    l: [HDN, APT]
+-   p: [0, 14]
+    k: BT CLR
+    l: [NAV]
+    a: top
+    o: .75
+-   p: [0, 1]
+    k: BT 0
+    l: [NAV]
+-   p: [1, 2]
+    k: BT 1
+    l: [NAV]
+-   p: [2, 3]
+    k: BT 2
+    l: [NAV]
+-   p: [3, 4]
+    k: BT 3
+    l: [NAV]
