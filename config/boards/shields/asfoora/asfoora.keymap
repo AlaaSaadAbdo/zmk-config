@@ -100,14 +100,20 @@
         apt {
             label = "APT";
             bindings = <
+//    [z] 
+//  w f g p b     x j , . '
+//  r s t h k     m n e i a
+//    c y d         l o u
+//    [v][q]
+
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp X         &kp W         &kp F         &kp P         &kp B             &kp J         &kp M         &kp COMMA     &kp DOT         &kp SQT
+     &kp W         &kp F         &kp G         &kp P         &kp B             &kp X         &kp J         &kp COMMA     &kp DOT       &kp SQT
 // ├──── ─────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp R         &kp S         &kp T         &kp H         &kp K             &kp V         &kp N         &kp A         &kp I         &kp O     
+     &kp R         &kp S         &kp T         &kp H         &kp K             &kp M         &kp N         &kp E         &kp I         &kp A     
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                   &kp C         &kp G         &kp D         &kp SLASH         &kp SLASH     &kp L         &kp U         &kp Y
+                   &kp C         &kp Y         &kp D                                         &kp L         &kp O         &kp U
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_nav   &kp SPACE          &skq LSHIFT    &lal SYM E
+                                               &macro_nav   &kp SPACE          &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -158,13 +164,13 @@
             label = "APTW";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp X         &kp W         &kp F         &kp P         &kp B             &kp J         &kp M         &kp COMMA     &kp DOT         &kp SQT
+     &kp W         &kp F         &kp G         &kp P         &kp B             &kp X         &kp J         &kp COMMA     &kp DOT       &kp SQT
 // ├──── ─────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp R         &kp S         &kp T         &kp H         &kp K             &kp V         &kp N         &kp A         &kp I         &kp O     
+     &kp R         &kp S         &kp T         &kp H         &kp K             &kp M         &kp N         &kp E         &kp I         &kp A     
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                   &kp C         &kp G         &kp D         &kp SLASH         &kp SLASH     &kp L         &kp U         &kp Y
+                   &kp C         &kp Y         &kp D                                         &kp L         &kp O         &kp U
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_navW  &kp SPACE          &skq LSHIFT   &lal SYMW E
+                                               &macro_nav   &kp SPACE          &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
