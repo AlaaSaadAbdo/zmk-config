@@ -95,6 +95,9 @@
                                                &macro_nav   &kp SPACE          &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
+            #ifdef ENCODERS
+              sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            #endif
         };
 
         apt {
@@ -117,6 +120,9 @@
                                                &macro_nav   &kp SPACE          &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
+            #ifdef ENCODERS
+              sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            #endif
         };
 
         navigation {
@@ -130,6 +136,9 @@
                                                 &trans        &trans            &trans       &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
+            #ifdef ENCODERS
+              sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            #endif
         };
 
         symbols {
@@ -143,6 +152,9 @@
                                                &trans         &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
+            #ifdef ENCODERS
+              sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            #endif
         };
 
         hands_down_windows {
@@ -156,6 +168,9 @@
                                                &macro_navW  &kp SPACE          &skq LSHIFT   &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
+            #ifdef ENCODERS
+              sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            #endif
         };
         
         aptw {
@@ -171,6 +186,9 @@
                                                &macro_navW   &kp SPACE          &skq LSHIFT  &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
+            #ifdef ENCODERS
+              sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            #endif
         };
 
         navigation_windows {
@@ -197,6 +215,9 @@
                                                &trans        &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
+            #ifdef ENCODERS
+              sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            #endif
         };
   };
 
