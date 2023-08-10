@@ -30,9 +30,9 @@ include:
   - board: nice_nano_v2
     shield: asfoora
   - board: seeeduino_xiao_ble
-    shield: rommana_left
+    shield: rommana_left rgbled_widget
   - board: seeeduino_xiao_ble
-    shield: rommana_right
+    shield: rommana_right rgbled_widget
   - board: nice_nano_v2
     shield: basbousa_left
   - board: nice_nano_v2
