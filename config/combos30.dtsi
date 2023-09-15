@@ -49,6 +49,7 @@ COMBO(caps_word, &caps_word, 27 28, ALPHA_ALL)
   /* Mac */
 COMBO(redo, &kp LG(LS(Z)), 3 4, ALPHA_MAC)
 COMBO(undo, &kp LG(Z), 13 14, ALPHA_MAC)
+COMBO(shortcat, &kp LS(LA(SPACE)), 1 2 3, ALPHA_MAC)
 COMBO(mission_control, &kp LA(UP), 6 7 8, ALPHA_MAC)
 COMBO(app_windows, &kp LA(DOWN), 23 24 25, ALPHA_MAC)
 COMBO(delete_word, &kp LA(BACKSPACE), 2 12, NAV)
