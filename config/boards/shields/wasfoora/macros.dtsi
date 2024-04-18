@@ -1,0 +1,20 @@
+/* Macro macro: */
+#define str(s) #s
+#define MACRO(NAME, BINDINGS, WAITMS, TAPMS) \
+  macro_##NAME: macro_##NAME { \
+      compatible = "zmk,behavior-macro"; \
+      label = str(macro_##NAME); \
+      #binding-cells = <0>; \
+      wait-ms = <WAITMS>; \
+      tap-ms = <TAPMS>; \
+      bindings = <BINDINGS>; \
+  };
+
+/* macro: */
+MACRO(nav, &macro_tap &kp K_CANCEL &macro_press &mo NAV &macro_pause_for_release &macro_release &mo NAV, 0, 0)
+MACRO(sym, &macro_tap &kp K_CANCEL &macro_press &mo SYM &macro_pause_for_release &macro_release &mo SYM, 0, 0)
+
+MACRO(navW, &macro_tap &kp K_CANCEL &macro_press &mo NAVW &macro_pause_for_release &macro_release &mo NAVW, 0, 0)
+MACRO(symW, &macro_tap &kp K_CANCEL &macro_press &mo SYMW &macro_pause_for_release &macro_release &mo SYMW, 0, 0)
+
+MACRO(grave3, &macro_tap &kp GRAVE &macro_tap &kp GRAVE &macro_tap &kp GRAVE, 0, 0)

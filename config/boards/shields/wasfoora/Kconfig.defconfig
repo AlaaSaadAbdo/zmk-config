@@ -1,0 +1,9 @@
+# Copyright (c) 2021 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_WASFOORA
+
+config ZMK_KEYBOARD_NAME
+    default "Wasfoora"
+
+endif

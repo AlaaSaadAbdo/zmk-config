@@ -1,0 +1,4 @@
+#define FIVEWAY
+
+#include "../../../base30.keymap"
+
