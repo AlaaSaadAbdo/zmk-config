@@ -96,9 +96,8 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef FIVEWAY
-                   &kp PG_UP    &kp C_VOL_DN    &kp PG_DN    &kp C_VOL_UP    &kp C_MUTE 
+                   &kp C &kp G &kp D &kp L &kp O 
             #endif
-
             >;
             #ifdef ENCODERS
               sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -126,9 +125,9 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef FIVEWAY
-                   &kp PG_UP    &kp C_VOL_DN    &kp PG_DN    &kp C_VOL_UP    &kp C_MUTE 
+                   &kp C &kp G &kp D &kp L &kp O 
             #endif
-
+            >;
             #ifdef ENCODERS
               sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
             #endif
@@ -146,9 +145,8 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef FIVEWAY
-                   &kp PG_UP    &kp C_VOL_DN    &kp PG_DN    &kp C_VOL_UP    &kp C_MUTE 
+                   &kp C &kp G &kp D &kp L &kp O 
             #endif
-
             >;
             #ifdef ENCODERS
               sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -167,9 +165,8 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef FIVEWAY
-                   &kp PG_UP    &kp C_VOL_DN    &kp PG_DN    &kp C_VOL_UP    &kp C_MUTE 
+                   &kp C &kp G &kp D &kp L &kp O 
             #endif
-
             >;
             #ifdef ENCODERS
               sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -188,9 +185,8 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef FIVEWAY
-                   &kp PG_UP    &kp C_VOL_DN    &kp PG_DN    &kp C_VOL_UP    &kp C_MUTE 
+                   &kp C &kp G &kp D &kp L &kp O 
             #endif
-
             >;
             #ifdef ENCODERS
               sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -211,9 +207,8 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef FIVEWAY
-                   &kp PG_UP    &kp C_VOL_DN    &kp PG_DN    &kp C_VOL_UP    &kp C_MUTE 
+                   &kp C &kp G &kp D &kp L &kp O 
             #endif
-
             >;
             #ifdef ENCODERS
               sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -232,9 +227,8 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef FIVEWAY
-                   &kp PG_UP    &kp C_VOL_DN    &kp PG_DN    &kp C_VOL_UP    &kp C_MUTE 
+                   &kp C &kp G &kp D &kp L &kp O 
             #endif
-
             >;
 
             #ifdef ENCODERS
@@ -254,7 +248,7 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef FIVEWAY
-                   &kp PG_UP    &kp C_VOL_DN    &kp PG_DN    &kp C_VOL_UP    &kp C_MUTE 
+                   &kp C &kp G &kp D &kp L &kp O 
             #endif
 
             >;
