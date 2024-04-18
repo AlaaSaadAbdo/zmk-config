@@ -96,6 +96,7 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef FIVEWAY
+                  // up           left            down         right           middle
                    &kp C &kp G &kp D &kp L &kp O 
             #endif
             >;
