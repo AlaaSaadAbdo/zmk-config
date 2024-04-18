@@ -97,7 +97,7 @@
 
             #ifdef FIVEWAY
                   // up           left            down         right           middle
-                   &kp C &kp G &kp D &kp L &kp O 
+                   &kp C &kp G &kp D &kp C_VOL_UP &kp O 
             #endif
             >;
             #ifdef ENCODERS
