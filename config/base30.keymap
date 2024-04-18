@@ -96,8 +96,8 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef FIVEWAY
-                  // up           left            down         right           middle
-                   &kp C &kp G &kp D &kp C_VOL_UP &kp O 
+                  // up  left         down  right        middle
+                   &kp C &kp C_VOL_DN &kp D &kp C_VOL_UP &kp O 
             #endif
             >;
             #ifdef ENCODERS
