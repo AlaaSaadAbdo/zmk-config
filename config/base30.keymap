@@ -94,6 +94,10 @@
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_nav   &kp SPACE          &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+
+            #ifdef FIVEWAY
+                   &kp C &kp G &kp D &kp L &kp O 
+            #endif
             >;
             #ifdef ENCODERS
               sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
