@@ -10,7 +10,6 @@
 	chosen {
 		zmk,kscan = &kscan_faceup;
 		zmk,matrix_transform = &default_transform;
-		wakeup-source;
 	};
 
 	default_transform: keymap_transform_0 {
@@ -28,10 +27,12 @@
 	/omit-if-no-ref/ kscan_faceup: kscan_0 {
 		compatible = "zmk,kscan-gpio-direct";
 		label = "KSCAN0";
+		wakeup-source;
 	};
 
 	/omit-if-no-ref/ kscan_facedown: kscan_1 {
 		compatible = "zmk,kscan-gpio-direct";
 		label = "KSCAN1";
+		wakeup-source;
 	};
 };
