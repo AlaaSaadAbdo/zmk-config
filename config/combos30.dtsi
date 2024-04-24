@@ -32,8 +32,8 @@ compatible = "zmk,combos";
 COMBO(Q, &kp Q, 21 22, ALPHA_ALL) // Q 
 COMBO(Z, &kp Z, 1 2, ALPHA_ALL) // Z
 COMBO(V, &kp V, 20 21, ALPHA_ALL) // V
-// COMBO(V, &kp V, 20 21, HDN HDNW) // V
-// COMBO(X, &kp X, 20 21, APT APTW) // X
+COMBO(X, &kp X, 2 3, APT APTW) // X
+COMBO(DAL, &kp RBKT, 7 8, APT APTW) // ]
 
 /* Brackets */
 COMBO(left_bracket, &kp LBKT, 1 11, ALPHA_ALL)
