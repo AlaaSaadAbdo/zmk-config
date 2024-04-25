@@ -91,5 +91,5 @@ GCOMBO(switch_to_APT_mac, &to APT, 1 11 26)
 GCOMBO(switch_to_APT_win, &to APTW, 8 18 29)
 
 /* bluetooth profile + default layer */
-COMBO(btblhdn,  btblwin, 20 21, NAV NAVW)
-COMBO(btblhdnw, btblmac, 21 22, NAV NAVW)
+COMBO(btblhdn,  &btblwin, 20 21, NAV NAVW)
+COMBO(btblhdnw, &btblmac, 21 22, NAV NAVW)
