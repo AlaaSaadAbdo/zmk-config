@@ -19,5 +19,5 @@ MACRO(symW, &macro_tap &kp K_CANCEL &macro_press &mo SYMW &macro_pause_for_relea
 
 MACRO(grave3, &macro_tap &kp GRAVE &macro_tap &kp GRAVE &macro_tap &kp GRAVE, 0, 0)
 
-MACRO(btblmac, &macro_tap &to HDN  &bt BT_SEL 0, 0, 0)
-MACRO(btblwin, &macro_tap &kp HDNW &bt BT_SEL 1, 0, 0)
+MACRO(btblmac, &macro_tap &to HDN  &macro_tap &bt BT_SEL 0, 0, 0)
+MACRO(btblwin, &macro_tap &kp HDNW &macro_tap &bt BT_SEL 1, 0, 0)
