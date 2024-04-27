@@ -96,8 +96,8 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef FIVEWAY
-                  // up      left         down      right        middle
-                   &kp PG_UP &kp C_VOL_DN &kp PG_DN &kp C_VOL_UP &kp C_MUTE
+                  // up          left         down         right        middle
+                   &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
             >;
             #ifdef ENCODERS
@@ -122,8 +122,8 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef FIVEWAY
-                  // up      left         down      right        middle
-                   &kp PG_UP &kp C_VOL_DN &kp PG_DN &kp C_VOL_UP &kp C_MUTE
+                  // up          left         down         right        middle
+                   &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
             >;
             #ifdef ENCODERS
@@ -143,8 +143,8 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef FIVEWAY
-                  // up      left         down      right        middle
-                   &kp PG_UP &kp C_VOL_DN &kp PG_DN &kp C_VOL_UP &kp C_MUTE
+                  // up          left         down         right        middle
+                   &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
             >;
             #ifdef ENCODERS
@@ -164,8 +164,8 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef FIVEWAY
-                  // up      left         down      right        middle
-                   &kp PG_UP &kp C_VOL_DN &kp PG_DN &kp C_VOL_UP &kp C_MUTE
+                  // up          left         down         right        middle
+                   &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
             >;
             #ifdef ENCODERS
@@ -185,8 +185,8 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef FIVEWAY
-                  // up      left         down      right        middle
-                   &kp PG_UP &kp C_VOL_DN &kp PG_DN &kp C_VOL_UP &kp C_MUTE
+                  // up          left         down         right        middle
+                   &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
             >;
             #ifdef ENCODERS
@@ -211,8 +211,8 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef FIVEWAY
-                  // up      left         down      right        middle
-                   &kp PG_UP &kp C_VOL_DN &kp PG_DN &kp C_VOL_UP &kp C_MUTE
+                  // up          left         down         right        middle
+                   &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
             >;
             #ifdef ENCODERS
@@ -232,8 +232,8 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef FIVEWAY
-                  // up      left         down      right        middle
-                   &kp PG_UP &kp C_VOL_DN &kp PG_DN &kp C_VOL_UP &kp C_MUTE
+                  // up          left         down         right        middle
+                   &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
             >;
 
@@ -254,8 +254,8 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef FIVEWAY
-                  // up      left         down      right        middle
-                   &kp PG_UP &kp C_VOL_DN &kp PG_DN &kp C_VOL_UP &kp C_MUTE
+                  // up          left         down         right        middle
+                   &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
             >;
