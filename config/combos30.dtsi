@@ -71,12 +71,12 @@ COMBO(key_repeat_l, &key_repeat, 14 22, ALPHA_ALL)
   /* Mac */
 COMBO(lock_screen, &kp LG(LC(Q)), 6 7 8, NAV)
 COMBO(sym1h, &macro_sym, 26 27, ALPHA_MAC)
-COMBO(win1h, &macro_nav, 28 29, ALPHA_MAC)
+COMBO(nav1h, &macro_nav, 28 29, ALPHA_MAC)
 
   /* Win */
 COMBO(lock_screenw, &kp LG(L), 6 7 8, NAVW)
 COMBO(sym1hw, &macro_symW, 26 27, ALPHA_WIN)
-COMBO(win1hw, &macro_navW, 28 29, ALPHA_WIN)
+COMBO(nav1hw, &macro_navW, 28 29, ALPHA_WIN)
 
 /* bluetooth */
 COMBO(bt_clear, &bt BT_CLR, 0 14, NAV NAVW)
