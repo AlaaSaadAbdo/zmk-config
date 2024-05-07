@@ -78,6 +78,11 @@ COMBO(lock_screenw, &kp LG(L), 6 7 8, NAVW)
 COMBO(sym1hw, &macro_symW, 26 27, ALPHA_WIN)
 COMBO(nav1hw, &macro_navW, 28 29, ALPHA_WIN)
 
+/* Volume */
+COMBO(volup, C_VOL_UP, 13 22, ALPHA_ALL)
+COMBO(voldown, C_VOL_DN, 12 21, ALPHA_WIN)
+COMBO(volmute, C_MUTE, 11 20, ALPHA_WIN)
+
 /* bluetooth */
 COMBO(bt_clear, &bt BT_CLR, 0 14, NAV NAVW)
 COMBO(bt_0, &bt BT_SEL 0, 0 1, NAV NAVW)
