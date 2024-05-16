@@ -80,8 +80,8 @@ COMBO(nav1hw, &macro_navW, 28 29, ALPHA_WIN)
 
 /* Volume */
 COMBO(volup, &kp C_VOL_UP, 13 22, ALPHA_ALL)
-COMBO(voldown, &kp C_VOL_DN, 12 21, ALPHA_WIN)
-COMBO(volmute, &kp C_MUTE, 11 20, ALPHA_WIN)
+COMBO(voldown, &kp C_VOL_DN, 12 21, ALPHA_ALL)
+COMBO(volmute, &kp C_MUTE, 11 20, ALPHA_ALL)
 
 /* bluetooth */
 COMBO(bt_clear, &bt BT_CLR, 0 14, NAV NAVW)
