@@ -1,4 +1,7 @@
 #define BATREEQ
 
+#include <dt-bindings/zmk/mouse.h>
+#include <behaviors/mouse_keys.dtsi>
+
 #include "../../../base30.keymap"
 
