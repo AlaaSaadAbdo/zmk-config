@@ -31,6 +31,8 @@ include:
     shield: asfoora
   - board: nice_nano_v2
     shield: wasfoora
+  - board: nice_nano_v2
+    shield: batreeq
   - board: seeeduino_xiao_ble
     shield: rommana_left rgbled_widget
   - board: seeeduino_xiao_ble
