@@ -95,10 +95,17 @@
                                                &macro_nav   &kp SPACE          &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
-            #ifdef FIVEWAY
+            #ifdef WASFOORA
                   // up          left         down         right        middle
                    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
+
+            #ifdef BATREEQ
+              &mkp LCLK
+              &mkp MCLK &mkp LCLK &mkp RCLK
+              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+            #endif
+
             >;
             #ifdef ENCODERS
               sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -121,10 +128,17 @@
                                                &macro_nav   &kp SPACE          &skq LSHIFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
-            #ifdef FIVEWAY
+            #ifdef WASFOORA
                   // up          left         down         right        middle
                    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
+
+            #ifdef BATREEQ
+              &mkp LCLK
+              &mkp MCLK &mkp LCLK &mkp RCLK
+              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+            #endif
+
             >;
             #ifdef ENCODERS
               sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -142,10 +156,17 @@
                                                 &trans        &trans            &trans       &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
-            #ifdef FIVEWAY
+            #ifdef WASFOORA
                   // up          left         down         right        middle
                    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
+
+            #ifdef BATREEQ
+              &mkp LCLK
+              &mkp MCLK &mkp LCLK &mkp RCLK
+              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+            #endif
+
             >;
             #ifdef ENCODERS
               sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -163,10 +184,17 @@
                                                &trans         &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
-            #ifdef FIVEWAY
+            #ifdef WASFOORA
                   // up          left         down         right        middle
                    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
+
+            #ifdef BATREEQ
+              &mkp LCLK
+              &mkp MCLK &mkp LCLK &mkp RCLK
+              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+            #endif
+
             >;
             #ifdef ENCODERS
               sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -184,10 +212,17 @@
                                                &macro_navW  &kp SPACE          &skq LSHIFT   &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
-            #ifdef FIVEWAY
+            #ifdef WASFOORA
                   // up          left         down         right        middle
                    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
+
+            #ifdef BATREEQ
+              &mkp LCLK
+              &mkp MCLK &mkp LCLK &mkp RCLK
+              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+            #endif
+
             >;
             #ifdef ENCODERS
               sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -210,10 +245,17 @@
                                                &macro_navW   &kp SPACE          &skq LSHIFT  &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
-            #ifdef FIVEWAY
+            #ifdef WASFOORA
                   // up          left         down         right        middle
                    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
+
+            #ifdef BATREEQ
+              &mkp LCLK
+              &mkp MCLK &mkp LCLK &mkp RCLK
+              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+            #endif
+
             >;
             #ifdef ENCODERS
               sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -231,10 +273,17 @@
                                                 &trans          &trans         &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
-            #ifdef FIVEWAY
+            #ifdef WASFOORA
                   // up          left         down         right        middle
                    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
+
+            #ifdef BATREEQ
+              &mkp LCLK
+              &mkp MCLK &mkp LCLK &mkp RCLK
+              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+            #endif
+
             >;
 
             #ifdef ENCODERS
@@ -253,9 +302,15 @@
                                                &trans        &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
-            #ifdef FIVEWAY
+            #ifdef WASFOORA
                   // up          left         down         right        middle
                    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+            #endif
+
+            #ifdef BATREEQ
+              &mkp LCLK
+              &mkp MCLK &mkp LCLK &mkp RCLK
+              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
             >;

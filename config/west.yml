@@ -2,29 +2,23 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
+    - name: sadekbaroudi
+      url-base: https://github.com/sadekbaroudi
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: petejohanson
+      revision: feat/pointers-move-scroll
       import: app/west.yml
+    - name: chiptuner-zmk-module
+      remote: petejohanson
+      revision: main
+    # replace the one above with the commented one below when it gets merged into zmk
+    # must swap the zmk-fingerpunch-keyboards repo as well at the same time
+    # - name: zmk
+    #   remote: zmkfirmware
+    #   revision: main
+    #   import: app/west.yml
   self:
     path: config
-# manifest:
-#   remotes:
-#     - name: zmkfirmware
-#       url-base: https://github.com/zmkfirmware
-#     - name: caksoylar
-#       url-base: https://github.com/caksoylar
-#     - name: alaasaadabdo
-#       url-base: https://github.com/alaasaadabdo
-#   projects:
-#     - name: zmk
-#       # remote: zmkfirmware
-#       # revision: main
-#       # remote: caksoylar
-#       # revision: caksoylar/experimental
-#       remote: alaasaadabdo
-#       revision: alaa
-#       import: app/west.yml
-#   self:
-#     path: config
