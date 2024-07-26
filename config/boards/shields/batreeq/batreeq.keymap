@@ -2,6 +2,7 @@
 
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors/mouse_keys.dtsi>
+#include <dt-bindings/zmk/ext_power.h>
 
 #include "../../../base30.keymap"
 

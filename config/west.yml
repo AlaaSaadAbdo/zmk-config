@@ -14,9 +14,6 @@ manifest:
     - name: chiptuner-zmk-module
       remote: petejohanson
       revision: main
-    - name: zmk-fingerpunch-vik 
-      remote: sadekbaroudi
-      revision: main
     - name: zmk-fingerpunch-vik
       remote: sadekbaroudi
       revision: main
