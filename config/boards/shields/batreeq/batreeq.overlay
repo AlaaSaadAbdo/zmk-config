@@ -104,7 +104,7 @@ vik_spi_pmw3610: &spi1 {
             , <&gpio0 9  GPIO_ACTIVE_HIGH>
             , <&gpio0 10 GPIO_ACTIVE_HIGH>
             , <&gpio1 11 GPIO_ACTIVE_HIGH>
-            , <&gpio0 13 GPIO_ACTIVE_HIGH>
+            , <&gpio1 13 GPIO_ACTIVE_HIGH>
             ;
 
         row-gpios
