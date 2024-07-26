@@ -103,7 +103,7 @@
             #ifdef BATREEQ
               &mkp LCLK
               &mkp MCLK &mkp LCLK &mkp RCLK
-              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &ext_power EP_ON    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &ext_power EP_TOG
             #endif
 
             >;
@@ -136,7 +136,7 @@
             #ifdef BATREEQ
               &mkp LCLK
               &mkp MCLK &mkp LCLK &mkp RCLK
-              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &ext_power EP_ON    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &ext_power EP_TOG
             #endif
 
             >;
@@ -220,7 +220,7 @@
             #ifdef BATREEQ
               &mkp LCLK
               &mkp MCLK &mkp LCLK &mkp RCLK
-              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &ext_power EP_ON    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &ext_power EP_TOG
             #endif
 
             >;
