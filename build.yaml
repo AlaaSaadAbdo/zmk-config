@@ -32,7 +32,7 @@ include:
   - board: nice_nano_v2
     shield: wasfoora
   - board: nice_nano_v2
-    shield: batreeq nice_view_adapter nice_view
+    shield: batreeq nice_view_adapter nice_view vik_spi_pmw3610
   - board: seeeduino_xiao_ble
     shield: rommana_left rgbled_widget
   - board: seeeduino_xiao_ble

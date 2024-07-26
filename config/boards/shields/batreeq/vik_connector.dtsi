@@ -1,0 +1,21 @@
+/ {
+	vik_conn: vik_connector {
+		compatible = "sadekbaroudi,vik-connector";
+		#gpio-cells = <2>;
+		gpio-map-mask = <0xffffffff 0xffffffc0>;
+		gpio-map-pass-thru = <0 0x3f>;
+		gpio-map
+			= <0 0 &gpio0  3 0>		/* vik SDA */
+			, <1 0 &gpio0  4 0>		/* vik SCL */
+			, <2 0 &gpio0  5 0>		/* vik RGB Data */
+			, <3 0 &gpio0  7 0>		/* vik AD_1 */
+			, <4 0 &gpio0  6 0>		/* vik MOSI */
+			, <5 0 &gpio0 21 0>		/* vik AD_2 */
+			, <6 0 &gpio0  8 0>		/* vik CS */
+			, <7 0 &gpio1 17 0>		/* vik MISO */
+			, <8 0 &gpio0 20 0>		/* vik SCLK */
+			;
+	};
+};
+
+vik_spi_pmw3610: &spi1 {};
