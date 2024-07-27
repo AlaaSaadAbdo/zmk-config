@@ -8,14 +8,14 @@
 // #include "vik_connector.dtsi"
 
 &pinctrl {
-    spi1_default: spi0_default {
+    spi1_default: spi1_default {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 1, 2)>,
                 <NRF_PSEL(SPIM_MOSI, 1, 1)>,
                 <NRF_PSEL(SPIM_MISO, 0, 19)>; /* GPIO0 19 is not broken on a nice!nano.*/
         };
     };
-    spi1_sleep: spi0_sleep {
+    spi1_sleep: spi1_sleep {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 1, 2)>,
                 <NRF_PSEL(SPIM_MOSI, 1, 1)>,
@@ -69,8 +69,8 @@
 
 nice_view_spi: &spi1 {
     compatible = "nordic,nrf-spim";
-    pinctrl-0 = <&spi0_default>;
-    pinctrl-1 = <&spi0_sleep>;
+    pinctrl-0 = <&spi1_default>;
+    pinctrl-1 = <&spi1_sleep>;
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio1 7 GPIO_ACTIVE_HIGH>;
 };
