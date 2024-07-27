@@ -103,7 +103,7 @@ vik_spi_pmw3610: &spi1 {
 
         /*   optional features   */
         snipe-layers = <3 7>;
-        scroll-layers = <1 5>;
+        scroll-layers = <8>;
         // automouse-layer = <4>;
     };
 };

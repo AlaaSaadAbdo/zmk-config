@@ -17,6 +17,9 @@
 #define APTW 5
 #define NAVW 6
 #define SYMW 7
+#ifdef BATREEQ
+  #define SCROLL 8
+#endif
 
 #define SK(KEY) &nk KEY KEY
 
@@ -101,9 +104,9 @@
             #endif
 
             #ifdef BATREEQ
-              &mkp LCLK
+              &mkp &macro_scroll 
               &mkp MCLK &mkp LCLK &mkp RCLK
-              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &ext_power EP_ON    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &ext_power EP_TOG
+              &kp MCLK  &kp LCLK &mo SCROLL &kp RCLK &mo SYM    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
             >;
@@ -134,9 +137,9 @@
             #endif
 
             #ifdef BATREEQ
-              &mkp LCLK
-              &mkp MCLK &mkp LCLK &mkp RCLK
-              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &ext_power EP_ON    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &ext_power EP_TOG
+              &trans
+              &trans &trans &trans
+              &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
             #endif
 
             >;
@@ -162,9 +165,9 @@
             #endif
 
             #ifdef BATREEQ
-              &mkp LCLK
-              &mkp MCLK &mkp LCLK &mkp RCLK
-              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+              &trans
+              &trans &trans &trans
+              &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
             #endif
 
             >;
@@ -190,9 +193,9 @@
             #endif
 
             #ifdef BATREEQ
-              &mkp LCLK
-              &mkp MCLK &mkp LCLK &mkp RCLK
-              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+              &trans
+              &trans &trans &trans
+              &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
             #endif
 
             >;
@@ -218,9 +221,9 @@
             #endif
 
             #ifdef BATREEQ
-              &mkp LCLK
+              &mkp &macro_scroll 
               &mkp MCLK &mkp LCLK &mkp RCLK
-              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &ext_power EP_ON    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &ext_power EP_TOG
+              &kp MCLK  &kp LCLK &mo SCROLL &kp RCLK &mo SYMW    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
             >;
@@ -251,9 +254,9 @@
             #endif
 
             #ifdef BATREEQ
-              &mkp LCLK
-              &mkp MCLK &mkp LCLK &mkp RCLK
-              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+              &trans
+              &trans &trans &trans
+              &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
             #endif
 
             >;
@@ -279,9 +282,9 @@
             #endif
 
             #ifdef BATREEQ
-              &mkp LCLK
-              &mkp MCLK &mkp LCLK &mkp RCLK
-              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+              &trans
+              &trans &trans &trans
+              &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
             #endif
 
             >;
@@ -308,11 +311,40 @@
             #endif
 
             #ifdef BATREEQ
-              &mkp LCLK
-              &mkp MCLK &mkp LCLK &mkp RCLK
-              &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+              &trans
+              &trans &trans &trans
+              &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
+            #endif
+            
+            >;
+
+            #ifdef ENCODERS
+              sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+            #endif
+        };
+
+        scroll {
+            label = "SCROLL";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &trans        &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans        &trans
+     &trans        &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans        &trans
+                   &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans
+//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+                                               &trans        &trans            &trans        &trans
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+
+            #ifdef WASFOORA
+                  // up          left         down         right        middle
+                   &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
+            #ifdef BATREEQ
+              &trans
+              &trans &trans &trans
+              &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
+            #endif
+            
             >;
 
             #ifdef ENCODERS
