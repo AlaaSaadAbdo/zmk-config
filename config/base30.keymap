@@ -19,6 +19,7 @@
 #define SYMW 7
 #ifdef BATREEQ
   #define SCROLL 8
+  #define SNIPE 9
 #endif
 
 #define SK(KEY) &nk KEY KEY
@@ -45,13 +46,6 @@
               ╰────────╯ ╰────────╯            */
 
 / {
-
-  combos {
-        #include "combos30.dtsi"
-    };
-  macros {
-        #include "macros.dtsi"
-    };
 
   behaviors {
 
@@ -100,6 +94,14 @@
     };
 
   };
+
+  combos {
+        #include "combos30.dtsi"
+    };
+  macros {
+        #include "macros.dtsi"
+    };
+
  
         keymap {
                 compatible = "zmk,keymap";
@@ -123,7 +125,7 @@
             #ifdef BATREEQ
               SL(SCROLL) 
               &mkp MCLK &mkp LCLK &mkp RCLK
-              &mkp MCLK &mkp LCLK &mo SCROLL &mkp RCLK &mo SYM    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+              &mkp MCLK &mkp LCLK &mo SCROLL &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
             >;
@@ -240,7 +242,7 @@
             #ifdef BATREEQ
               SL(SCROLL) 
               &mkp MCLK &mkp LCLK &mkp RCLK
-              &mkp MCLK &mkp LCLK &mo SCROLL &mkp RCLK &mo SYMW    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+              &mkp MCLK &mkp LCLK &mo SCROLL &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
             >;
@@ -340,6 +342,7 @@
             #endif
         };
 
+    #ifdef BATREEQ
         scroll {
             label = "SCROLL";
             bindings = <
@@ -368,6 +371,36 @@
               sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
             #endif
         };
+
+        snipe {
+            label = "SNIPE";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &trans        &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans        &trans
+     &trans        &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans        &trans
+                   &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans
+//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+                                               &trans        &trans            &trans        &trans
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+
+            #ifdef WASFOORA
+                  // up          left         down         right        middle
+                   &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+            #endif
+
+            #ifdef BATREEQ
+              &trans
+              &trans &trans &trans
+              &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
+            #endif
+            
+            >;
+
+            #ifdef ENCODERS
+              sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+            #endif
+        };
+    #endif
   };
 
 };
