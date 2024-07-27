@@ -160,7 +160,7 @@
             #endif
 
             #ifdef BATREEQ
-              &trans
+              SL(SCROLL) 
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
             #endif
@@ -188,7 +188,7 @@
             #endif
 
             #ifdef BATREEQ
-              &trans
+              SL(SCROLL) 
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
             #endif
@@ -216,7 +216,7 @@
             #endif
 
             #ifdef BATREEQ
-              &trans
+              SL(SCROLL) 
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
             #endif
@@ -277,7 +277,7 @@
             #endif
 
             #ifdef BATREEQ
-              &trans
+              SL(SCROLL) 
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
             #endif
@@ -305,7 +305,7 @@
             #endif
 
             #ifdef BATREEQ
-              &trans
+              SL(SCROLL) 
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
             #endif
@@ -334,7 +334,7 @@
             #endif
 
             #ifdef BATREEQ
-              &trans
+              SL(SCROLL) 
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
             #endif
@@ -363,7 +363,7 @@
             #endif
 
             #ifdef BATREEQ
-              &trans
+              SL(SCROLL) 
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
             #endif
