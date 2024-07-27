@@ -1,4 +1,4 @@
-#define BATREEQ
+#define GHAZAL
 
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors/mouse_keys.dtsi>

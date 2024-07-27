@@ -1,9 +1,9 @@
 # Copyright (c) 2021 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_BATREEQ
+if SHIELD_GHAZAL
 
 config ZMK_KEYBOARD_NAME
-    default "Batreeq"
+    default "Ghazal"
 
 endif
