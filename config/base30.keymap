@@ -363,7 +363,7 @@
             #endif
 
             #ifdef BATREEQ
-              SL(SCROLL) 
+              &none 
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
             #endif
