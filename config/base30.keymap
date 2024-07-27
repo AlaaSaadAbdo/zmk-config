@@ -28,6 +28,10 @@
   release-after-ms = <60000>;
 };
 
+&sl {
+  release-after-ms = <60000>;
+};
+
 &caps_word {
   continue-list = <UNDERSCORE MINUS BACKSPACE K_CANCEL>;
 };
