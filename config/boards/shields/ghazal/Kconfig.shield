@@ -2,4 +2,4 @@
 # SPDX-License-Identifier: MIT
 
 config SHIELD_GHAZAL
-    def_bool $(shields_list_contains,Ghazal)
+    def_bool $(shields_list_contains,ghazal)

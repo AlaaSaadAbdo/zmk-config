@@ -16,10 +16,6 @@ manifest:
     - name: chiptuner-zmk-module
       remote: petejohanson
       revision: main
-  #  - name: zmk-fingerpunch-vik
-  #    remote: sadekbaroudi
-  #    revision: main
-  #    import: config/deps.yml
     - name: zmk-pmw3610-driver
       remote: inorichi
       revision: main
