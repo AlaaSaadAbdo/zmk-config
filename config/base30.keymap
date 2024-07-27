@@ -117,7 +117,7 @@
             #endif
 
             #ifdef BATREEQ
-              &SL SCROLL 
+              SL(SCROLL) 
               &mkp MCLK &mkp LCLK &mkp RCLK
               &mkp MCLK &mkp LCLK &mo SCROLL &mkp RCLK &mo SYM    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
@@ -234,7 +234,7 @@
             #endif
 
             #ifdef BATREEQ
-              &SL SCROLL 
+              SL(SCROLL) 
               &mkp MCLK &mkp LCLK &mkp RCLK
               &mkp MCLK &mkp LCLK &mo SCROLL &mkp RCLK &mo SYMW    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
