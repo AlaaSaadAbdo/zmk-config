@@ -104,9 +104,9 @@
             #endif
 
             #ifdef BATREEQ
-              &mkp &macro_scroll 
+              &macro_scroll 
               &mkp MCLK &mkp LCLK &mkp RCLK
-              &kp MCLK  &kp LCLK &mo SCROLL &kp RCLK &mo SYM    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+              &mkp MCLK &mkp LCLK &mo SCROLL &mkp RCLK &mo SYM    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
             >;
@@ -221,9 +221,9 @@
             #endif
 
             #ifdef BATREEQ
-              &mkp &macro_scroll 
+              &macro_scroll 
               &mkp MCLK &mkp LCLK &mkp RCLK
-              &kp MCLK  &kp LCLK &mo SCROLL &kp RCLK &mo SYMW    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+              &mkp MCLK &mkp LCLK &mo SCROLL &mkp RCLK &mo SYMW    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
             >;
