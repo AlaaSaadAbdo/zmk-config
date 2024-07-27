@@ -17,14 +17,14 @@
 #define APTW 5
 #define NAVW 6
 #define SYMW 7
-#ifdef BATREEQ
+#ifdef GHAZAL
   #define SCROLL 8
   #define SNIPE 9
 #endif
 
 #define SK(KEY) &nk KEY KEY
 
-#ifdef BATREEQ
+#ifdef GHAZAL
   #define SL(LAYER) &nl LAYER LAYER
 #endif
 
@@ -60,7 +60,7 @@
         bindings = <&kp>, <&sk>;
     };
 
-#ifdef BATREEQ
+#ifdef GHAZAL
     // Toggle layer on tap, normal layer on hold
     // Useful for scroll toggling without the scroll remaining active unless held
     nl: not_so_sticky_layer {
@@ -122,7 +122,7 @@
                    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
-            #ifdef BATREEQ
+            #ifdef GHAZAL
               SL(SCROLL) 
               &mkp MCLK &mkp LCLK &mkp RCLK
               &mkp MCLK &mkp LCLK &mo SCROLL &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
@@ -155,7 +155,7 @@
                    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
-            #ifdef BATREEQ
+            #ifdef GHAZAL
               SL(SCROLL) 
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
@@ -183,7 +183,7 @@
                    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
-            #ifdef BATREEQ
+            #ifdef GHAZAL
               &trans 
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
@@ -211,7 +211,7 @@
                    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
-            #ifdef BATREEQ
+            #ifdef GHAZAL
               &trans 
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
@@ -239,7 +239,7 @@
                    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
-            #ifdef BATREEQ
+            #ifdef GHAZAL
               SL(SCROLL) 
               &mkp MCLK &mkp LCLK &mkp RCLK
               &mkp MCLK &mkp LCLK &mo SCROLL &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
@@ -272,7 +272,7 @@
                    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
-            #ifdef BATREEQ
+            #ifdef GHAZAL
               SL(SCROLL) 
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
@@ -300,7 +300,7 @@
                    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
-            #ifdef BATREEQ
+            #ifdef GHAZAL
               &trans 
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
@@ -329,7 +329,7 @@
                    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
-            #ifdef BATREEQ
+            #ifdef GHAZAL
               &trans 
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
@@ -342,7 +342,7 @@
             #endif
         };
 
-    #ifdef BATREEQ
+    #ifdef GHAZAL
         scroll {
             label = "SCROLL";
             bindings = <
@@ -359,7 +359,7 @@
                    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
-            #ifdef BATREEQ
+            #ifdef GHAZAL
               &trans
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
@@ -388,7 +388,7 @@
                    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
-            #ifdef BATREEQ
+            #ifdef GHAZAL
               &trans
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans

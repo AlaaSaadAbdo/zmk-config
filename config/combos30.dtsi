@@ -102,7 +102,7 @@ COMBO(btblhdn,  &macro_btblwin, 27 20 21, ALPHA_ALL)
 COMBO(btblhdnw, &macro_btblmac, 27 21 22, ALPHA_ALL)
 
 /* Batreeq trackball combos */
-#ifdef BATREEQ
+#ifdef GHAZAL
   COMBO(LCLICK, &mkp LCLK, 26 13, ALPHA_ALL)
   COMBO(RCLICK, &mkp  RCLK, 26 12, ALPHA_ALL)
   COMBO(MCLICK, &mkp  MCLK, 26 11, ALPHA_ALL)
