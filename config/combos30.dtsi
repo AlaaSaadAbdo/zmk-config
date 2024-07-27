@@ -101,7 +101,7 @@ GCOMBO(switch_to_APT_win, &to APTW, 8 18 29)
 COMBO(btblhdn,  &macro_btblwin, 27 20 21, ALPHA_ALL)
 COMBO(btblhdnw, &macro_btblmac, 27 21 22, ALPHA_ALL)
 
-/* Batreeq trackball combos */
+/* GHAZAL trackball combos */
 #ifdef GHAZAL
   COMBO(LCLICK, &mkp RCLK, 26 13, ALPHA_ALL)
   COMBO(RCLICK, &mkp LCLK, 26 12, ALPHA_ALL)
