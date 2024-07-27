@@ -4,11 +4,10 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: petejohanson
       url-base: https://github.com/petejohanson
-    - name: sadekbaroudi
-      url-base: https://github.com/sadekbaroudi
-    - name: zmk-pmw3610-driver
-      remote: inorichi
-      revision: main
+  #  - name: sadekbaroudi
+  #    url-base: https://github.com/sadekbaroudi
+    - name: inorichi
+      url-base: https://github.com/inorichi
   projects:
     - name: zmk
       remote: petejohanson
@@ -17,10 +16,13 @@ manifest:
     - name: chiptuner-zmk-module
       remote: petejohanson
       revision: main
-    - name: zmk-fingerpunch-vik
-      remote: sadekbaroudi
+  #  - name: zmk-fingerpunch-vik
+  #    remote: sadekbaroudi
+  #    revision: main
+  #    import: config/deps.yml
+    - name: zmk-pmw3610-driver
+      remote: inorichi
       revision: main
-      import: config/deps.yml
     # replace the one above with the commented one below when it gets merged into zmk
     # must swap the zmk-fingerpunch-keyboards repo as well at the same time
     # - name: zmk
