@@ -77,7 +77,7 @@
     // Useful for modifier-clicking without the modifier remaining active
     nl: not_so_sticky_layer {
         compatible = "zmk,behavior-hold-tap";
-        label = "NOT_SO_STICKY_KEY";
+        label = "NOT_SO_STICKY_LAYER";
         #binding-cells = <2>;
         tapping_term_ms = <250>;
         flavor = "tap-preferred";
@@ -188,7 +188,7 @@
             #endif
 
             #ifdef BATREEQ
-              SL(SCROLL) 
+              &trans 
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
             #endif
@@ -216,7 +216,7 @@
             #endif
 
             #ifdef BATREEQ
-              SL(SCROLL) 
+              &trans 
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
             #endif
@@ -305,7 +305,7 @@
             #endif
 
             #ifdef BATREEQ
-              SL(SCROLL) 
+              &trans 
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
             #endif
@@ -334,7 +334,7 @@
             #endif
 
             #ifdef BATREEQ
-              SL(SCROLL) 
+              &trans 
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
             #endif
@@ -363,7 +363,7 @@
             #endif
 
             #ifdef BATREEQ
-              &none 
+              &trans
               &trans &trans &trans
               &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
             #endif
