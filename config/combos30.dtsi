@@ -24,26 +24,20 @@ compatible = "zmk,combos";
     key-positions = <KEYPOS>; \
   };
 
-#define ALPHA_ALL HDN HDNW
-#define ALPHA_MAC HDN
-#define ALPHA_WIN HDNW
+#ifdef GHAZAL
+  #define ALPHA_ALL HDN HDNW SCROLL SNIPE
+  #define ALPHA_MAC HDN SCROLL SNIPE
+  #define ALPHA_WIN HDNW SCROLL SNIPE
+#else
+  #define ALPHA_ALL HDN HDNW
+  #define ALPHA_MAC HDN
+  #define ALPHA_WIN HDNW
+#endif
 
 /* Missing Alphas */
-COMBO(Q, &kp Q, 21 22, ALPHA_ALL 
-#ifdef GHAZAL
-  SCROLL
-#endif
-) // Q 
-COMBO(Z, &kp Z, 1 2, ALPHA_ALL
-#ifdef GHAZAL
-  SCROLL
-#endif
-) // Z
-COMBO(V, &kp V, 20 21, ALPHA_ALL
- SCROLL#ifdef GHAZAL
-  SCROLL
-#endif
-) // V
+COMBO(Q, &kp Q, 21 22, ALPHA_ALL ) // Q 
+COMBO(Z, &kp Z, 1 2, ALPHA_ALL) // Z
+COMBO(V, &kp V, 20 21, ALPHA_ALL) // V
 
 /* Brackets */
 COMBO(left_bracket, &kp LBKT, 1 11, ALPHA_ALL)
