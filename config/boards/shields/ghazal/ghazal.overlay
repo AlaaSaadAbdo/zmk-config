@@ -70,7 +70,7 @@ nice_view_spi: &spi1 {
 
         /*   optional features   */
         snipe-layers = <2 5 7>;
-        scroll-layers = <8>;
+        scroll-layers = <6>;
         // automouse-layer = <4>;
     };
 };
