@@ -10,16 +10,14 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define HDN 0
-#define APT 1
-#define NAV 2
-#define SYM 3
-#define HDNW 4
-#define APTW 5
-#define NAVW 6
-#define SYMW 7
+#define NAV 1
+#define SYM 2
+#define HDNW 3
+#define NAVW 4
+#define SYMW 5
 #ifdef GHAZAL
-  #define SCROLL 8
-  #define SNIPE 9
+  #define SCROLL 6
+  #define SNIPE 7
 #endif
 
 #define SK(KEY) &nk KEY KEY
@@ -134,39 +132,6 @@
             #endif
         };
 
-        apt {
-            label = "APT";
-            bindings = <
-
-// qwerty for arabic 
-
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp W         &kp E         &kp R         &kp T         &kp Y             &kp U         &kp I         &kp O         &kp P         &kp LBKT
-// ├──── ─────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp A         &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L         &kp SEMI
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                   &kp C         &kp N         &kp M                                         &kp COMMA     &kp DOT       &kp SQT
-//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_nav   &kp SPACE          &skq LSHIFT    &macro_sym
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-
-            #ifdef WASFOORA
-                  // up          left         down         right        middle
-                   &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-            #endif
-
-            #ifdef GHAZAL
-              SL(SCROLL) 
-              &trans &trans &trans
-              &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
-            #endif
-
-            >;
-            #ifdef ENCODERS
-              sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
-            #endif
-        };
-
         navigation {
             label = "NAV";
             bindings = <
@@ -251,39 +216,6 @@
             #endif
         };
         
-        aptw {
-            label = "APTW";
-            bindings = <
-
-// qwerty for arabic 
-
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp W         &kp E         &kp R         &kp T         &kp Y             &kp U         &kp I         &kp O         &kp P         &kp LBKT
-// ├──── ─────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp A         &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L         &kp SEMI
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                   &kp C         &kp N         &kp M                                         &kp COMMA     &kp DOT       &kp SQT
-//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_navW   &kp SPACE          &skq LSHIFT  &macro_symW
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-
-            #ifdef WASFOORA
-                  // up          left         down         right        middle
-                   &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-            #endif
-
-            #ifdef GHAZAL
-              SL(SCROLL) 
-              &trans &trans &trans
-              &trans &trans &trans &trans &trans       &trans &trans &trans &trans &trans
-            #endif
-
-            >;
-            #ifdef ENCODERS
-              sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
-            #endif
-        };
-
         navigation_windows {
             label = "NAVW";
             bindings = <

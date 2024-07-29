@@ -69,7 +69,7 @@ nice_view_spi: &spi1 {
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 
         /*   optional features   */
-        snipe-layers = <3 7 9>;
+        snipe-layers = <2 5 7>;
         scroll-layers = <8>;
         // automouse-layer = <4>;
     };

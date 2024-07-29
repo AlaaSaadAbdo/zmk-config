@@ -24,16 +24,26 @@ compatible = "zmk,combos";
     key-positions = <KEYPOS>; \
   };
 
-#define ALPHA_ALL HDN HDNW APT APTW
-#define ALPHA_MAC HDN APT
-#define ALPHA_WIN HDNW APT
+#define ALPHA_ALL HDN HDNW
+#define ALPHA_MAC HDN
+#define ALPHA_WIN HDNW
 
 /* Missing Alphas */
-COMBO(Q, &kp Q, 21 22, ALPHA_ALL SCROLL) // Q 
-COMBO(Z, &kp Z, 1 2, ALPHA_ALL SCROLL) // Z
-COMBO(V, &kp V, 20 21, ALPHA_ALL SCROLL) // V
-COMBO(X, &kp X, 2 3, APT APTW SCROLL) // X
-COMBO(DAL, &kp RBKT, 7 8, APT APTW SCROLL) // ]
+COMBO(Q, &kp Q, 21 22, ALPHA_ALL 
+#ifdef GHAZAL
+  SCROLL
+#endif
+) // Q 
+COMBO(Z, &kp Z, 1 2, ALPHA_ALL
+#ifdef GHAZAL
+  SCROLL
+#endif
+) // Z
+COMBO(V, &kp V, 20 21, ALPHA_ALL
+ SCROLL#ifdef GHAZAL
+  SCROLL
+#endif
+) // V
 
 /* Brackets */
 COMBO(left_bracket, &kp LBKT, 1 11, ALPHA_ALL)
@@ -93,9 +103,6 @@ COMBO(bt_3, &bt BT_SEL 3, 3 4, NAV NAVW)
 /* mac | win */
 GCOMBO(switch_to_HDN_mac, &to HDN, 0 10 26)
 GCOMBO(switch_to_HDN_win, &to HDNW, 9 19 29)
-
-GCOMBO(switch_to_APT_mac, &to APT, 1 11 26)
-GCOMBO(switch_to_APT_win, &to APTW, 8 18 29)
 
 /* bluetooth profile + default layer */
 COMBO(btblhdn,  &macro_btblwin, 27 20 21, ALPHA_ALL)
