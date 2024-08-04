@@ -103,6 +103,9 @@ GCOMBO(switch_to_HDN_win, &to HDNW, 9 19 29)
 COMBO(btblhdn,  &macro_btblwin, 27 20 21, ALPHA_ALL)
 COMBO(btblhdnw, &macro_btblmac, 27 21 22, ALPHA_ALL)
 
+/* soft off */
+COMBO(softoff, &soft_off, 0 1 2 3, ALPHA_ALL)
+
 /* GHAZAL trackball combos */
 #ifdef GHAZAL
 
