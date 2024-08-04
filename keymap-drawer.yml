@@ -8,7 +8,6 @@ layout:
         drop_inner: true
 layers:
     HDN: [W, F, M, P, B, ',', X, '"', J, K, R, S, N, T, G, ., A, E, I, H, C, L, D, U, O, Y, 'Nav', SPACE, {t: 'SHIFT', h: 'Sticky'}, 'Sym']
-    APT: [W, F, G, P, B, X, J, ',', ., '"', R, S, T, H, K, M, N, E, I, A, C, Y, D, L, O, U, 'Nav', SPACE, {t: 'SHIFT', h: 'Sticky'}, 'Sym']
     NAV:
     - Scrn Sht
     - ENTER
