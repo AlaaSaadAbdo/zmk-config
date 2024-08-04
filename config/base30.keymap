@@ -66,7 +66,7 @@
         label = "NOT_SO_STICKY_LAYER";
         #binding-cells = <2>;
         tapping_term_ms = <250>;
-        flavor = "balanced";
+        flavor = "tap-preferred";
         bindings = <&mo>, <&tog>;
     };
 #endif
