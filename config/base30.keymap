@@ -279,7 +279,7 @@
             label = "SCROLL";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &trans        &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans        &trans
+     &soft_off     &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans        &soft_off
      &trans        &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans        &trans
                    &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
@@ -308,7 +308,7 @@
             label = "SNIPE";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &trans        &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans        &trans
+     &soft_off     &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans        &soft_off
      &trans        &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans        &trans
                    &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
