@@ -81,17 +81,6 @@
       release-after-ms = <750>;
     };
 
-    lal: layer-alpha {
-        compatible = "zmk,behavior-hold-tap";
-        label = "LAYER_ALPHA";
-        #binding-cells = <2>;
-        flavor = "balanced";
-        tapping-term-ms = <170>;
-        quick-tap-ms = <100>;
-        global-quick-tap;
-        bindings = <&mo>, <&kp>;
-    };
-
   };
 
   combos {
