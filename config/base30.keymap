@@ -34,10 +34,6 @@
   continue-list = <UNDERSCORE MINUS BACKSPACE K_CANCEL>;
 };
 
-&soft_off {
-    hold-time-ms = <3000>; // Only turn off it the key is held for 5 seconds or longer.
-};
-
 
 /*                KEY POSITIONS
 
