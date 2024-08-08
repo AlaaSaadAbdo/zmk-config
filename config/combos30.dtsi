@@ -64,6 +64,7 @@ COMBO(rayclip, &kp LC(LA(LG(LS(J)))), 21 26, ALPHA_ALL)
 COMBO(redow, &kp LC(Y), 3 4, ALPHA_WIN)
 COMBO(undow, &kp LC(Z), 13 14, ALPHA_WIN)
 COMBO(delete_wordw, &kp LC(BACKSPACE), 2 12, NAVW)
+COMBO(open_windows, &kp LG(TAB), 6 7 8, ALPHA_WIN)
 
 /* misc */
 COMBO(L_esc, &kp ESC, 22 26, ALPHA_ALL)
