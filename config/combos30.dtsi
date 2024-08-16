@@ -25,13 +25,13 @@ compatible = "zmk,combos";
   };
 
 #ifdef GHAZAL
-  #define ALPHA_ALL HDN HDNW SCROLL SNIPE
-  #define ALPHA_MAC HDN SCROLL SNIPE
-  #define ALPHA_WIN HDNW SCROLL SNIPE
+  #define ALPHA_ALL MAC WIN SCROLL SNIPE
+  #define ALPHA_MAC MAC SCROLL SNIPE
+  #define ALPHA_WIN WIN SCROLL SNIPE
 #else
-  #define ALPHA_ALL HDN HDNW
-  #define ALPHA_MAC HDN
-  #define ALPHA_WIN HDNW
+  #define ALPHA_ALL MAC WIN
+  #define ALPHA_MAC MAC
+  #define ALPHA_WIN WIN
 #endif
 
 /* Missing Alphas */
@@ -97,12 +97,12 @@ COMBO(bt_2, &bt BT_SEL 2, 2 3, NAV NAVW)
 COMBO(bt_3, &bt BT_SEL 3, 3 4, NAV NAVW)
   
 /* mac | win */
-GCOMBO(switch_to_HDN_mac, &to HDN, 0 10 26)
-GCOMBO(switch_to_HDN_win, &to HDNW, 9 19 29)
+GCOMBO(switch_to_MAC_mac, &to MAC, 0 10 26)
+GCOMBO(switch_to_MAC_win, &to WIN, 9 19 29)
 
 /* bluetooth profile + default layer */
-COMBO(btblhdn,  &macro_btblwin, 27 20 21, ALPHA_ALL)
-COMBO(btblhdnw, &macro_btblmac, 27 21 22, ALPHA_ALL)
+COMBO(btblMAC,  &macro_btblwin, 27 20 21, ALPHA_ALL)
+COMBO(btblWIN, &macro_btblmac, 27 21 22, ALPHA_ALL)
 
 /* prefer USB or BLE */
 COMBO(OUTUSB, &out OUT_USB, 5 6 7, ALPHA_ALL)

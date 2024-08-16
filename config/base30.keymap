@@ -9,10 +9,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define HDN 0
+#define MAC 0
 #define NAV 1
 #define SYM 2
-#define HDNW 3
+#define WIN 3
 #define NAVW 4
 #define SYMW 5
 #ifdef GHAZAL
@@ -95,7 +95,7 @@
                 compatible = "zmk,keymap";
  
         hands_down {
-            label = "HDN";
+            label = "MAC";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp W         &kp F         &kp M         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp J         &kp K
@@ -179,7 +179,7 @@
         };
 
         hands_down_windows {
-            label = "HDNW";
+            label = "WIN";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp W         &kp F         &kp M         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp J         &kp K

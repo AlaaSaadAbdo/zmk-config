@@ -7,7 +7,7 @@ layout:
         drop_pinky: true
         drop_inner: true
 layers:
-    HDN: [W, F, M, P, B, ',', X, '"', J, K, R, S, N, T, G, ., A, E, I, H, C, L, D, U, O, Y, 'Nav', SPACE, {t: 'SHIFT', h: 'Sticky'}, 'Sym']
+    BASE: [W, F, M, P, B, ',', X, '"', J, K, R, S, N, T, G, ., A, E, I, H, C, L, D, U, O, Y, 'Nav', SPACE, {t: 'SHIFT', h: 'Sticky'}, 'Sym']
     NAV:
     - Scrn Sht
     - ENTER
@@ -73,52 +73,52 @@ layers:
 combos:
 -   p: [21, 22]
     k: Q
-    l: [HDN, APT]
+    l: [BASE, APT]
 -   p: [1, 2]
     k: Z
-    l: [HDN, APT]
+    l: [BASE, APT]
 -   p: [20, 21]
     k: V
-    l: [HDN, APT]
+    l: [BASE, APT]
 -   p: [1, 11]
     k: '['
-    l: [HDN, APT]
+    l: [BASE, APT]
 -   p: [8, 18]
     k: ']'
-    l: [HDN, APT]
+    l: [BASE, APT]
 -   p: [2, 12]
     k: (
-    l: [HDN, APT]
+    l: [BASE, APT]
 -   p: [7, 17]
     k: )
-    l: [HDN, APT]
+    l: [BASE, APT]
 -   p: [3, 13]
     k: '{'
-    l: [HDN, APT]
+    l: [BASE, APT]
 -   p: [6, 16]
     k: '}'
-    l: [HDN, APT]
+    l: [BASE, APT]
 -   p: [27, 28]
     k: Caps
-    l: [HDN, APT]
+    l: [BASE, APT]
 -   p: [3, 4]
     k: Redo
-    l: [HDN, APT]
+    l: [BASE, APT]
 -   p: [13, 14]
     k: Undo
-    l: [HDN, APT]
+    l: [BASE, APT]
 -   p: [2, 12]
     k: Dwrd
     l: [NAV]
 -   p: [22, 26]
     k: ESC
-    l: [HDN, APT]
+    l: [BASE, APT]
 -   p: [15, 23]
     k: RPT
-    l: [HDN, APT]
+    l: [BASE, APT]
 -   p: [14, 22]
     k: RPT
-    l: [HDN, APT]
+    l: [BASE, APT]
 -   p: [6, 7, 8]
     k: Lck
     l: [NAV]
@@ -126,7 +126,7 @@ combos:
     o: .25
 -   p: [26, 27]
     k: Sym
-    l: [HDN, APT]
+    l: [BASE, APT]
 -   p: [0, 14]
     k: BT CLR
     l: [NAV]
