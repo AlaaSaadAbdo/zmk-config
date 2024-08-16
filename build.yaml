@@ -2,25 +2,25 @@
 include:
   - board: nice_nano_v2
     shield: settings_reset
-  - board: nice_nano_v2
-    shield: wizza_left
-  - board: nice_nano_v2
-    shield: wizza_right
-  - board: nice_nano_v2
-    shield: wizzav2_left
-  - board: nice_nano_v2
-    shield: wizzav2_right
-  - board: nice_nano_v2
-    shield: wizzades_left
-  - board: nice_nano_v2
-    shield: wizzades_right
-  - board: nice_nano_v2
-    shield: asfoora
-  - board: nice_nano_v2
-    shield: wasfoora
+  # - board: nice_nano_v2
+  #   shield: wizza_left
+  # - board: nice_nano_v2
+  #   shield: wizza_right
+  # - board: nice_nano_v2
+  #   shield: wizzav2_left
+  # - board: nice_nano_v2
+  #   shield: wizzav2_right
+  # - board: nice_nano_v2
+  #   shield: wizzades_left
+  # - board: nice_nano_v2
+  #   shield: wizzades_right
+  # - board: nice_nano_v2
+  #   shield: asfoora
+  # - board: nice_nano_v2
+  #   shield: wasfoora
   - board: nice_nano_v2
     shield: ghazal nice_view
-  - board: seeeduino_xiao_ble
-    shield: rommana_left rgbled_widget
-  - board: seeeduino_xiao_ble
-    shield: rommana_right rgbled_widget
+  # - board: seeeduino_xiao_ble
+  #   shield: rommana_left rgbled_widget
+  # - board: seeeduino_xiao_ble
+  #   shield: rommana_right rgbled_widget
