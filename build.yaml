@@ -16,8 +16,9 @@ include:
   #   shield: wizzades_right
   # - board: nice_nano_v2
   #   shield: asfoora
-  # - board: nice_nano_v2
-  #   shield: wasfoora
+  - board: nice_nano_v2
+    shield: wasfoora
+    snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: ghazal nice_view
     snippet: zmk-usb-logging

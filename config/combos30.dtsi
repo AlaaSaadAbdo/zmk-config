@@ -112,6 +112,11 @@ COMBO(OUTBLE, &out OUT_BLE, 15 23 24, ALPHA_ALL)
 COMBO(softoff, &soft_off, 0 1 2 3, ALPHA_ALL)
 
 /* GHAZAL trackball combos */
+
+#ifdef WASFOORA
+COMBO(L_LCLICK_HR, &mkp LCLK, 12 13, ALPHA_ALL SCROLL SNIPE)
+#endif
+
 #ifdef GHAZAL
 
   /* Left hand mouse */
