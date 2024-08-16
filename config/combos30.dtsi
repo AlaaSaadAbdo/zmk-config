@@ -104,6 +104,10 @@ GCOMBO(switch_to_HDN_win, &to HDNW, 9 19 29)
 COMBO(btblhdn,  &macro_btblwin, 27 20 21, ALPHA_ALL)
 COMBO(btblhdnw, &macro_btblmac, 27 21 22, ALPHA_ALL)
 
+/* prefer USB or BLE */
+COMBO(OUTUSB, &out OUT_USB, 5 6 7, ALPHA_ALL)
+COMBO(OUTBLE, &out OUT_BLE, 15 23 24, ALPHA_ALL)
+
 /* soft off */
 COMBO(softoff, &soft_off, 0 1 2 3, ALPHA_ALL)
 
