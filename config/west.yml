@@ -11,7 +11,8 @@ manifest:
   projects:
     - name: zmk
       remote: petejohanson
-      revision: d45cb3c26fc113357dfc035965e51c84e13e218d #pmw3610 trackball issue
+      revision: 0b1d513f53ce81042d546eb94b2d6ec789f421a9 #pmw3610 trackball issue
+      # revision: feat/pointers-move-scroll
       import: app/west.yml
     - name: chiptuner-zmk-module
       remote: petejohanson
