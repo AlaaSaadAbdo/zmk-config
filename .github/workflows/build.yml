@@ -2,28 +2,6 @@ name: Reusable user config build
 
 on:
   [push, pull_request, workflow_dispatch]
-  workflow_call:
-    inputs:
-      build_matrix_path:
-        description: "Path to the build matrix file"
-        default: "build.yaml"
-        required: false
-        type: string
-      config_path:
-        description: "Path to the config directory"
-        default: "config"
-        required: false
-        type: string
-      fallback_binary:
-        description: "Fallback binary format, if no *.uf2 file was built"
-        default: "bin"
-        required: false
-        type: string
-      archive_name:
-        description: "Archive output file name"
-        default: "firmware"
-        required: false
-        type: string
 
 jobs:
   matrix:
@@ -46,7 +24,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: zmkfirmware/zmk-build-arm:3.5-branch-20240724023030-3.5.0-0.16.3-f93290b3ab1a-10069499076 
+      image: zmkfirmware/zmk-build-arm:stable@sha256:0979a8de325e3d822e48bd8d1d9efaee2984ad3750253119f920a342f0ce5cde 
     needs: matrix
     name: Build
     strategy:
