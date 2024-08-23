@@ -23,6 +23,9 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: badjeff
       revision: main
+    # - name: zmk-input-behavior-listener
+    #   remote: badjeff
+    #   revision: main
     # replace the one above with the commented one below when it gets merged into zmk
     # must swap the zmk-fingerpunch-keyboards repo as well at the same time
     # - name: zmk
