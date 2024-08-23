@@ -4,10 +4,10 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: petejohanson
       url-base: https://github.com/petejohanson
-  #  - name: sadekbaroudi
-  #    url-base: https://github.com/sadekbaroudi
-    - name: inorichi
-      url-base: https://github.com/inorichi
+    # - name: inorichi
+    #   url-base: https://github.com/inorichi
+    - name: badjeff
+      url-base: https://github.com/badjeff
   projects:
     - name: zmk
       remote: petejohanson
