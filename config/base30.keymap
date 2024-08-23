@@ -46,48 +46,6 @@
 
 / {
 
-#ifdef GHAZAL
-    trackball_listener {
-        compatible = "zmk,input-behavior-listener";
-        device = <&trackball>;
-        layers = <0 1 2 3 4 5>;
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
-        scale-multiplier = <1>;
-        scale-divisor = <2>;
-    };
-
-    trackball_snipe_listener {
-        compatible = "zmk,input-behavior-listener";   
-        device = <&trackball>;
-        layers = <7>;
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
-        scale-multiplier = <1>;
-        scale-divisor = <16>;
-    };
-
-    trackball_scroll_listener {
-        compatible = "zmk,input-behavior-listener";
-        device = <&trackball>;
-        layers = <6>;
-        evt-type = <INPUT_EV_REL>;            
-        x-input-code = <INPUT_REL_MISC>;
-        y-input-code = <INPUT_REL_WHEEL>;
-        y-invert;
-        bindings = <&ib_wheel_scaler 1 32>;
-    };
-
-    ib_wheel_scaler: ib_wheel_scaler {
-        compatible = "zmk,input-behavior-scaler";
-        #binding-cells = <2>;
-        evt-type = <INPUT_EV_REL>;
-        input-code = <INPUT_REL_WHEEL>;
-    };
-#endif
-
   behaviors {
 
     // Sticky key on tap, normal key on hold
