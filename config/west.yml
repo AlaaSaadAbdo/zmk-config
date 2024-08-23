@@ -17,8 +17,11 @@ manifest:
     - name: chiptuner-zmk-module
       remote: petejohanson
       revision: main
+    # - name: zmk-pmw3610-driver
+    #   remote: inorichi
+    #   revision: main
     - name: zmk-pmw3610-driver
-      remote: inorichi
+      remote: badjeff
       revision: main
     # replace the one above with the commented one below when it gets merged into zmk
     # must swap the zmk-fingerpunch-keyboards repo as well at the same time
