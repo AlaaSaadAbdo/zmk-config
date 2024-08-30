@@ -11,7 +11,7 @@ manifest:
     # - name: badjeff
     #   url-base: https://github.com/badjeff
     - name: charlesmst
-    - url-base: https://github.com/charlesmst
+      url-base: https://github.com/charlesmst
   projects:
     # - name: zmk
     #   remote: petejohanson
