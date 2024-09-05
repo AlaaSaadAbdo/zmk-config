@@ -113,7 +113,7 @@
             #ifdef GHAZAL
               SL(SCROLL) 
               &mkp MCLK &mkp LCLK &mkp RCLK
-              &mkp MCLK &mkp LCLK &mo SCROLL &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+              &mkp MCLK &mkp LCLK SL(SCROLL) &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
             >;
@@ -197,7 +197,7 @@
             #ifdef GHAZAL
               SL(SCROLL) 
               &mkp MCLK &mkp LCLK &mkp RCLK
-              &mkp MCLK &mkp LCLK &mo SCROLL &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+              &mkp MCLK &mkp LCLK SL(SCROLL) &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
             >;
