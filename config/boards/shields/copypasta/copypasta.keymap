@@ -4,6 +4,13 @@
 
 
 / {
+
+    combos {
+        compatible = "zmk,combos";
+        reset { key-positions = <1 2>; bindings = <&bootloader>; };
+
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -11,7 +18,7 @@
 
             bindings = <
 
-            &kp N1 &kp N2
+            &kp N1 &bootloader
    
             >;
         };
