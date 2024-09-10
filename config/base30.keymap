@@ -10,14 +10,16 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define MAC 0
-#define NAV 1
-#define SYM 2
-#define WIN 3
-#define NAVW 4
-#define SYMW 5
+#define MBIRD 1
+#define NAV 2
+#define SYM 3
+#define WIN 4
+#define WBIRD 5
+#define NAVW 6
+#define SYMW 7
 #ifdef GHAZAL
-  #define SCROLL 6
-  #define SNIPE 7
+  #define SCROLL 8
+  #define SNIPE 9
 #endif
 
 #define SK(KEY) &nk KEY KEY
@@ -122,6 +124,34 @@
             #endif
         };
 
+        bird_mac {
+            label = "MBIRD";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp X         &kp C         &kp L         &kp F         &kp P             &kp K         &kp Y         &kp O         &kp U         &kp SQT
+     &kp R         &kp S         &kp N         &kp T         &kp B             &kp J         &kp H         &kp E         &kp I         &kp A
+                   &kp W         &kp M         &kp G                                         &kp D         &kp COMMA     &kp DOT
+//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+                                               &macro_nav   &kp SPACE          &skq LSHIFT    &macro_sym
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+
+            #ifdef WASFOORA
+                  // up          left         down         right        middle
+                   &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+            #endif
+
+            #ifdef GHAZAL
+              SL(SCROLL) 
+              &mkp MCLK &mkp LCLK &mkp RCLK
+              &mkp MCLK &mkp LCLK SL(SCROLL) &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+            #endif
+
+            >;
+            #ifdef ENCODERS
+              sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            #endif
+        };
+
         navigation {
             label = "NAV";
             bindings = <
@@ -185,6 +215,35 @@
      &kp W         &kp F         &kp M         &kp P         &kp B             &kp COMMA     &kp X         &kp SQT       &kp J         &kp K
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
                    &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
+//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
+                                               &macro_navW  &kp SPACE          &skq LSHIFT   &macro_symW
+//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+
+            #ifdef WASFOORA
+                  // up          left         down         right        middle
+                   &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+            #endif
+
+            #ifdef GHAZAL
+              SL(SCROLL) 
+              &mkp MCLK &mkp LCLK &mkp RCLK
+              &mkp MCLK &mkp LCLK SL(SCROLL) &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+            #endif
+
+            >;
+            #ifdef ENCODERS
+              sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+            #endif
+        };
+
+
+        bird_windows {
+            label = "WBIRD";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp X         &kp C         &kp L         &kp F         &kp P             &kp K         &kp Y         &kp O         &kp U         &kp SQT
+     &kp R         &kp S         &kp N         &kp T         &kp B             &kp J         &kp H         &kp E         &kp I         &kp A
+                   &kp W         &kp M         &kp G                                         &kp D         &kp COMMA     &kp DOT
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_navW  &kp SPACE          &skq LSHIFT   &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯

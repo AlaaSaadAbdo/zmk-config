@@ -25,19 +25,25 @@ compatible = "zmk,combos";
   };
 
 #ifdef GHAZAL
-  #define ALPHA_ALL MAC WIN SCROLL SNIPE
-  #define ALPHA_MAC MAC SCROLL SNIPE
-  #define ALPHA_WIN WIN SCROLL SNIPE
+  #define ALPHA_ALL MAC WIN SCROLL SNIPE MBIRD WBIRD
+  #define ALPHA_MAC MAC SCROLL SNIPE MBIRD
+  #define ALPHA_WIN WIN SCROLL SNIPE WBIRD
 #else
-  #define ALPHA_ALL MAC WIN
-  #define ALPHA_MAC MAC
-  #define ALPHA_WIN WIN
+  #define ALPHA_ALL MAC WIN MBIRD WBIRD
+  #define ALPHA_MAC MAC MBIRD
+  #define ALPHA_WIN WIN WBIRD
 #endif
 
 /* Missing Alphas */
-COMBO(Q, &kp Q, 21 22, ALPHA_ALL ) // Q 
-COMBO(Z, &kp Z, 1 2, ALPHA_ALL) // Z
-COMBO(V, &kp V, 20 21, ALPHA_ALL) // V
+/* Hands down */
+COMBO(Q, &kp Q, 21 22, MAC WIN) // Q 
+COMBO(Z, &kp Z, 1 2, MAC WIN) // Z
+COMBO(V, &kp V, 20 21, MAC WIN) // V
+
+/* BIRD */
+COMBO(BQ, &kp Q, 2 3, MBIRD WBIRD) // Q 
+COMBO(BZ, &kp Z, 20 21, MBIRD WBIRD) // Z
+COMBO(BV, &kp V, 1 2, MBIRD WBIRD) // V
 
 /* Brackets */
 COMBO(left_bracket, &kp LBKT, 1 11, ALPHA_ALL)
@@ -97,8 +103,12 @@ COMBO(bt_2, &bt BT_SEL 2, 2 3, NAV NAVW)
 COMBO(bt_3, &bt BT_SEL 3, 3 4, NAV NAVW)
   
 /* mac | win */
-GCOMBO(switch_to_MAC_mac, &to MAC, 0 10 26)
-GCOMBO(switch_to_MAC_win, &to WIN, 9 19 29)
+GCOMBO(switch_to_mac, &to MAC, 0 10 26)
+GCOMBO(switch_to_win, &to WIN, 9 19 29)
+
+/* BIRD: mac | win */
+GCOMBO(switch_to_mbird, &to MBIRD, 1 11 26)
+GCOMBO(switch_to_wbird, &to WBIRD, 8 18 29)
 
 /* bluetooth profile + default layer */
 COMBO(btblMAC,  &macro_btblwin, 27 20 21, ALPHA_ALL)
