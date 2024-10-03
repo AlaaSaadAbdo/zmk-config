@@ -26,24 +26,28 @@ compatible = "zmk,combos";
 
 #ifdef GHAZAL
   #define ALPHA_ALL MAC WIN SCROLL SNIPE MBIRD WBIRD
+  #define ALPHA_HD MAC WIN SCROLL SNIPE
+  #define ALPHA_BIRD SCROLL SNIPE MBIRD WBIRD
   #define ALPHA_MAC MAC SCROLL SNIPE MBIRD
   #define ALPHA_WIN WIN SCROLL SNIPE WBIRD
 #else
   #define ALPHA_ALL MAC WIN MBIRD WBIRD
+  #define ALPHA_HD MAC WIN
+  #define ALPHA_BIRD MBIRD WBIRD
   #define ALPHA_MAC MAC MBIRD
   #define ALPHA_WIN WIN WBIRD
 #endif
 
 /* Missing Alphas */
 /* Hands down */
-COMBO(Q, &kp Q, 21 22, MAC WIN) // Q 
-COMBO(Z, &kp Z, 1 2, MAC WIN) // Z
-COMBO(V, &kp V, 20 21, MAC WIN) // V
+COMBO(Q, &kp Q, 21 22, ALPHA_HD) // Q 
+COMBO(Z, &kp Z, 1 2, ALPHA_HD) // Z
+COMBO(V, &kp V, 20 21, ALPHA_HD) // V
 
 /* BIRD */
-COMBO(BQ, &kp Q, 2 3, MBIRD WBIRD) // Q 
-COMBO(BZ, &kp Z, 20 21, MBIRD WBIRD) // Z
-COMBO(BV, &kp V, 1 2, MBIRD WBIRD) // V
+COMBO(BQ, &kp Q, 2 3, ALPHA_BIRD) // Q 
+COMBO(BZ, &kp Z, 20 21, ALPHA_BIRD) // Z
+COMBO(BV, &kp V, 1 2, ALPHA_BIRD) // V
 
 /* Brackets */
 COMBO(left_bracket, &kp LBKT, 1 11, ALPHA_ALL)
