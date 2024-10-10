@@ -90,6 +90,7 @@
     };
   macros {
         #include "macros.dtsi"
+#include <dt-bindings/zmk/mouse.h>
     };
 
  
@@ -115,7 +116,7 @@
             #ifdef GHAZAL
               SL(SCROLL) 
               &mkp MCLK &mkp LCLK &mkp RCLK
-              SL(SCROLL) &mkp LCLK &mkp MCLK &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+              &mkp MCLK &mkp LCLK SL(SCROLL) &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
             >;
@@ -143,7 +144,7 @@
             #ifdef GHAZAL
               SL(SCROLL) 
               &mkp MCLK &mkp LCLK &mkp RCLK
-              SL(SCROLL) &mkp LCLK &mkp MCLK &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+              &mkp MCLK &mkp LCLK SL(SCROLL) &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
             >;
@@ -227,7 +228,7 @@
             #ifdef GHAZAL
               SL(SCROLL) 
               &mkp MCLK &mkp LCLK &mkp RCLK
-              SL(SCROLL) &mkp LCLK &mkp MCLK &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+              &mkp MCLK &mkp LCLK SL(SCROLL) &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
             >;
@@ -256,7 +257,7 @@
             #ifdef GHAZAL
               SL(SCROLL) 
               &mkp MCLK &mkp LCLK &mkp RCLK
-              SL(SCROLL) &mkp LCLK &mkp MCLK &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+              &mkp MCLK &mkp LCLK SL(SCROLL) &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
             #endif
 
             >;
