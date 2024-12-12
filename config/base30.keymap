@@ -242,9 +242,9 @@
             label = "WBIRD";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp LSHFT     &kp E         &kp W         &kp F         &kp U             &kp K         &kp Y         &kp O         &kp U         &kp SQT
+     &kp LSHFT     &kp Q         &kp W         &kp E         &kp F             &kp K         &kp Y         &kp O         &kp U         &kp SQT
      &kp LCTRL     &kp A         &kp S         &kp D         &kp V             &kp J         &kp H         &kp E         &kp I         &kp A
-                   &kp V         &kp F         &kp U                                         &kp D         &kp COMMA     &kp DOT
+                   &kp Z         &kp X         &kp C                                         &kp D         &kp COMMA     &kp DOT
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &macro_navW  &kp SPACE          &skq LSHIFT   &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯

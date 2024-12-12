@@ -45,9 +45,10 @@ COMBO(Z, &kp Z, 1 2, ALPHA_HD) // Z
 COMBO(V, &kp V, 20 21, ALPHA_HD) // V
 
 /* BIRD */
-COMBO(BQ, &kp Q, 2 3, ALPHA_BIRD) // Q 
-COMBO(BZ, &kp Z, 20 21, ALPHA_BIRD) // Z
-COMBO(BV, &kp V, 1 2, ALPHA_BIRD) // V
+COMBO(BQ, &kp G, 21 22, ALPHA_BIRD) // Q 
+COMBO(BZ, &kp R, 20 21, ALPHA_BIRD) // Z
+COMBO(BV, &kp N1, 1 2, ALPHA_BIRD) // V
+COMBO(BV, &kp N2, 2 3, ALPHA_BIRD) // V
 
 /* Brackets */
 COMBO(left_bracket, &kp LBKT, 1 11, ALPHA_ALL)
