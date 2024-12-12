@@ -84,6 +84,7 @@ COMBO(launcher, &kp LG(SPACE), 20 22, ALPHA_ALL)
 COMBO(clipboard_manager, &kp LG(LC(LA(LS(Z)))), 20 21 22, ALPHA_ALL)
 COMBO(key_repeat_r, &key_repeat, 15 23, ALPHA_ALL)
 COMBO(key_repeat_l, &key_repeat, 14 22, ALPHA_ALL)
+COMBO(gamingtab, &kp TAB, 1 2 3, WBIRD)
 
   /* Mac */
 COMBO(lock_screen, &kp LG(LC(Q)), 6 7 8, NAV)
