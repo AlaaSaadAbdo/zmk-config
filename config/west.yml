@@ -17,10 +17,10 @@ manifest:
     #   remote: petejohanson
     #   revision: dbbeb701aee215fbd5f5e9faecc778b745d4cf87 #pmw3610 trackball issue
       # revision: feat/pointers-move-scroll
-    - name: zmk
-      remote: AlaaSaadAbdo
-      revision: windows-10-pmw3610-pointer
-      import: app/west.yml
+    # - name: zmk
+    #   remote: AlaaSaadAbdo
+    #   revision: windows-10-pmw3610-pointer
+    #   import: app/west.yml
     - name: chiptuner-zmk-module
       remote: petejohanson
       revision: main
@@ -38,9 +38,9 @@ manifest:
     #   revision: main
     # replace the one above with the commented one below when it gets merged into zmk
     # must swap the zmk-fingerpunch-keyboards repo as well at the same time
-    # - name: zmk
-    #   remote: zmkfirmware
-    #   revision: main
-    #   import: app/west.yml
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
   self:
     path: config
