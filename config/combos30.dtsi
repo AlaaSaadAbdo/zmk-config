@@ -27,13 +27,11 @@ compatible = "zmk,combos";
 #ifdef GHAZAL
   #define ALPHA_ALL MAC WIN SCROLL SNIPE
   #define ALPHA_HD MAC WIN SCROLL SNIPE
-  #define ALPHA_BIRD SCROLL SNIPE
   #define ALPHA_MAC MAC SCROLL SNIPE 
   #define ALPHA_WIN WIN SCROLL SNIPE
 #else
   #define ALPHA_ALL MAC WIN
   #define ALPHA_HD MAC WIN
-  #define ALPHA_BIRD
   #define ALPHA_MAC MAC 
   #define ALPHA_WIN WIN
 #endif
@@ -43,12 +41,6 @@ compatible = "zmk,combos";
 COMBO(Q, &kp Q, 21 22, ALPHA_HD) // Q 
 COMBO(Z, &kp Z, 1 2, ALPHA_HD) // Z
 COMBO(V, &kp V, 20 21, ALPHA_HD) // V
-
-/* BIRD */
-COMBO(BG, &kp G, 21 22, ALPHA_BIRD) // Q 
-COMBO(BR, &kp R, 20 21, ALPHA_BIRD) // Z
-COMBO(B1, &kp N1, 1 2, ALPHA_BIRD) // V
-COMBO(B2, &kp N2, 2 3, ALPHA_BIRD) // V
 
 /* Brackets */
 COMBO(left_bracket, &kp LBKT, 1 11, ALPHA_ALL)
