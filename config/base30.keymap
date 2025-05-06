@@ -10,16 +10,14 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define MAC 0
-#define MBIRD 1
-#define NAV 2
-#define SYM 3
-#define WIN 4
-#define WBIRD 5
-#define NAVW 6
-#define SYMW 7
+#define NAV 1
+#define SYM 2
+#define WIN 3
+#define NAVW 4
+#define SYMW 5
 #ifdef GHAZAL
-  #define SCROLL 8
-  #define SNIPE 9
+  #define SCROLL 6
+  #define SNIPE 7
 #endif
 
 #define SK(KEY) &nk KEY KEY
