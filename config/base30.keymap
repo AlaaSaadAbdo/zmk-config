@@ -88,7 +88,7 @@
     };
   macros {
         #include "macros.dtsi"
-#include <dt-bindings/zmk/mouse.h>
+        #include <dt-bindings/zmk/mouse.h>
     };
 
  
@@ -103,7 +103,7 @@
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
                    &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_nav   &kp SPACE          &kp LSHIFT    &macro_sym
+                                               &macro_nav   &kp SPACE          &skq LSHFT    &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef WASFOORA
@@ -187,7 +187,7 @@
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
                    &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_navW  &kp SPACE          &kp LSHIFT    &macro_symW
+                                               &macro_navW  &kp SPACE          &skq LSHFT    &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef WASFOORA
