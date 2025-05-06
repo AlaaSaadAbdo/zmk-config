@@ -103,35 +103,7 @@
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
                    &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_nav   &kp SPACE          &skq LSHIFT    &macro_sym
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-
-            #ifdef WASFOORA
-                  // up          left         down         right        middle
-                   &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-            #endif
-
-            #ifdef GHAZAL
-              SL(SCROLL) 
-              &mkp MCLK &mkp LCLK &mkp RCLK
-              &mkp MCLK &mkp LCLK SL(SCROLL) &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-            #endif
-
-            >;
-            #ifdef ENCODERS
-              sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-            #endif
-        };
-
-        bird_mac {
-            label = "MBIRD";
-            bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp X         &kp C         &kp L         &kp F         &kp P             &kp K         &kp Y         &kp O         &kp U         &kp SQT
-     &kp R         &kp S         &kp N         &kp T         &kp B             &kp J         &kp H         &kp E         &kp I         &kp A
-                   &kp W         &kp M         &kp G                                         &kp D         &kp COMMA     &kp DOT
-//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_nav   &kp SPACE          &skq LSHIFT    &macro_sym
+                                               &macro_nav   &kp SPACE          LSHIFT        &macro_sym
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef WASFOORA
@@ -215,7 +187,7 @@
      &kp R         &kp S         &kp N         &kp T         &kp G             &kp DOT       &kp A         &kp E         &kp I         &kp H
                    &kp C         &kp L         &kp D                                         &kp U         &kp O         &kp Y
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &macro_navW  &kp SPACE          &skq LSHIFT   &macro_symW
+                                               &macro_navW  &kp SPACE          LSHIFT        &macro_symW
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 
             #ifdef WASFOORA
@@ -235,35 +207,6 @@
             #endif
         };
 
-
-        bird_windows {
-            label = "WBIRD";
-            bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp LSHFT     &kp Q         &kp W         &kp E         &kp F             &kp K         &kp Y         &kp O         &kp U         &kp SQT
-     &kp LCTRL     &kp A         &kp S         &kp D         &kp V             &kp J         &kp H         &kp E         &kp I         &kp A
-                   &kp Z         &kp X         &kp C                                         &kp D         &kp COMMA     &kp DOT
-//               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
-                                               &kp R  &kp SPACE          &skq LSHIFT   &macro_symW
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-
-            #ifdef WASFOORA
-                  // up          left         down         right        middle
-                   &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-            #endif
-
-            #ifdef GHAZAL
-              SL(SCROLL) 
-              &mkp MCLK &mkp LCLK &mkp RCLK
-              &mkp MCLK &macro_navW SL(SCROLL) &mkp RCLK &mo SNIPE    &kp C_VOL_UP  &kp C_VOL_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-            #endif
-
-            >;
-            #ifdef ENCODERS
-              sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
-            #endif
-        };
-        
         navigation_windows {
             label = "NAVW";
             bindings = <
@@ -328,8 +271,8 @@
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &trans     &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans           &trans
-     &trans        &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans        &trans
-                   &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans
+     &trans     &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans           &trans
+                &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &trans        &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -356,9 +299,9 @@
             label = "SNIPE";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &trans     &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans           &trans
-     &trans        &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans        &trans
-                   &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans
+     &trans     &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans        &trans
+     &trans     &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans        &trans
+                &trans       &trans         &trans         &trans            &trans       &trans        &trans       &trans
 //               ╰─────────────┴─────────────┼─────────────┤                               ├─────────────┼─────────────┴─────────────╯
                                                &trans        &trans            &trans        &trans
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
