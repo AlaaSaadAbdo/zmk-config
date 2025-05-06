@@ -25,17 +25,15 @@ compatible = "zmk,combos";
   };
 
 #ifdef GHAZAL
-  #define ALPHA_ALL MAC WIN SCROLL SNIPE MBIRD WBIRD
+  #define ALPHA_ALL MAC WIN SCROLL SNIPE
   #define ALPHA_HD MAC WIN SCROLL SNIPE
-  #define ALPHA_BIRD SCROLL SNIPE MBIRD WBIRD
-  #define ALPHA_MAC MAC SCROLL SNIPE MBIRD
-  #define ALPHA_WIN WIN SCROLL SNIPE WBIRD
+  #define ALPHA_MAC MAC SCROLL SNIPE 
+  #define ALPHA_WIN WIN SCROLL SNIPE
 #else
-  #define ALPHA_ALL MAC WIN MBIRD WBIRD
+  #define ALPHA_ALL MAC WIN
   #define ALPHA_HD MAC WIN
-  #define ALPHA_BIRD MBIRD WBIRD
-  #define ALPHA_MAC MAC MBIRD
-  #define ALPHA_WIN WIN WBIRD
+  #define ALPHA_MAC MAC 
+  #define ALPHA_WIN WIN
 #endif
 
 /* Missing Alphas */
@@ -43,12 +41,6 @@ compatible = "zmk,combos";
 COMBO(Q, &kp Q, 21 22, ALPHA_HD) // Q 
 COMBO(Z, &kp Z, 1 2, ALPHA_HD) // Z
 COMBO(V, &kp V, 20 21, ALPHA_HD) // V
-
-/* BIRD */
-COMBO(BG, &kp G, 21 22, ALPHA_BIRD) // Q 
-COMBO(BR, &kp R, 20 21, ALPHA_BIRD) // Z
-COMBO(B1, &kp N1, 1 2, ALPHA_BIRD) // V
-COMBO(B2, &kp N2, 2 3, ALPHA_BIRD) // V
 
 /* Brackets */
 COMBO(left_bracket, &kp LBKT, 1 11, ALPHA_ALL)
@@ -84,7 +76,6 @@ COMBO(launcher, &kp LG(SPACE), 20 22, ALPHA_ALL)
 COMBO(clipboard_manager, &kp LG(LC(LA(LS(Z)))), 20 21 22, ALPHA_ALL)
 COMBO(key_repeat_r, &key_repeat, 15 23, ALPHA_ALL)
 COMBO(key_repeat_l, &key_repeat, 14 22, ALPHA_ALL)
-COMBO(gamingtab, &kp TAB, 1 2 3, WBIRD)
 
   /* Mac */
 COMBO(lock_screen, &kp LG(LC(Q)), 6 7 8, NAV)
@@ -111,10 +102,6 @@ COMBO(bt_3, &bt BT_SEL 3, 3 4, NAV NAVW)
 /* mac | win */
 GCOMBO(switch_to_mac, &to MAC, 0 10 26)
 GCOMBO(switch_to_win, &to WIN, 9 19 29)
-
-/* BIRD: mac | win */
-GCOMBO(switch_to_mbird, &to MBIRD, 1 11 26)
-GCOMBO(switch_to_wbird, &to WBIRD, 8 18 29)
 
 /* bluetooth profile + default layer */
 COMBO(btblMAC,  &macro_btblwin, 27 20 21, ALPHA_ALL)
