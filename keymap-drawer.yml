@@ -14,7 +14,7 @@ layers:
     - BCK SPCE
     - TAB
     - DELETE
-    - DWord
+    - Delete Word
     - Rename
     - UP
     - Quit
@@ -23,8 +23,8 @@ layers:
     - {t: LALT, h: Sticky}
     - {t: LGUI, h: Sticky}
     - {t: LSHIFT, h: Sticky}
-    - SALL
-    - SALL
+    - Select All
+    - Select All
     - LEFT
     - DOWN
     - RIGHT
@@ -73,68 +73,66 @@ layers:
 combos:
 -   p: [21, 22]
     k: Q
-    l: [BASE, APT]
+    l: [BASE]
 -   p: [1, 2]
     k: Z
-    l: [BASE, APT]
+    l: [BASE]
 -   p: [20, 21]
     k: V
-    l: [BASE, APT]
+    l: [BASE]
 -   p: [1, 11]
     k: '['
-    l: [BASE, APT]
+    l: [BASE]
 -   p: [8, 18]
     k: ']'
-    l: [BASE, APT]
+    l: [BASE]
 -   p: [2, 12]
-    k: (
-    l: [BASE, APT]
+    k: '('
+    l: [BASE]
 -   p: [7, 17]
-    k: )
-    l: [BASE, APT]
+    k: ')'
+    l: [BASE]
 -   p: [3, 13]
     k: '{'
-    l: [BASE, APT]
+    l: [BASE]
 -   p: [6, 16]
     k: '}'
-    l: [BASE, APT]
+    l: [BASE]
 -   p: [27, 28]
     k: Caps
-    l: [BASE, APT]
+    l: [BASE]
+    d: true
 -   p: [3, 4]
     k: Redo
-    l: [BASE, APT]
+    l: [BASE]
+    r: 45
 -   p: [13, 14]
     k: Undo
-    l: [BASE, APT]
--   p: [2, 12]
-    k: Dwrd
-    l: [NAV]
+    l: [BASE]
+    r: 45
 -   p: [22, 26]
     k: ESC
-    l: [BASE, APT]
--   p: [15, 23]
-    k: RPT
-    l: [BASE, APT]
--   p: [14, 22]
-    k: RPT
-    l: [BASE, APT]
+    l: [BASE]
 -   p: [6, 7, 8]
-    k: Lck
+    k: Lock Screen
     l: [NAV]
     align: top
     o: .25
+    w: 45
 -   p: [26, 27]
     k: Sym
-    l: [BASE, APT]
+    l: [BASE]
+    hidden: true
 -   p: [0, 14]
-    k: BT CLR
+    k: Bluetooth Clear
     l: [NAV]
     a: top
     o: .75
+    w: 65
 -   p: [0, 1]
     k: BT 0
     l: [NAV]
+    r: -45
 -   p: [1, 2]
     k: BT 1
     l: [NAV]
@@ -144,3 +142,4 @@ combos:
 -   p: [3, 4]
     k: BT 3
     l: [NAV]
+    r: 45
