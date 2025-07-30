@@ -6,7 +6,7 @@ I use this keyboard for both windows and mac, to type in Arabic and English
 
 ## Layout
 
-![](layout.png) 
+![](layout.svg) 
 
 ## References
 
