@@ -40,7 +40,7 @@ manifest:
     # must swap the zmk-fingerpunch-keyboards repo as well at the same time
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3.0
       import: app/west.yml
   self:
     path: config
