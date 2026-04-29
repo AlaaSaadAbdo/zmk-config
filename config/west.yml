@@ -12,5 +12,8 @@ manifest:
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
+    - name: zmk-input-processor-scroll-inertia
+      remote: mjmjm0101
+      revision: main
   self:
     path: config
