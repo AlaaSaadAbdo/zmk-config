@@ -4,8 +4,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: AlaaSaadAbdo
       url-base: https://github.com/AlaaSaadAbdo
-    - name: mjmjm0101
-      url-base: https://github.com/mjmjm0101
   projects:
     - name: zmk-pmw3610-driver
       remote: AlaaSaadAbdo
@@ -14,8 +12,5 @@ manifest:
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
-    - name: zmk-input-processor-scroll-inertia
-      remote: mjmjm0101
-      revision: main
   self:
     path: config
